@@ -1,0 +1,14 @@
+---
+layout: master
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <small class="post-list-meta">{{ post.date | date: "%b %-d, %Y" }}</small>
+    <h2 class="post-list-title inline">
+      <a class="post-list-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+  </li>
+  {% endfor %}
+</ul>

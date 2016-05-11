@@ -1,0 +1,19 @@
+# Site settings
+title: CIAvash::Blog
+description: Writings of Siavash Askari Nasr
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.ciavash.name" # the base hostname & protocol for your site
+feed: /atom.xml
+author:
+  name: CIAvash
+  full_name: Siavash Askari Nasr
+  twitter: CIAvash
+  github: CIAvash
+  website:
+    name: CIAvash.name
+    url: http://ciavash.name
+
+# Build settings
+markdown: kramdown
+sass:
+  style: :compressed

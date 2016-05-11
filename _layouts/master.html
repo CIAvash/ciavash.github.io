@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }}" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <header class="page-header">
+        <h1 class="page-header-title"><a href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></h1>
+        <div class="page-header-subtitle text-muted">{{ site.description }}</div>
+
+        <ul class="s-links list-unstyled list-inline">
+          <li>
+            <a href="{{ site.feed | prepend: site.baseurl }}" title="Feed">
+              <img alt="Feed" src="{{ '/assets/img/icon/fi-rss.svg' | prepend: site.baseurl }}">
+            </a>
+          </li>
+          <li>
+            <a href="{{ site.author.website.url }}" title="{{ site.author.website.name }}">
+              <img alt="{{ site.author.website.name }}" src="{{ '/assets/img/icon/fi-home.svg' | prepend: site.baseurl }}">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
+              <img alt="Twitter" src="{{ '/assets/img/icon/fi-social-twitter.svg' | prepend: site.baseurl }}">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" title="Github">
+              <img alt="Github" src="{{ '/assets/img/icon/fi-social-github.svg' | prepend: site.baseurl }}">
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+    </div>
+  </body>
+</html>
