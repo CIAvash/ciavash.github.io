@@ -2,7 +2,7 @@
 title: CIAvash::Blog
 description: Writings of Siavash Askari Nasr
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.ciavash.name" # the base hostname & protocol for your site
+url: "https://blog.ciavash.name" # the base hostname & protocol for your site
 feed: /atom.xml
 author:
   name: CIAvash
