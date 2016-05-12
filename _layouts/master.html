@@ -22,22 +22,27 @@
         <ul class="s-links list-unstyled list-inline">
           <li>
             <a href="{{ site.feed | prepend: site.baseurl }}" title="Feed">
-              <img alt="Feed" src="{{ '/assets/img/icon/fi-rss.svg' | prepend: site.baseurl }}">
+              <img alt="Feed" src="{{ '/assets/img/icon/fa-rss.svg' | prepend: site.baseurl }}">
             </a>
           </li>
           <li>
             <a href="{{ site.author.website.url }}" title="{{ site.author.website.name }}">
-              <img alt="{{ site.author.website.name }}" src="{{ '/assets/img/icon/fi-home.svg' | prepend: site.baseurl }}">
+              <img alt="{{ site.author.website.name }}" src="{{ '/assets/img/icon/fa-home.svg' | prepend: site.baseurl }}">
             </a>
           </li>
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
-              <img alt="Twitter" src="{{ '/assets/img/icon/fi-social-twitter.svg' | prepend: site.baseurl }}">
+              <img alt="Twitter" src="{{ '/assets/img/icon/fa-twitter.svg' | prepend: site.baseurl }}">
+            </a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/u/{{ site.author.gitlab }}" title="Gitlab">
+              <img alt="Gitlab" src="{{ '/assets/img/icon/fa-gitlab.svg' | prepend: site.baseurl }}">
             </a>
           </li>
           <li>
             <a href="https://github.com/{{ site.author.github }}" title="Github">
-              <img alt="Github" src="{{ '/assets/img/icon/fi-social-github.svg' | prepend: site.baseurl }}">
+              <img alt="Github" src="{{ '/assets/img/icon/fa-github.svg' | prepend: site.baseurl }}">
             </a>
           </li>
         </ul>
