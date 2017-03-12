@@ -3,13 +3,13 @@ layout: post
 title: How to type Perl 6 unicode characters in Emacs
 ---
 
-[Perl 6](http://perl6.org/) uses some unicode characters as operators, quotation marks, etc.
+[Perl 6](https://perl6.org/) uses some unicode characters as operators, quotation marks, etc.
 In this post I'm going to explain how to type those characters in Emacs using
 [input methods](http://www.emacswiki.org/emacs/InputMethods).
 
 First, you might want to see a list of those characters and their ASCII equivalents
-[here](http://doc.perl6.org/language/unicode_texas).
-There is also a doc for [entering unicode characters](http://doc.perl6.org/language/unicode_entry).
+[here](https://docs.perl6.org/language/unicode_texas).
+There is also a doc for [entering unicode characters](https://docs.perl6.org/language/unicode_entry).
 You may specifically want to look at [XCompose](https://en.wikipedia.org/wiki/Compose_key#GNU.2FLinux) for a system-wide solution.
 
 There are at least two input methods you can use to enter the unicode characters used in Perl 6.
@@ -70,18 +70,22 @@ Below is a list of unicode characters used in Perl 6 and their character sequenc
 | »  | `>` | `&>>` | `\frqq` |
 | ×  | `x` | `&*X` | `\times` |
 | ÷  | `/ /` | `&-:` | `\div` |
-| −  |   | `&-2` | `\minus` |
+| −  | `_ -` | `&-2` | `\minus` |
+| ≤  | `_ <` | `&=<` | `\le` |
+| ≥  | `_ >` | `&>=` | `\ge` |
+| ≠  | `/ =` | `&!=` | `\ne` |
 | ∘  |   | `&Ob` | `\circ` |
 | ≅  |   | `&?=` | `\cong` |
+| ‼  |   | `&!*2` |      |
 | π  |   | `&p*` | `\pi` |
 | τ  |   | `&t*` | `\tau` |
 | ∞  |   | `&00` | `\infty` |
 | …  |   | `&.3` | `\ldots` |
-| ‘  |   | `&'6` | `\rq` |
-| ’  |   | `&'9` | `\lq` |
+| ‘  | `[` | `&'6` | `\rq` |
+| ’  | `]` | `&'9` | `\lq` |
 | ‚  |   | `&.9` | `\glq` |
-| “  |   | `&"6` | `\ldq` |
-| ”  |   | `&"9` | `\rdq` |
+| “  | `{` | `&"6` | `\ldq` |
+| ”  | `}` | `&"9` | `\rdq` |
 | „  |   | `&:9` | `\glqq` |
 | ¯  | `=` | `&'m` | `\={}` |
 | ⁻  |   | `&-S` | `^-` |
