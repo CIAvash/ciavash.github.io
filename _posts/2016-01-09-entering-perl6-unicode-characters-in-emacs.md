@@ -76,7 +76,6 @@ Below is a list of unicode characters used in Perl 6 and their character sequenc
 | ≠  | `/ =` | `&!=` | `\ne` |
 | ∘  |   | `&Ob` | `\circ` |
 | ≅  |   | `&?=` | `\cong` |
-| ‼  |   | `&!*2` |      |
 | π  |   | `&p*` | `\pi` |
 | τ  |   | `&t*` | `\tau` |
 | ∞  |   | `&00` | `\infty` |
