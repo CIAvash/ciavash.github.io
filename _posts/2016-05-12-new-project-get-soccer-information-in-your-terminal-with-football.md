@@ -12,10 +12,10 @@ It uses another module I wrote called [WebService::FootballData](https://gitlab.
 [football-data.org](http://football-data.org) API.
 
 To install App::Football, you need to first install [Perl 6](https://perl6.org/downloads/)
-and [Panda](https://github.com/tadzik/panda), then run:
+and [Zef](https://github.com/ugexe/zef), then run:
 
 ```bash
-panda install App::Football
+zef install App::Football
 ```
 
 The [README](https://gitlab.com/CIAvash/App-Football/blob/master/README.md) file has some useful examples,
