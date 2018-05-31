@@ -5,45 +5,54 @@
 @import 'syntax-highlighting'
 
 body
-  background: #2F0808
-  color: #DDD
+  background: #422c2c
+  color: #CCC
   padding-bottom: 40px
 
 a, a:hover, a:focus
-  color: #f52b00
+  color: #c5984a
   transition: border-color 450ms
 
 a:hover, a:focus
   text-decoration: none
-  border-bottom: 1px solid #600101
+  border-bottom: 1px solid #9b6a33
 
 img
   max-width: 100%
   height: auto
 
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+  border-color: #999
+
 pre
   background-color: transparent
   color: inherit
+  border: none
+  border-radius: 0
 
   code
     border: none
 
 code
   font-family: 'Fira Mono', 'DejaVu Sans Mono', monospace
-  background-color: #450000
-  color: #FF8802
+  background-color: #392121
+  color: #A87E50
+
+.highlight
+  border-radius: 4px
 
 .inline
   display: inline
 
 .text-muted
-  color: #BBB
+  color: #AAA
 
 .wrapper
   padding: 0 7px
 
 .page-header
   position: relative
+  border-bottom: 1px solid #999
 
 $social_icon_width: 25px
 .s-links
@@ -60,7 +69,7 @@ $social_icon_width: 25px
     border: none
 
   img
-    width: $social_icon_width
+    height: $social_icon_width
 
 
 .post-list
