@@ -103,8 +103,6 @@ Below is a list of unicode characters used in Perl 6 and their character sequenc
 | ⊉  |   |       | `\nsupseteq` |
 | ⊃  |   | `&(C` | `\supset` |
 | ⊅  |   |       | `\nsupset` |
-| ≼  |   |       | `\preceq` |
-| ≽  |   |       | `\succeq` |
 | ∪  |   | `&)U` | `\cup` |
 | ∩  |   | `&(U` | `\cap` |
 | ∖  |   |       | `\setminus` |
