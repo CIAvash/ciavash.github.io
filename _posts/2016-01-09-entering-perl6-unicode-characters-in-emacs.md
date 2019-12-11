@@ -3,7 +3,7 @@ layout: post
 title: How to type Raku unicode characters in Emacs
 ---
 
-[Raku](https://raku.org/) uses some unicode characters as operators, quotation marks, etc.
+[Raku programming language](https://raku.org/) uses some unicode characters as operators, quotation marks, etc.
 In this post I'm going to explain how to type those characters in Emacs using
 [input methods](http://www.emacswiki.org/emacs/InputMethods).
 
