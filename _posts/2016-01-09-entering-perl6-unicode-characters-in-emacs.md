@@ -120,4 +120,6 @@ Below is a list of unicode characters used in Raku and their character sequences
 | ∖         |               |               | `\setminus`  |
 | ⊖         |               |               | `\ominus`    |
 | ⊎         |               |               | `\uplus`     |
+| ≡         |               | `&=3`         | `\equiv`     |
+| ≢         |               |               | `\nequiv`    |
 {: .table style="font-family: sans-serif;"}
