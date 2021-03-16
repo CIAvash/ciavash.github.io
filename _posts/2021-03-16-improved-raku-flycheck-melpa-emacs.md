@@ -8,7 +8,7 @@ And did some improvements to it and published it on [melpa](https://melpa.org/),
 
 For those who don't know, [flycheck](https://www.flycheck.org/) is a tool for syntax checking Gnu Emacs buffers.
 
-You can install it [flycheck-raku](https://github.com/Raku/flycheck-raku) using [use-package](https://github.com/jwiegley/use-package):
+You can install [flycheck-raku](https://github.com/Raku/flycheck-raku) using [use-package](https://github.com/jwiegley/use-package):
 
 ```elisp
 (use-package flychek-raku :ensure t)
