@@ -26,3 +26,5 @@ I added an overall rating, which is the average of those ratings.
 
 [MovieInfo](https://ciavash.gitlab.io/MovieInfo/) is released under GPLv3+
 and its source code is available [here](https://gitlab.com/CIAvash/MovieInfo).
+
+*Update*: I Recreated the app with [Svelte](https://svelte.dev/): [MovieInfo](https://movie-info.ciavash.name/)
