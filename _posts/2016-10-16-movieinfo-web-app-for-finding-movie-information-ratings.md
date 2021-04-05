@@ -16,7 +16,7 @@ I liked what I saw, so I did a bit more reading before starting the project.
 [MovieInfo](https://ciavash.gitlab.io/MovieInfo/)
 -------------------------------------------------
 
-![MovieInfo - screenshot of a title]({{ site.baseurl }}/uploads/MovieInfo-title.jpg)
+[![MovieInfo - screenshot of a title]({{ site.baseurl }}/uploads/MovieInfo-title.jpg)]({{ site.baseurl }}/uploads/MovieInfo-title.jpg)
 
 I wanted the project to be very simple and light, so I created a simple interface,
 and used the [OMDb API](https://omdbapi.com/) to show the necessary information.

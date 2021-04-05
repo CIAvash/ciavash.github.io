@@ -18,7 +18,7 @@ You can install [flycheck-raku](https://github.com/Raku/flycheck-raku) using [us
 
 ### Project detection
 
-![Emacs - flycheck-raku - bare say]({{ site.baseurl }}/uploads/emacs-flycheck-raku-could-not-find-module.png)
+[![Emacs - flycheck-raku - bare say]({{ site.baseurl }}/uploads/emacs-flycheck-raku-could-not-find-module.png)]({{ site.baseurl }}/uploads/emacs-flycheck-raku-could-not-find-module.png)
 
 Previously if you used `flycheck-raku` on a project, it would show errors on `use SomeModule;`,
 even though the module was in the `lib` directory of the project. And this would make `flycheck` kinda
