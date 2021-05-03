@@ -1,0 +1,42 @@
+{{ define "header" }}
+<header class="page-header">
+    <h1 class="page-header-title">
+        <a href="/blog">{{ .Site.Params.Blog.Title }}</a>
+    </h1>
+    <p class="page-header-subtitle">{{ .Site.Params.Blog.Description }}</p>
+    {{ partial "social-media" . }}
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article class="article">
+    <header>
+        <h2 class="article-title">{{ .Title }}</h2>
+        <p class="article-meta">
+            <span class="article-author">By {{ .Site.Params.Author }} • </span>
+            {{ with .Date }}
+            <time datetime="{{.Format "2006-01-02"}}">{{.Format "Jan 2, 2006"}}</time>
+            {{ end }}
+            {{ $categories := .GetTerms "categories" }}
+            {{ if $categories }}
+            • Category:
+            {{ range $index, $category := $categories }}
+            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            {{ if lt $index (sub (len $categories) 1) }},{{ end }}
+            {{ end }}
+            {{ end }}
+            {{ $tags := .GetTerms "tags" }}
+            {{ if $tags }}
+            • Tag:
+            {{ range $index, $tag := $tags }}
+            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            {{ if lt $index (sub (len $tags) 1) }},{{ end }}
+            {{ end }}
+            {{ end }}
+        </p>
+    </header>
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

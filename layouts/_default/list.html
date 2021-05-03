@@ -1,0 +1,11 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+{{ .Content }}
+
+{{ partial "article-list.html" . }}
+
+{{ end }}

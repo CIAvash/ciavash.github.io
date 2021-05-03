@@ -1,0 +1,29 @@
+baseURL: https://www.ciavash.name
+disablePathToLower: true
+languageCode: en-us
+title: Siavash Askari Nasr
+permalinks:
+  blog: /:section/:year/:month/:day/:filename/
+paginate: 15
+author:
+  name: Siavash Askari Nasr
+params:
+  Author: CIAvash
+  Blog:
+    Title: CIAvash::Blog
+    Description: Writings of Siavash Askari Nasr
+  github: CIAvash
+  gitlab: CIAvash
+  twitter: CIAvash
+  mastodon: '@CIAvash'
+  artstation: CIAvash
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+  # highlight:
+    # style: doom-one
+outputFormats:
+  RSS:
+    baseName: atom

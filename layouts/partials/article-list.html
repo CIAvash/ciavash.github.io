@@ -1,0 +1,32 @@
+{{ if eq .Kind "term" }}
+<h2>
+    {{ singularize .CurrentSection.Title }}: {{ .Title }}
+</h2>
+{{ end }}
+
+{{ $pages := .Pages }}
+
+{{ if eq .Section "blog" }}
+{{ $pages = .Paginator.Pages }}
+{{ end }}
+
+{{ range $pages }}
+<article class="article">
+    <header>
+        <h2 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="article-meta">
+            <span class="article-author">{{ with .Site.Params.Author }}By {{.}} • {{ end }}</span>
+            {{ with .Date }}
+            <time datetime="{{.Format "2006-01-02"}}">{{.Format "Jan 2, 2006"}}</time>
+            {{ end }}
+        </p>
+    </header>
+    {{ .Summary }}
+    <footer>
+        <a href="{{ .Permalink }}">Read More»</a>
+    </footer>
+</article>
+{{ end }}
+{{ if eq .Section "blog" }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}

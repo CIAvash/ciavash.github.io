@@ -1,6 +1,10 @@
 ---
-layout: post
-title: 'An improved flycheck-raku now available on melpa [Emacs]'
+date: "2021-03-16T00:00:00Z"
+title: An improved flycheck-raku now available on melpa [Emacs]
+categories: [Raku, Emacs]
+tags: [Raku, Emacs, Flycheck, Syntax Checking]
+aliases:
+    - /blog/2021/03/16/improved-raku-flycheck-melpa-emacs.html
 ---
 
 Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
@@ -18,7 +22,7 @@ You can install [flycheck-raku](https://github.com/Raku/flycheck-raku) using [us
 
 ### Project detection
 
-[![Emacs - flycheck-raku - bare say]({{ site.baseurl }}/uploads/emacs-flycheck-raku-could-not-find-module.png)]({{ site.baseurl }}/uploads/emacs-flycheck-raku-could-not-find-module.png)
+![Emacs - flycheck-raku - bare say](/img/emacs-flycheck-raku-could-not-find-module.png)
 
 Previously if you used `flycheck-raku` on a project, it would show errors on `use SomeModule;`,
 even though the module was in the `lib` directory of the project. And this would make `flycheck` kinda
@@ -36,12 +40,12 @@ Previous versions of `flycheck-raku` would cut some long error messages. Now, er
 
 #### Multi-line error messages
 
-![Emacs - flycheck-raku - bare say]({{ site.baseurl }}/uploads/emacs-flycheck-raku-bare-say.png)
+![Emacs - flycheck-raku - bare say](/img/emacs-flycheck-raku-bare-say.png)
 
 In the new version, multi-line error messages are fully shown.
 
 #### Potential difficulties
 
-![Emacs - flycheck-raku - symbol redclaration]({{ site.baseurl }}/uploads/emacs-flycheck-raku-symbol-redclaration.png)
+![Emacs - flycheck-raku - symbol redclaration](/img/emacs-flycheck-raku-symbol-redclaration.png)
 
 New version shows potential difficulties; I've only seen one such error message and that is `Redclaration of symbol $x`.

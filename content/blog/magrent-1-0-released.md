@@ -1,13 +1,17 @@
 ---
-layout: post
+date: "2014-06-04T00:00:00Z"
 title: Magrent 1.0 released [Firefox]
+categories: [Firefox, Add-on]
+tags: [Firefox, Magrent, Torrent, Add-on]
+aliases:
+    - /blog/2014/06/04/magrent-1-0-released.html
 ---
 
-![Magrent-Panel]({{ site.baseurl }}/uploads/Magrent-Panel.png)
+![Magrent-Panel](/img/Magrent-Panel.png)
 
 [Magrent](https://addons.mozilla.org/en-US/firefox/addon/magrent/) 1.0 adds context menu items to torrent info hash(when hash is selected) and The Pirate Bay torrent pages and links.
 
-![Magrent-ContextMenu]({{ site.baseurl }}/uploads/Magrent-ContextMenu.png)
+![Magrent-ContextMenu](/img/Magrent-ContextMenu.png)
 
 Changes in this version:
 

@@ -1,6 +1,9 @@
 ---
-layout: post
+date: "2013-07-02T00:00:00Z"
 title: Simple parser for C language
+tags: [Perl, C, Programming Language, Parser]
+aliases:
+    - /blog/2013/07/02/simple-parser-for-c-language.html
 ---
 
 For a long time I'v wanted to push my Parser project which was a university project for Principles of Compiler Design course to GitHub. Now I’v found the time to do it and you can download it [here](https://github.com/CIAvash/simple-c-parser/).
@@ -16,16 +19,16 @@ Take a look at the README.md for its usage and some dummy C code for using in sc
 Usage:
 
 scanner:
-{% highlight bash %}
+```bash
 ./scanner.pl [file_name]
-{% endhighlight %}
+```
 
 Output: Symbol Table (tokens)
 
 parser:
-{% highlight bash %}
+```bash
 ./parser.pl [-s] [file_name]
-{% endhighlight %}
+```
 
 Output: Table of parsing process
 

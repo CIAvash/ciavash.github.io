@@ -1,4 +1,4 @@
 Credits
 =======
 
-Icons: [Font Awesome](https://fontawesome.com/) with colors changed
+Icons: [Font Awesome](https://fontawesome.com/) with fill colors changed

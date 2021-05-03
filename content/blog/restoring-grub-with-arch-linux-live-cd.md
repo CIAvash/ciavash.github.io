@@ -1,6 +1,10 @@
 ---
-layout: post
+date: "2012-12-11T00:00:00Z"
 title: Restoring GRUB with Arch linux live CD
+categories: [Arch Linux]
+tags: [Arch Linux, GRUB, Recovery]
+aliases:
+    - /blog/2012/12/11/restoring-grub-with-arch-linux-live-cd.html
 ---
 
 I had Arch linux on my computer and needed Windows for gaming; Windows installs its own boot loader, so I had to re-install grub. The following is what I did to restore grub.
@@ -10,63 +14,73 @@ I suppose that you know what you're doing! For example you need to know in which
 Boot Arch linux from live CD.
 
 Create a directory for [chroot](https://wiki.archlinux.org/index.php/Change_Root) environment:
-{% highlight bash %}
+
+```bash
 mkdir /mnt/root
-{% endhighlight %}
+```
 
 Mount the root partition and other necessary device and file systems:
-{% highlight bash %}
+
+```bash
 mount /dev/sda1 /mnt/root
 cd /mnt/root
 mount -o bind /dev dev/
 mount -t proc proc proc/
 mount -t sysfs sys sys/
-{% endhighlight %}
+```
 
 It seems that on newer Arch releases(2012), you can use `arch-chroot /mnt/root` instead of the last 3 mount commands.
 
 If you have a separate partition for boot, mount it:
-{% highlight bash %}
+
+```bash
 mount /dev/[boot partition] boot/
-{% endhighlight %}
+```
 
 Change the root:
-{% highlight bash %}
+
+```bash
 chroot .
-{% endhighlight %}
+```
 
 You can define another shell by adding it to the above command, like this:
-{% highlight bash %}
+
+```bash
 chroot . /bin/bash
-{% endhighlight %}
+```
 
 Generate grub.cfg file:
-{% highlight bash %}
+
+```bash
 grub-mkconfig -o /boot/grub/grub.cfg
-{% endhighlight %}
+```
 
 Install GRUB:
-{% highlight bash %}
+
+```bash
 grub-install /dev/sda
-{% endhighlight %}
+```
 
 Exit the chroot environment:
-{% highlight bash %}
+```bash
 exit
-{% endhighlight %}
+```
 
 Unmount filesystems and devices:
-{% highlight bash %}
+
+```bash
 umount {dev,proc,sys,}
-{% endhighlight %}
+```
 
 Unmount the root partition:
-{% highlight bash %}
+
+```bash
 cd ..
 umount root
-{% endhighlight %}
+```
 
 And finally, you can reboot:
-{% highlight bash %}
+
+```bash
 reboot
-{% endhighlight %}
+```

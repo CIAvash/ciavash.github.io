@@ -1,6 +1,10 @@
 ---
-layout: post
+date: "2016-01-09T00:00:00Z"
 title: How to type Raku unicode characters in Emacs
+categories: [Raku, Emacs]
+tags: [Raku, Emacs, Unicode]
+aliases:
+    - /blog/2016/01/09/entering-perl6-unicode-characters-in-emacs.html
 ---
 
 [Raku programming language](https://raku.org/) uses some unicode characters as operators, quotation marks, etc.
@@ -31,44 +35,44 @@ To see a list of character sequences for an input method, type `C-h I`.
 
 You can change the default input method by setting the `default-input-method` variable:
 
-{% highlight elisp %}
+```elisp
 (setq default-input-method 'TeX)
-{% endhighlight %}
+```
 
 To add characters which are not available in an input method:
 
-{% highlight elisp %}
+```elisp
 (eval-after-load "quail/latin-ltx"
   `(let ((quail-current-package (assoc "TeX" quail-package-alist)))
      (quail-define-rules ((append . t))
                          ("\\lcb" ?｢)
                          ("\\rcb" ?｣))))
-{% endhighlight %}
+```
 
 Now with TeX method enabled, `\lcb` types '｢' and `\rcb` types '｣'.
 
 Same thing for the rfc1345 input method:
 
-{% highlight elisp %}
+```elisp
 (eval-after-load "quail/rfc1345"
   `(let ((quail-current-package (assoc "rfc1345" quail-package-alist)))
     (quail-define-rules ((append . t))
                         ("&[" "｢")
                         ("&]" "｣"))))
-{% endhighlight %}
+```
 
 Now with the rfc1345 method you can type '｢' with `&[` and type '｣' with `&]`.
 
 Another way of entering unicode characters is using `C-x 8 RET` which runs `insert-char` command.
 `C-x 8` prefix key has shortcuts for some characters. For example, `C-x 8 / /` inserts ÷. To add your own characters:
 
-{% highlight elisp %}
+```elisp
 (global-set-key (kbd "C-x 8 l") "λ")
-{% endhighlight %}
+```
 or:
-{% highlight elisp %}
+```elisp
 (global-set-key (kbd "C-x 8 l") (lambda () (interactive) (insert "λ")))
-{% endhighlight %}
+```
 
 Now `C-x 8 l` inserts λ.
 
@@ -122,4 +126,4 @@ Below is a list of unicode characters used in Raku and their character sequences
 | ⊎         |               |               | `\uplus`     |
 | ≡         |               | `&=3`         | `\equiv`     |
 | ≢         |               |               | `\nequiv`    |
-{: .table style="font-family: sans-serif;"}
+{ .table }

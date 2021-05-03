@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language.Lang }}">
+  {{ partial "head.html" . }}
+
+    <body {{ if (eq .Kind "home") }}class="home"{{ end }}>
+        <div class="wrapper">
+
+            {{ block "header" . }}{{ end }}
+
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+
+        </div>
+        </body>
+</html>

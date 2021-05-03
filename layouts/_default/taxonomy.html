@@ -1,0 +1,20 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+{{ .Content }}
+
+{{ if eq .Kind "term" }}
+{{ partial "article-list.html" . }}
+{{ else if eq .Kind "taxonomy" }}
+<h2>{{ .Title }}</h2>
+{{ $pages := .Pages }}
+{{ range $index, $page := $pages }}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ if lt $index (sub (len $pages) 1) }},{{ end }}
+{{ end }}
+{{ end }}
+
+{{ end }}

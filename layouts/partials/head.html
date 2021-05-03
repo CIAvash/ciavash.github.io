@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>
+      {{ if eq .Kind "term" }}
+      {{ singularize .CurrentSection.Title }}: {{ .Title }}
+      {{ else if eq .Kind "section" }}
+      CIAvash::{{ .Title }}
+      {{ else }}
+      {{ .Title }}
+      {{ end }}
+  </title>
+
+  {{ if eq .Section "blog" }}
+  <meta name="description" content="{{ $.Site.Params.Blog.Description }}">
+  {{ end }}
+
+  {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  <link rel="alternate" type="application/rss+xml" href="{{ "/blog/atom.xml" | absURL }}" title="CIAvash::Blog">
+  {{ if eq .Kind "term" }}
+  {{ range .AlternativeOutputFormats -}}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end -}}
+  {{ end }}
+</head>

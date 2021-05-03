@@ -1,6 +1,10 @@
 ---
-layout: post
+date: "2012-11-12T00:00:00Z"
 title: My move from Ubuntu to Arch Linux
+categories: [Arch Linux]
+tags: [Arch Linux, Ubuntu, Gnu+Linux]
+aliases:
+    - /blog/2012/11/12/move-from-ubuntu-to-arch-linux.html
 ---
 
 About a month ago I decided to try a new linux distribution. I was using Ubuntu and was even waiting for Ubuntu 12.10. I chose [Arch Linux](https://www.archlinux.org/) for testing, and Installed it on my netbook. I really liked the installation process! Then I chose [Xfce](http://xfce.org/) as Desktop Environment. After a few days I decided to move from Ubuntu to Arch Linux.
@@ -9,8 +13,8 @@ When I read an article about a window manager, I was reminded of Tiling Window M
 
 So I installed Arch Linux with xmonad. I spent a few days on installing softwares and configuring. You can see the result in the below picture.
 
-[archlinux-xmonad-img]: {{ site.baseurl }}/uploads/arch-linux-xmonad-CIAvash.png
-[![arch-linux-xmonad][archlinux-xmonad-img]][archlinux-xmonad-img]
+
+![arch-linux-xmonad](/img/arch-linux-xmonad-CIAvash.png)
 
 There is still a lot to learn about Arch Linux and xmonad, but I know enough to do the things I need to do.
 
