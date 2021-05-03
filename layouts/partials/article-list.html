@@ -1,12 +1,13 @@
 {{ if eq .Kind "term" }}
 <h2>
-    {{ singularize .CurrentSection.Title }}: {{ .Title }}
+    <a href="{{ .CurrentSection.Permalink }}">{{ singularize .CurrentSection.Title }}</a>
+    : {{ .Title }}
 </h2>
 {{ end }}
 
 {{ $pages := .Pages }}
 
-{{ if eq .Section "blog" }}
+{{ if eq .Section "blog" | or (eq .Kind "term") }}
 {{ $pages = .Paginator.Pages }}
 {{ end }}
 
@@ -27,6 +28,6 @@
     </footer>
 </article>
 {{ end }}
-{{ if eq .Section "blog" }}
+{{ if eq .Section "blog" | or (eq .Kind "term") }}
 {{ template "_internal/pagination.html" . }}
 {{ end }}
