@@ -73,7 +73,11 @@ body {
 a, a:hover, a:focus {
     color: #34b2ff;
     text-decoration: none;
-    transition: border-color 450ms;
+    transition: border-color 500ms;
+}
+
+a:hover, a:focus {
+    border-bottom: 1px solid #157cbb;
 }
 
 img {
@@ -133,6 +137,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .page-header-title {
     a {
         color: #dd4e4e;
+
+        &:hover, &:focus {
+            border-bottom: 1px solid #a72323;
+        }
     }
 }
 
@@ -157,9 +165,6 @@ $social_icon_width: 25px;
 }
 
 .article {
-    a:hover, a:focus {
-        border-bottom: 1px solid #157cbb;
-    }
 }
 
 .article-title {
@@ -186,6 +191,14 @@ $social_icon_width: 25px;
 
 .pagination {
     margin-top: 15px;
+
+    .page-item.disabled .page-link {
+        background: #ddd;
+    }
+
+    .page-link {
+        background: #eee;
+    }
 }
 
 @media screen and (min-width: 900px) {
