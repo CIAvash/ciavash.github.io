@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Gnu+Linux</title><link>https://www.ciavash.name/tags/Gnu+Linux/</link><description>Recent content in Gnu+Linux</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 12 Nov 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Gnu+Linux/atom.xml" rel="self" type="application/rss+xml"/><item><title>My move from Ubuntu to Arch Linux</title><link>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</link><pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</guid><description>&lt;p>About a month ago I decided to try a new linux distribution. I was using Ubuntu and was even waiting for Ubuntu 12.10. I chose &lt;a href="https://www.archlinux.org/">Arch Linux&lt;/a> for testing, and Installed it on my netbook. I really liked the installation process! Then I chose &lt;a href="http://xfce.org/">Xfce&lt;/a> as Desktop Environment. After a few days I decided to move from Ubuntu to Arch Linux.&lt;/p>
+&lt;p>When I read an article about a window manager, I was reminded of Tiling Window Managers so I decided to check window managers before moving. After some reading and comparing, I chose &lt;a href="http://xmonad.org/">xmonad&lt;/a> as my window manager.&lt;/p>
+&lt;p>So I installed Arch Linux with xmonad. I spent a few days on installing softwares and configuring. You can see the result in the below picture.&lt;/p>
+&lt;p>&lt;a href="https://www.ciavash.name/img/arch-linux-xmonad-CIAvash.png">
+&lt;img
+src="https://www.ciavash.name/img/arch-linux-xmonad-CIAvash.png"
+alt="arch-linux-xmonad"
+/>
+&lt;/a>&lt;/p>
+&lt;p>There is still a lot to learn about Arch Linux and xmonad, but I know enough to do the things I need to do.&lt;/p>
+&lt;p>If you want to try Arch Linux, the &lt;a href="https://wiki.archlinux.org/index.php/Beginners%27_Guide">Beginners' Guide&lt;/a> is the best place to start.&lt;/p>
+&lt;p>&lt;a href="http://www.haskell.org/haskellwiki/Xmonad/Config_archive/John_Goerzen%27s_Configuration">This guide&lt;/a> is a good start on configuring xmonad. Other useful links:&lt;/p>
+&lt;p>&lt;a href="http://xmonad.org/tour.html">xmonad : a guided tour&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://www.haskell.org/haskellwiki/Xmonad/Config_archive">Xmonad/Config archive – HaskellWiki&lt;/a>&lt;/p>
+&lt;p>Some of the Applications I use:(updated)&lt;/p>
+&lt;ul>
+&lt;li>Firefox&lt;/li>
+&lt;li>Thunderbird&lt;/li>
+&lt;li>GNU Emacs (text editor and more!)&lt;/li>
+&lt;li>Guake (terminal)&lt;/li>
+&lt;li>zsh (shell)&lt;/li>
+&lt;li>tmux (terminal multiplexer)&lt;/li>
+&lt;li>xmobar (status bar)&lt;/li>
+&lt;li>dmenu (application launcher)&lt;/li>
+&lt;li>dunst (notification daemon)&lt;/li>
+&lt;li>Krusader, Dolphin (file manager)&lt;/li>
+&lt;li>ncmpcpp (music player)&lt;/li>
+&lt;li>mpv (media player)&lt;/li>
+&lt;li>feh, ristretto (image viewer)&lt;/li>
+&lt;li>scrot (screenshot)&lt;/li>
+&lt;li>zathura (PDF viewer)&lt;/li>
+&lt;li>Liferea (feed reader)&lt;/li>
+&lt;li>syncthing, btsync, dropbox (sync, backup)&lt;/li>
+&lt;/ul></description></item></channel></rss>

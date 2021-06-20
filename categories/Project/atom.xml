@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Project</title><link>https://www.ciavash.name/categories/Project/</link><description>Recent content in Project</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/categories/Project/atom.xml" rel="self" type="application/rss+xml"/><item><title>MovieInfo - A web app for finding movie information and ratings</title><link>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</guid><description>&lt;p>I wanted to create something that makes it easy for me to see movie ratings.
+I decided to create it as a SPA. In order to do so, I had to find a good framework.
+I looked at a few well known frameworks, but did not like any of them!&lt;/p>
+&lt;p>I was going to give up, but then I saw &lt;a href="http://elm-lang.org/">Elm&lt;/a>.
+I had seen it being mentioned here and there, but I had never looked into it.
+So I decided to give it a try and started reading the
+&lt;a href="https://guide.elm-lang.org/">guide&lt;/a> and the &lt;a href="http://elm-lang.org/docs">docs&lt;/a>.
+I liked what I saw, so I did a bit more reading before starting the project.&lt;/p>
+&lt;h2 id="movieinfohttpsciavashgitlabiomovieinfo" class="heading">
+&lt;a href="#movieinfohttpsciavashgitlabiomovieinfo">
+&lt;a href="https://ciavash.gitlab.io/MovieInfo/">MovieInfo&lt;/a>
+&lt;/a>
+&lt;/h2>&lt;p>&lt;a href="https://www.ciavash.name/img/MovieInfo-title.jpg">
+&lt;img
+src="https://www.ciavash.name/img/MovieInfo-title.jpg"
+alt="MovieInfo - screenshot of a title"
+/>
+&lt;/a>&lt;/p>
+&lt;p>I wanted the project to be very simple and light, so I created a simple interface,
+and used the &lt;a href="https://omdbapi.com/">OMDb API&lt;/a> to show the necessary information.&lt;/p>
+&lt;p>In addition to ratings from IMDB, Rotten Tomatoes and Metacritic,
+I added an overall rating, which is the average of those ratings.&lt;/p>
+&lt;p>&lt;a href="https://ciavash.gitlab.io/MovieInfo/">MovieInfo&lt;/a> is released under GPLv3+
+and its source code is available &lt;a href="https://gitlab.com/CIAvash/MovieInfo">here&lt;/a>.&lt;/p>
+&lt;p>&lt;strong>Update&lt;/strong>: I Recreated the app with &lt;a href="https://svelte.dev/">Svelte&lt;/a>: &lt;a href="https://movie-info.ciavash.name/">MovieInfo&lt;/a>&lt;/p></description></item><item><title>Get football information in your terminal with football</title><link>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</link><pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</guid><description>&lt;p>&lt;a href="https://www.ciavash.name/img/football-leagues.png">
+&lt;img
+src="https://www.ciavash.name/img/football-leagues.png"
+alt="Football Leagues"
+/>
+&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gitlab.com/CIAvash/App-Football">App::Football&lt;/a> is a command line program I wrote in &lt;a href="https://raku-lang.ir/en">Raku&lt;/a>.
+&lt;code>football&lt;/code> lets you access information regarding football(soccer!) teams, leagues, tables, fixtures, scores and players.&lt;/p>
+&lt;p>It uses another module I wrote called &lt;a href="https://gitlab.com/CIAvash/WebService-FootballData">WebService::FootballData&lt;/a> which is a Raku interface for
+&lt;a href="http://football-data.org">football-data.org&lt;/a> API.&lt;/p>
+&lt;p>To install App::Football, you need to first install &lt;a href="https://raku-lang.ir/en/downloads/">Raku&lt;/a>
+and &lt;a href="https://github.com/ugexe/zef">Zef&lt;/a>, then run:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">zef install App::Football
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;a href="https://gitlab.com/CIAvash/App-Football/blob/master/README.md">README&lt;/a> file has some useful examples,
+but here are more examples and screenshots:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>bayern --fixtures --timeframe&lt;span style="color:#c7bf54">=&lt;/span>p30 --venue&lt;span style="color:#c7bf54">=&lt;/span>away
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-bayern-away-fixtures.png">
+&lt;img
+src="https://www.ciavash.name/img/football-bayern-away-fixtures.png"
+alt="Football - Bayern away fixtures"
+/>
+&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>mancity --players
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-mancity-players.png">
+&lt;img
+src="https://www.ciavash.name/img/football-mancity-players.png"
+alt="Football - Mancity players"
+/>
+&lt;/a>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --league&lt;span style="color:#c7bf54">=&lt;/span>pl --table --matchday&lt;span style="color:#c7bf54">=&lt;/span>&lt;span style="color:#d19a66">37&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-pl-table-matchday-37.png">
+&lt;img
+src="https://www.ciavash.name/img/football-pl-table-matchday-37.png"
+alt="Football - PL matchday 37 table"
+/>
+&lt;/a>&lt;/p></description></item></channel></rss>

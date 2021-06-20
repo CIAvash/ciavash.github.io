@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Add-on</title><link>https://www.ciavash.name/categories/Add-on/</link><description>Recent content in Add-on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Wed, 04 Jun 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/categories/Add-on/atom.xml" rel="self" type="application/rss+xml"/><item><title>Magrent 1.0 released [Firefox]</title><link>https://www.ciavash.name/blog/2014/06/04/magrent-1-0-released/</link><pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2014/06/04/magrent-1-0-released/</guid><description>&lt;p>&lt;a href="https://www.ciavash.name/img/Magrent-Panel.png">
+&lt;img
+src="https://www.ciavash.name/img/Magrent-Panel.png"
+alt="Magrent-Panel"
+/>
+&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/magrent/">Magrent&lt;/a> 1.0 adds context menu items to torrent info hash(when hash is selected) and The Pirate Bay torrent pages and links.&lt;/p>
+&lt;p>&lt;a href="https://www.ciavash.name/img/Magrent-ContextMenu.png">
+&lt;img
+src="https://www.ciavash.name/img/Magrent-ContextMenu.png"
+alt="Magrent-ContextMenu"
+/>
+&lt;/a>&lt;/p>
+&lt;p>Changes in this version:&lt;/p>
+&lt;ul>
+&lt;li>Add support for The Pirate Bay torrent URLs and links&lt;/li>
+&lt;li>Add context menu items for torrent info hashes&lt;/li>
+&lt;li>New design for Magrent panel&lt;/li>
+&lt;li>Use new action buttons(Australis) with backwards compatibility.&lt;/li>
+&lt;li>New icon&lt;/li>
+&lt;li>Notify user when torrent source is not accessible.&lt;/li>
+&lt;li>Add torrent source name to the notification title&lt;/li>
+&lt;/ul></description></item></channel></rss>
