@@ -19,11 +19,14 @@ params:
   artstation: CIAvash
 markup:
   goldmark:
+    extensions:
+      typographer: false
     parser:
       attribute:
         block: true
-  # highlight:
-    # style: doom-one
+  highlight:
+    style: doom-one
+    anchorLineNos: true
 outputFormats:
   RSS:
     baseName: atom
