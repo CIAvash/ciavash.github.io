@@ -10,8 +10,10 @@ author:
 params:
   Author: CIAvash
   Blog:
-    Title: CIAvash::Blog
+    Kind: section
+    Title: Blog
     Description: Writings of Siavash Askari Nasr
+    Permalink: /blog/
   github: CIAvash
   gitlab: CIAvash
   twitter: CIAvash

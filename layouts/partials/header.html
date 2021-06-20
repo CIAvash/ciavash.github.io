@@ -1,5 +1,5 @@
 <header class="page-header">
-    {{ if (eq .Kind "section") }}
+    {{ if eq .Kind "section" }}
     <h1 class="page-header-title"><a href="{{ .Permalink }}">CIAvash::{{ .Title }}</a></h1>
     {{ with .Description }}
     <span class="page-header-subtitle">{{.}}</span>

@@ -190,6 +190,7 @@ $social_icon_width: 25px;
     bottom: 0;
 
     li {
+        margin: 0 3px;
         padding: 0;
     }
 
@@ -221,61 +222,65 @@ $social_icon_width: 25px;
     }
 }
 
-    .article-title {
-        a {
-            color: #e8ca91;
+.article-title {
+    a {
+        color: #e8ca91;
 
-            &:hover {
-                border-color: #a98540;
-            }
+        &:hover {
+            border-color: #a98540;
         }
     }
+}
 
-    .article-meta {
-        font-size: 14px;
-        color: #b39494;
+.article-meta {
+    font-size: 14px;
+    color: #b39494;
+}
+
+.article-content {
+    margin-top: 20px;
+    hyphens: auto;
+
+    img {
+        display: block;
+        margin: 5px auto;
     }
 
-    .article-content {
-        margin-top: 20px;
-        hyphens: auto;
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: #ccc;
+    }
+}
+
+.pagination {
+    margin-top: 15px;
+
+    .page-item.disabled .page-link {
+        background: #ddd;
+    }
+
+    .page-link {
+        background: #eee;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper {
+        width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    $social_icon_width: 25px;
+    .s-links {
+        width: $social_icon_width * 3 + 3 * 9;
+
+        li {
+            margin: 6px 3px 0;
+        }
 
         img {
-            display: block;
-            margin: 5px auto;
-        }
-
-        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-            color: #ccc;
+            width: $social_icon_width;
         }
     }
-
-    .pagination {
-        margin-top: 15px;
-
-        .page-item.disabled .page-link {
-            background: #ddd;
-        }
-
-        .page-link {
-            background: #eee;
-        }
-    }
-
-    @media screen and (min-width: 900px) {
-        .wrapper {
-            width: 900px;
-            margin: 0 auto;
-        }
-    }
-
-    @media screen and (max-width: 478px) {
-        $social_icon_width: 25px;
-        .s-links {
-            width: $social_icon_width * 2 + 5;
-
-            img {
-                width: $social_icon_width;
-            }
-        }
-    }
+}

@@ -5,7 +5,7 @@
 
 {{ define "main" }}
 <div class="slinks">
-    <a href="/blog" rel="me">Blog</a>
+    <a href="{{ $.Site.Params.Blog.Permalink }}" rel="me">Blog</a>
     <a href="https://twitter.com/{{ $.Site.Params.twitter }}" rel="me">Twitter</a>
     <a href="https://mastodon.social/{{ $.Site.Params.mastodon }}" rel="me">Mastodon</a>
     <a href="https://github.com/{{ $.Site.Params.github }}" rel="me">Github</a>

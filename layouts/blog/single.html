@@ -1,11 +1,5 @@
 {{ define "header" }}
-<header class="page-header">
-    <h1 class="page-header-title">
-        <a href="/blog">{{ .Site.Params.Blog.Title }}</a>
-    </h1>
-    <p class="page-header-subtitle">{{ .Site.Params.Blog.Description }}</p>
-    {{ partial "social-media" . }}
-</header>
+{{ partial "header.html" .Site.Params.Blog }}
 {{ end }}
 
 {{ define "main" }}
