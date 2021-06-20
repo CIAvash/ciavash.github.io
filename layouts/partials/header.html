@@ -2,11 +2,11 @@
     {{ if (eq .Kind "section") }}
     <h1 class="page-header-title"><a href="{{ .Permalink }}">CIAvash::{{ .Title }}</a></h1>
     {{ with .Description }}
-    <p class="page-header-subtitle">{{.}}</p>
+    <span class="page-header-subtitle">{{.}}</span>
     {{ end }}
     {{ else }}
     <h1 class="page-header-title"><a href="/">CIAvash</a></h1>
-    <p class="page-header-subtitle">Website of Siavash Askari Nasr</p>
+    <span class="page-header-subtitle">Website of Siavash Askari Nasr</span>
     {{ end }}
 
     {{ partial "social-media.html" . }}
