@@ -2,7 +2,7 @@
 title: T - Easy way of writing test assertions which output good test descriptions and error messages in Raku
 date: 2022-02-13
 categories: [Raku, Programming, Raku Module, Testing]
-tags: [Raku, Testing, Module, Rakue Module, Slang, Assertion]
+tags: [Raku, Testing, Module, Raku Module, Slang, Assertion]
 ---
 
 After I finished watching [Daniel Sockwell](https://www.codesections.com/)'s [FOSDEM 2022 Raku
