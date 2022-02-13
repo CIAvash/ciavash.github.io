@@ -34,24 +34,24 @@ alt="Football Leagues"
 &lt;a href="http://football-data.org">football-data.org&lt;/a> API.&lt;/p>
 &lt;p>To install App::Football, you need to first install &lt;a href="https://raku-lang.ir/en/downloads/">Raku&lt;/a>
 and &lt;a href="https://github.com/ugexe/zef">Zef&lt;/a>, then run:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">zef install App::Football
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">zef install App::Football
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;a href="https://gitlab.com/CIAvash/App-Football/blob/master/README.md">README&lt;/a> file has some useful examples,
 but here are more examples and screenshots:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>bayern --fixtures --timeframe&lt;span style="color:#c7bf54">=&lt;/span>p30 --venue&lt;span style="color:#c7bf54">=&lt;/span>away
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>bayern --fixtures --timeframe&lt;span style="color:#c7bf54">=&lt;/span>p30 --venue&lt;span style="color:#c7bf54">=&lt;/span>away
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-bayern-away-fixtures.png">
 &lt;img
 src="https://www.ciavash.name/img/football-bayern-away-fixtures.png"
 alt="Football - Bayern away fixtures"
 />
 &lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>mancity --players
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --team&lt;span style="color:#c7bf54">=&lt;/span>mancity --players
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-mancity-players.png">
 &lt;img
 src="https://www.ciavash.name/img/football-mancity-players.png"
 alt="Football - Mancity players"
 />
 &lt;/a>&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --league&lt;span style="color:#c7bf54">=&lt;/span>pl --table --matchday&lt;span style="color:#c7bf54">=&lt;/span>&lt;span style="color:#d19a66">37&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">football --league&lt;span style="color:#c7bf54">=&lt;/span>pl --table --matchday&lt;span style="color:#c7bf54">=&lt;/span>&lt;span style="color:#d19a66">37&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-pl-table-matchday-37.png">
 &lt;img
 src="https://www.ciavash.name/img/football-pl-table-matchday-37.png"

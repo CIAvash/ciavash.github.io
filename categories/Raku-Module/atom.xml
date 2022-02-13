@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Raku Module</title><link>https://www.ciavash.name/categories/Raku-Module/</link><description>Recent content in Raku Module</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/categories/Raku-Module/atom.xml" rel="self" type="application/rss+xml"/><item><title>T - Easy way of writing test assertions which output good test descriptions and error messages in Raku</title><link>https://www.ciavash.name/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</guid><description>&lt;p>After I finished watching &lt;a href="https://www.codesections.com/">Daniel Sockwell&lt;/a>'s &lt;a href="https://fosdem.org/2022/schedule/event/simpletesting/">FOSDEM 2022 Raku
+presentation&lt;/a>, I thought this is a good opportunity to play with
+&lt;a href="https://www.raku-lang.ir/en">Raku&lt;/a>'s &lt;a href="https://design.raku.org/S99.html#slang">slangs&lt;/a>, something I hadn't done before.&lt;/p>
+&lt;p>What is Daniel's talk(and upcoming module) and my module going to solve?&lt;/p>
+&lt;ul>
+&lt;li>Write less but more readable test code&lt;/li>
+&lt;li>Get a useful test description and failure message&lt;/li>
+&lt;/ul>
+&lt;p>If you use &lt;a href="https://docs.raku.org/type/Test#sub_cmp-ok">&lt;code>cmp-ok&lt;/code>&lt;/a>, you get a good error message; but without a test
+description it's sometimes hard to understand. Also &lt;code>cmp-ok&lt;/code> and other test functions(most of them, &lt;code>use-ok&lt;/code> being an
+exception for example) do not output anything on a successful test, unless you provide the description yourself. I
+personally think that test sub routines should generate a description if one is not provided. But of course that
+cannot be done with simple functions. Maybe the &lt;a href="https://docs.raku.org/type/Test">Test&lt;/a> module needs to be rethought in the future?&lt;/p>
+&lt;p>So I made the &lt;a href="https://github.com/CIAvash/T">T&lt;/a> slang which provides the &lt;code>t&lt;/code> keyword for writing test assertions. I didn't
+want to make it complicated, so it's a very short and simple slang which takes an expression of form &lt;code>&amp;lt;got&amp;gt; &amp;lt;infix&amp;gt; &amp;lt;expected&amp;gt;&lt;/code>.&lt;/p>
+&lt;p>The current status of the module: It works for me!&lt;/p>
+&lt;p>Here are some examples:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-raku" data-lang="raku">&lt;span style="color:#c678dd">use&lt;/span> &lt;span style="color:#ef8383">T&lt;/span>:&lt;span style="color:#98c379">auth&lt;/span>&amp;lt;&lt;span style="color:#98c379">zef:CIAash&lt;/span>&amp;gt;;
+&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#d19a66">4&lt;/span> &lt;span style="color:#c7bf54">==&lt;/span> &lt;span style="color:#d19a66">4&lt;/span>;
+&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 1 - 4 == 4
+&lt;/span>&lt;span style="color:#7e97c3">
+&lt;/span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
+&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 2 - $my_great_module.return(&amp;#39;something&amp;#39;) eq &amp;#39;something&amp;#39;
+&lt;/span>&lt;span style="color:#7e97c3">
+&lt;/span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something else&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
+&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> not ok 3 - $my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;
+&lt;/span>&lt;span style="color:#7e97c3"># Failed test &amp;#39;$my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;&amp;#39;
+&lt;/span>&lt;span style="color:#7e97c3"># at ... line ...
+&lt;/span>&lt;span style="color:#7e97c3"># expected: &amp;#34;something&amp;#34;
+&lt;/span>&lt;span style="color:#7e97c3"># matcher: &amp;#39;infix:&amp;lt;eq&amp;gt;&amp;#39;
+&lt;/span>&lt;span style="color:#7e97c3"># got: &amp;#34;something else&amp;#34;
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

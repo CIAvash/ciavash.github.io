@@ -1,0 +1,128 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width">
+<title>
+T - Easy way of writing test assertions which output good test descriptions and error messages in Raku
+</title>
+<meta name=description content="Writings of Siavash Askari Nasr">
+<link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css>
+<link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog>
+</head>
+<body>
+<div class=wrapper>
+<header class=page-header>
+<h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1>
+<span class=page-header-subtitle>Writings of Siavash Askari Nasr</span>
+<ul class="s-links list-unstyled list-inline">
+<li>
+<a href=/ title=Home rel=me>
+<img alt=Home src=/assets/img/icon/fa-home.svg>
+</a>
+</li>
+<li>
+<a href=/blog/ title=Blog>
+<img alt=Blog src=/assets/img/icon/fa-blog.svg>
+</a>
+</li>
+<li>
+<a href=/blog/atom.xml title=Feed>
+<img alt=Feed src=/assets/img/icon/fa-rss.svg>
+</a>
+</li>
+<li>
+<a href=https://mastodon.social/@CIAvash title=Mastodon rel=me>
+<img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg>
+</a>
+</li>
+<li>
+<a href=https://twitter.com/CIAvash title=Twitter rel=me>
+<img alt=Twitter src=/assets/img/icon/fa-twitter.svg>
+</a>
+</li>
+<li>
+<a href=https://github.com/CIAvash title=Github rel=me>
+<img alt=Github src=/assets/img/icon/fa-github.svg>
+</a>
+</li>
+<li>
+<a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me>
+<img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg>
+</a>
+</li>
+<li>
+<a href=https://www.artstation.com/CIAvash title=Artstation rel=me>
+<img alt=Artstation src=/assets/img/icon/fa-artstation.svg>
+</a>
+</li>
+</ul>
+</header>
+<main>
+<article class=article>
+<header>
+<h2 class=article-title>T - Easy way of writing test assertions which output good test descriptions and error messages in Raku</h2>
+<p class=article-meta>
+<span class=article-author>By CIAvash • </span>
+<time datetime=2022-02-13>Feb 13, 2022</time>
+• Category:
+<a href=https://www.ciavash.name/categories/Raku/>Raku</a>
+,
+<a href=https://www.ciavash.name/categories/Programming/>Programming</a>
+,
+<a href=https://www.ciavash.name/categories/Raku-Module/>Raku Module</a>
+,
+<a href=https://www.ciavash.name/categories/Testing/>Testing</a>
+• Tag:
+<a href=https://www.ciavash.name/tags/Raku/>Raku</a>
+,
+<a href=https://www.ciavash.name/tags/Testing/>Testing</a>
+,
+<a href=https://www.ciavash.name/tags/Module/>Module</a>
+,
+<a href=https://www.ciavash.name/tags/Rakue-Module/>Rakue Module</a>
+,
+<a href=https://www.ciavash.name/tags/Slang/>Slang</a>
+,
+<a href=https://www.ciavash.name/tags/Assertion/>Assertion</a>
+</p>
+</header>
+<div class=article-content>
+<p>After I finished watching <a href=https://www.codesections.com/>Daniel Sockwell</a>'s <a href=https://fosdem.org/2022/schedule/event/simpletesting/>FOSDEM 2022 Raku
+presentation</a>, I thought this is a good opportunity to play with
+<a href=https://www.raku-lang.ir/en>Raku</a>'s <a href=https://design.raku.org/S99.html#slang>slangs</a>, something I hadn't done before.</p>
+<p>What is Daniel's talk(and upcoming module) and my module going to solve?</p>
+<ul>
+<li>Write less but more readable test code</li>
+<li>Get a useful test description and failure message</li>
+</ul>
+<p>If you use <a href=https://docs.raku.org/type/Test#sub_cmp-ok><code>cmp-ok</code></a>, you get a good error message; but without a test
+description it's sometimes hard to understand. Also <code>cmp-ok</code> and other test functions(most of them, <code>use-ok</code> being an
+exception for example) do not output anything on a successful test, unless you provide the description yourself. I
+personally think that test sub routines should generate a description if one is not provided. But of course that
+cannot be done with simple functions. Maybe the <a href=https://docs.raku.org/type/Test>Test</a> module needs to be rethought in the future?</p>
+<p>So I made the <a href=https://github.com/CIAvash/T>T</a> slang which provides the <code>t</code> keyword for writing test assertions. I didn't
+want to make it complicated, so it's a very short and simple slang which takes an expression of form <code>&lt;got> &lt;infix> &lt;expected></code>.</p>
+<p>The current status of the module: It works for me!</p>
+<p>Here are some examples:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>use</span> <span style=color:#ef8383>T</span>:<span style=color:#98c379>auth</span>&lt;<span style=color:#98c379>zef:CIAash</span>&gt;;
+
+<span style=color:#ef8383>t</span> <span style=color:#d19a66>4</span> <span style=color:#c7bf54>==</span> <span style=color:#d19a66>4</span>;
+<span style=color:#c1abea>=output</span><span style=color:#7e97c3> ok 1 - 4 == 4
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#ef8383>t</span> <span style=color:#dcaeea>$my_great_module</span><span style=color:#c7bf54>.</span><span style=color:#c678dd>return</span>(&#39;<span style=color:#98c379>something</span>&#39;) <span style=color:#b756ff;font-weight:700>eq</span> &#39;<span style=color:#98c379>something</span>&#39;;
+<span style=color:#c1abea>=output</span><span style=color:#7e97c3> ok 2 - $my_great_module.return(&#39;something&#39;) eq &#39;something&#39;
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#ef8383>t</span> <span style=color:#dcaeea>$my_great_module</span><span style=color:#c7bf54>.</span><span style=color:#c678dd>return</span>(&#39;<span style=color:#98c379>something else</span>&#39;) <span style=color:#b756ff;font-weight:700>eq</span> &#39;<span style=color:#98c379>something</span>&#39;;
+<span style=color:#c1abea>=output</span><span style=color:#7e97c3> not ok 3 - $my_great_module.return(&#39;something else&#39;) eq &#39;something&#39;
+</span><span style=color:#7e97c3># Failed test &#39;$my_great_module.return(&#39;something else&#39;) eq &#39;something&#39;&#39;
+</span><span style=color:#7e97c3># at ... line ...
+</span><span style=color:#7e97c3># expected: &#34;something&#34;
+</span><span style=color:#7e97c3>#  matcher: &#39;infix:&lt;eq&gt;&#39;
+</span><span style=color:#7e97c3>#      got: &#34;something else&#34;
+</span></code></pre></div>
+</div>
+</article>
+</main>
+</div>
+</body>
+</html>

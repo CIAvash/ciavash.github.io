@@ -2,33 +2,33 @@
 &lt;p>I suppose that you know what you're doing! For example you need to know in which partition linux is installed.&lt;/p>
 &lt;p>Boot Arch linux from live CD.&lt;/p>
 &lt;p>Create a directory for &lt;a href="https://wiki.archlinux.org/index.php/Change_Root">chroot&lt;/a> environment:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mkdir /mnt/root
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mkdir /mnt/root
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Mount the root partition and other necessary device and file systems:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/sda1 /mnt/root
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/sda1 /mnt/root
 &lt;span style="color:#ef8383">cd&lt;/span> /mnt/root
 mount -o &lt;span style="color:#ef8383">bind&lt;/span> /dev dev/
 mount -t proc proc proc/
 mount -t sysfs sys sys/
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>It seems that on newer Arch releases(2012), you can use &lt;code>arch-chroot /mnt/root&lt;/code> instead of the last 3 mount commands.&lt;/p>
 &lt;p>If you have a separate partition for boot, mount it:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/&lt;span style="color:#c7bf54">[&lt;/span>boot partition&lt;span style="color:#c7bf54">]&lt;/span> boot/
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/&lt;span style="color:#c7bf54">[&lt;/span>boot partition&lt;span style="color:#c7bf54">]&lt;/span> boot/
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Change the root:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot .
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot .
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>You can define another shell by adding it to the above command, like this:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot . /bin/bash
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot . /bin/bash
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Generate grub.cfg file:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-mkconfig -o /boot/grub/grub.cfg
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-mkconfig -o /boot/grub/grub.cfg
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Install GRUB:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-install /dev/sda
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-install /dev/sda
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Exit the chroot environment:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">exit&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">exit&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount filesystems and devices:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">umount &lt;span style="color:#c7bf54">{&lt;/span>dev,proc,sys,&lt;span style="color:#c7bf54">}&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">umount &lt;span style="color:#c7bf54">{&lt;/span>dev,proc,sys,&lt;span style="color:#c7bf54">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount the root partition:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">cd&lt;/span> ..
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">cd&lt;/span> ..
 umount root
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>And finally, you can reboot:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">reboot
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">reboot
 &lt;/code>&lt;/pre>&lt;/div></description></item><item><title>My move from Ubuntu to Arch Linux</title><link>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</link><pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</guid><description>&lt;p>About a month ago I decided to try a new linux distribution. I was using Ubuntu and was even waiting for Ubuntu 12.10. I chose &lt;a href="https://www.archlinux.org/">Arch Linux&lt;/a> for testing, and Installed it on my netbook. I really liked the installation process! Then I chose &lt;a href="http://xfce.org/">Xfce&lt;/a> as Desktop Environment. After a few days I decided to move from Ubuntu to Arch Linux.&lt;/p>
 &lt;p>When I read an article about a window manager, I was reminded of Tiling Window Managers so I decided to check window managers before moving. After some reading and comparing, I chose &lt;a href="http://xmonad.org/">xmonad&lt;/a> as my window manager.&lt;/p>
 &lt;p>So I installed Arch Linux with xmonad. I spent a few days on installing softwares and configuring. You can see the result in the below picture.&lt;/p>

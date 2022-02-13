@@ -1,4 +1,68 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Simple parser for C language</title><meta name=description content="Writings of Siavash Askari Nasr"><link rel=stylesheet href=https://www.ciavash.name/sass/main.min.2513c9d618b66f08d707017a8f2b26c9798dff58e2ce054685519fd3db8e3f1d.css><link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog></head><body><div class=wrapper><header class=page-header><h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1><span class=page-header-subtitle>Writings of Siavash Askari Nasr</span><ul class="s-links list-unstyled list-inline"><li><a href=/ title=Home rel=me><img alt=Home src=/assets/img/icon/fa-home.svg></a></li><li><a href=/blog/ title=Blog><img alt=Blog src=/assets/img/icon/fa-blog.svg></a></li><li><a href=/blog/atom.xml title=Feed><img alt=Feed src=/assets/img/icon/fa-rss.svg></a></li><li><a href=https://mastodon.social/@CIAvash title=Mastodon rel=me><img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg></a></li><li><a href=https://twitter.com/CIAvash title=Twitter rel=me><img alt=Twitter src=/assets/img/icon/fa-twitter.svg></a></li><li><a href=https://github.com/CIAvash title=Github rel=me><img alt=Github src=/assets/img/icon/fa-github.svg></a></li><li><a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me><img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg></a></li><li><a href=https://www.artstation.com/CIAvash title=Artstation rel=me><img alt=Artstation src=/assets/img/icon/fa-artstation.svg></a></li></ul></header><main><article class=article><header><h2 class=article-title>Simple parser for C language</h2><p class=article-meta><span class=article-author>By CIAvash •</span>
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width">
+<title>
+Simple parser for C language
+</title>
+<meta name=description content="Writings of Siavash Askari Nasr">
+<link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css>
+<link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog>
+</head>
+<body>
+<div class=wrapper>
+<header class=page-header>
+<h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1>
+<span class=page-header-subtitle>Writings of Siavash Askari Nasr</span>
+<ul class="s-links list-unstyled list-inline">
+<li>
+<a href=/ title=Home rel=me>
+<img alt=Home src=/assets/img/icon/fa-home.svg>
+</a>
+</li>
+<li>
+<a href=/blog/ title=Blog>
+<img alt=Blog src=/assets/img/icon/fa-blog.svg>
+</a>
+</li>
+<li>
+<a href=/blog/atom.xml title=Feed>
+<img alt=Feed src=/assets/img/icon/fa-rss.svg>
+</a>
+</li>
+<li>
+<a href=https://mastodon.social/@CIAvash title=Mastodon rel=me>
+<img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg>
+</a>
+</li>
+<li>
+<a href=https://twitter.com/CIAvash title=Twitter rel=me>
+<img alt=Twitter src=/assets/img/icon/fa-twitter.svg>
+</a>
+</li>
+<li>
+<a href=https://github.com/CIAvash title=Github rel=me>
+<img alt=Github src=/assets/img/icon/fa-github.svg>
+</a>
+</li>
+<li>
+<a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me>
+<img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg>
+</a>
+</li>
+<li>
+<a href=https://www.artstation.com/CIAvash title=Artstation rel=me>
+<img alt=Artstation src=/assets/img/icon/fa-artstation.svg>
+</a>
+</li>
+</ul>
+</header>
+<main>
+<article class=article>
+<header>
+<h2 class=article-title>Simple parser for C language</h2>
+<p class=article-meta>
+<span class=article-author>By CIAvash • </span>
 <time datetime=2013-07-02>Jul 2, 2013</time>
 • Tag:
 <a href=https://www.ciavash.name/tags/Perl/>Perl</a>
@@ -7,6 +71,27 @@
 ,
 <a href=https://www.ciavash.name/tags/Programming-Language/>Programming Language</a>
 ,
-<a href=https://www.ciavash.name/tags/Parser/>Parser</a></p></header><div class=article-content><p>For a long time I'v wanted to push my Parser project which was a university project for Principles of Compiler Design course to GitHub. Now I’v found the time to do it and you can download it <a href=https://github.com/CIAvash/simple-c-parser/>here</a>.</p><p>2 years ago I started learning Perl, soon Perl became my favourite programming language. It was then that our professor gave us the scanner project for C language. He told us that we can use the programming language of our choice. We were also allowed to use regular expressions. So I thought Perl is the best language for writing the project. In a month I read <a href=http://en.wikipedia.org/wiki/Learning_Perl>Learning Perl</a> book and other necessary stuff and became ready to write the scanner. Scanner was my first Perl project. When I gave the project to professor, he said that I was the first person who has written the project in Perl :)</p><p>After Scanner, professor gave us a simple C grammar for a parser project. I wrote that in Perl too. The result (with a little change) is <a href=https://github.com/CIAvash/simple-c-parser/>here</a>.</p><p>The used grammar exists in the documents directory. Along with other things that are produced from grammar: the LL(1) grammar after left factoring and left recursion removal, FIRST and FOLLOW sets and the parse table.</p><p>Take a look at the README.md for its usage and some dummy C code for using in scanner and parser.</p><p>Usage:</p><p>scanner:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>./scanner.pl <span style=color:#c7bf54>[</span>file_name<span style=color:#c7bf54>]</span>
-</code></pre></div><p>Output: Symbol Table (tokens)</p><p>parser:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>./parser.pl <span style=color:#c7bf54>[</span>-s<span style=color:#c7bf54>]</span> <span style=color:#c7bf54>[</span>file_name<span style=color:#c7bf54>]</span>
-</code></pre></div><p>Output: Table of parsing process</p><p>With -s switch you can also see the scanner's output.</p><p><a href=https://github.com/CIAvash/simple-c-parser/>Simple C Parser on GitHub</a></p></div></article></main></div></body></html>
+<a href=https://www.ciavash.name/tags/Parser/>Parser</a>
+</p>
+</header>
+<div class=article-content>
+<p>For a long time I'v wanted to push my Parser project which was a university project for Principles of Compiler Design course to GitHub. Now I’v found the time to do it and you can download it <a href=https://github.com/CIAvash/simple-c-parser/>here</a>.</p>
+<p>2 years ago I started learning Perl, soon Perl became my favourite programming language. It was then that our professor gave us the scanner project for C language. He told us that we can use the programming language of our choice. We were also allowed to use regular expressions. So I thought Perl is the best language for writing the project. In a month I read <a href=http://en.wikipedia.org/wiki/Learning_Perl>Learning Perl</a> book and other necessary stuff and became ready to write the scanner. Scanner was my first Perl project. When I gave the project to professor, he said that I was the first person who has written the project in Perl :)</p>
+<p>After Scanner, professor gave us a simple C grammar for a parser project. I wrote that in Perl too. The result (with a little change) is <a href=https://github.com/CIAvash/simple-c-parser/>here</a>.</p>
+<p>The used grammar exists in the documents directory. Along with other things that are produced from grammar: the LL(1) grammar after left factoring and left recursion removal, FIRST and FOLLOW sets and the parse table.</p>
+<p>Take a look at the README.md for its usage and some dummy C code for using in scanner and parser.</p>
+<p>Usage:</p>
+<p>scanner:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>./scanner.pl <span style=color:#c7bf54>[</span>file_name<span style=color:#c7bf54>]</span>
+</code></pre></div><p>Output: Symbol Table (tokens)</p>
+<p>parser:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>./parser.pl <span style=color:#c7bf54>[</span>-s<span style=color:#c7bf54>]</span> <span style=color:#c7bf54>[</span>file_name<span style=color:#c7bf54>]</span>
+</code></pre></div><p>Output: Table of parsing process</p>
+<p>With -s switch you can also see the scanner's output.</p>
+<p><a href=https://github.com/CIAvash/simple-c-parser/>Simple C Parser on GitHub</a></p>
+</div>
+</article>
+</main>
+</div>
+</body>
+</html>

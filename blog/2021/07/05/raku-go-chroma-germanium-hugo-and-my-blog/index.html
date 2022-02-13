@@ -1,4 +1,68 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Raku, Go, Chroma, Germanium, Hugo and my blog</title><meta name=description content="Writings of Siavash Askari Nasr"><link rel=stylesheet href=https://www.ciavash.name/sass/main.min.2513c9d618b66f08d707017a8f2b26c9798dff58e2ce054685519fd3db8e3f1d.css><link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog></head><body><div class=wrapper><header class=page-header><h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1><span class=page-header-subtitle>Writings of Siavash Askari Nasr</span><ul class="s-links list-unstyled list-inline"><li><a href=/ title=Home rel=me><img alt=Home src=/assets/img/icon/fa-home.svg></a></li><li><a href=/blog/ title=Blog><img alt=Blog src=/assets/img/icon/fa-blog.svg></a></li><li><a href=/blog/atom.xml title=Feed><img alt=Feed src=/assets/img/icon/fa-rss.svg></a></li><li><a href=https://mastodon.social/@CIAvash title=Mastodon rel=me><img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg></a></li><li><a href=https://twitter.com/CIAvash title=Twitter rel=me><img alt=Twitter src=/assets/img/icon/fa-twitter.svg></a></li><li><a href=https://github.com/CIAvash title=Github rel=me><img alt=Github src=/assets/img/icon/fa-github.svg></a></li><li><a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me><img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg></a></li><li><a href=https://www.artstation.com/CIAvash title=Artstation rel=me><img alt=Artstation src=/assets/img/icon/fa-artstation.svg></a></li></ul></header><main><article class=article><header><h2 class=article-title>Raku, Go, Chroma, Germanium, Hugo and my blog</h2><p class=article-meta><span class=article-author>By CIAvash •</span>
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width">
+<title>
+Raku, Go, Chroma, Germanium, Hugo and my blog
+</title>
+<meta name=description content="Writings of Siavash Askari Nasr">
+<link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css>
+<link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog>
+</head>
+<body>
+<div class=wrapper>
+<header class=page-header>
+<h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1>
+<span class=page-header-subtitle>Writings of Siavash Askari Nasr</span>
+<ul class="s-links list-unstyled list-inline">
+<li>
+<a href=/ title=Home rel=me>
+<img alt=Home src=/assets/img/icon/fa-home.svg>
+</a>
+</li>
+<li>
+<a href=/blog/ title=Blog>
+<img alt=Blog src=/assets/img/icon/fa-blog.svg>
+</a>
+</li>
+<li>
+<a href=/blog/atom.xml title=Feed>
+<img alt=Feed src=/assets/img/icon/fa-rss.svg>
+</a>
+</li>
+<li>
+<a href=https://mastodon.social/@CIAvash title=Mastodon rel=me>
+<img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg>
+</a>
+</li>
+<li>
+<a href=https://twitter.com/CIAvash title=Twitter rel=me>
+<img alt=Twitter src=/assets/img/icon/fa-twitter.svg>
+</a>
+</li>
+<li>
+<a href=https://github.com/CIAvash title=Github rel=me>
+<img alt=Github src=/assets/img/icon/fa-github.svg>
+</a>
+</li>
+<li>
+<a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me>
+<img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg>
+</a>
+</li>
+<li>
+<a href=https://www.artstation.com/CIAvash title=Artstation rel=me>
+<img alt=Artstation src=/assets/img/icon/fa-artstation.svg>
+</a>
+</li>
+</ul>
+</header>
+<main>
+<article class=article>
+<header>
+<h2 class=article-title>Raku, Go, Chroma, Germanium, Hugo and my blog</h2>
+<p class=article-meta>
+<span class=article-author>By CIAvash • </span>
 <time datetime=2021-07-05>Jul 5, 2021</time>
 • Category:
 <a href=https://www.ciavash.name/categories/Raku/>Raku</a>
@@ -21,7 +85,25 @@
 ,
 <a href=https://www.ciavash.name/tags/Source-Code/>Source Code</a>
 ,
-<a href=https://www.ciavash.name/tags/Image-Generation/>Image Generation</a></p></header><aside><header><h2>Table of Contents</h2></header><nav id=TableOfContents><ul><li><a href=#chroma>Chroma</a></li><li><a href=#generate-images-from-source-code-with-germanium>Generate images from source code with Germanium</a></li><li><a href=#golang>Golang</a></li><li><a href=#hugo-and-my-blog>Hugo and my blog</a></li><li><a href=#raku>Raku</a></li></ul></nav></aside><div class=article-content><p>When I created my <a href=https://www.raku-lang.ir/en>Raku programming language website</a> with
+<a href=https://www.ciavash.name/tags/Image-Generation/>Image Generation</a>
+</p>
+</header>
+<aside>
+<header>
+<h2>Table of Contents</h2>
+</header>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#chroma>Chroma</a></li>
+<li><a href=#generate-images-from-source-code-with-germanium>Generate images from source code with Germanium</a></li>
+<li><a href=#golang>Golang</a></li>
+<li><a href=#hugo-and-my-blog>Hugo and my blog</a></li>
+<li><a href=#raku>Raku</a></li>
+</ul>
+</nav>
+</aside>
+<div class=article-content>
+<p>When I created my <a href=https://www.raku-lang.ir/en>Raku programming language website</a> with
 <a href=https://gohugo.io/>Hugo</a> static site generator, I had to manually create the syntax highlighted
 html files for code examples shown in the front page, because Hugo used
 <a href=https://github.com/alecthomas/chroma/>Chroma</a>(written in <a href=https://golang.org/>Go</a> and uses a
@@ -31,17 +113,29 @@ the Raku lexer from Pygments to Chroma; You would need to create some functions 
 Chroma needed a new <code>Emitter</code> interface which would take the <code>LexerState</code> as an argument, because
 Raku has some complex syntax; the Raku lexer in Pygments had functions for finding closing
 brackets matching the opening brackets, and for regex nesting in <code>tokens</code>, <code>regexes</code> and
-<code>rules</code>. In the end I realized functions for token nesting were unnecessary.</p><p>But I was curious if I could do something with the broken lexer I generated with the
+<code>rules</code>. In the end I realized functions for token nesting were unnecessary.</p>
+<p>But I was curious if I could do something with the broken lexer I generated with the
 <code>pygments2chroma.py</code> script that comes with Chroma. So I began working on the Raku lexer
-without knowing Go, Chroma, Python or Pygments.</p><h2 id=chroma class=heading><a href=#chroma>Chroma</a></h2><p>After playing with the lexer for a while, I was very close to giving up. But after looking at
+without knowing Go, Chroma, Python or Pygments.</p>
+<h2 id=chroma class=heading>
+<a href=#chroma>
+Chroma
+</a>
+</h2><p>After playing with the lexer for a while, I was very close to giving up. But after looking at
 the Chroma code and the functions it provided and also looking at some other lexers, I began to
-come up with some ideas.</p><p>For finding closing brackets I used the function generated by <code>pygments2chroma</code> and modified it a
+come up with some ideas.</p>
+<p>For finding closing brackets I used the function generated by <code>pygments2chroma</code> and modified it a
 lot and also as a workaround I placed empty capture groups inside the patterns that needed
 bracket finding; and I filled those placeholders with the <code>bracketsFinder</code> function(or
-<code>mutator</code>).</p><p>I also used a placeholder rule inside regex which would be replaced by <code>bracketsFinder</code> with the
-appropriate rule which <code>Pop</code>ed from the regex state when the delimiter matched.</p><p>I did the same thing with <code>POD</code> formatters(<code>C&lt;code>, B&lt;bold>,...</code>), although I didn't have to,
-and could create a state for each formatter that needed different tokens for highlighting.</p><p>I also created <code>Emitters</code> for Raku's colon pair syntax and <code>POD</code> config.</p><p>So I finally managed to create an imperfect <a href=https://github.com/alecthomas/chroma/blob/master/lexers/r/raku.go>Raku
-lexer</a> for Chroma.</p><p>I added some things to Chroma itself as well; Added support for named
+<code>mutator</code>).</p>
+<p>I also used a placeholder rule inside regex which would be replaced by <code>bracketsFinder</code> with the
+appropriate rule which <code>Pop</code>ed from the regex state when the delimiter matched.</p>
+<p>I did the same thing with <code>POD</code> formatters(<code>C&lt;code>, B&lt;bold>,...</code>), although I didn't have to,
+and could create a state for each formatter that needed different tokens for highlighting.</p>
+<p>I also created <code>Emitters</code> for Raku's colon pair syntax and <code>POD</code> config.</p>
+<p>So I finally managed to create an imperfect <a href=https://github.com/alecthomas/chroma/blob/master/lexers/r/raku.go>Raku
+lexer</a> for Chroma.</p>
+<p>I added some things to Chroma itself as well; Added support for named
 capture groups(although there is something people need to watch
 for. <code>regexp2</code>, the regex package Chroma uses, implements .Nets' regex
 engine which doesn't maintain the order of captures, in other words,
@@ -51,7 +145,8 @@ request</a> to add an option
 for maintaining the capture order (I don't know if it'll get merged),
 added the <code>ByGroupNames</code> helper function, and made the <code>emitter</code>
 functions take <code>*LexerState</code> as argument, so they have access to more
-things.</p><p>I should have done these things before I made the Raku lexer,
+things.</p>
+<p>I should have done these things before I made the Raku lexer,
 so I could use them while I was making it, but at the time, I didn't
 know I could do it! And also improved the Svelte, SCSS and Fish
 lexers. Additionally, added two new styles,
@@ -59,41 +154,87 @@ lexers. Additionally, added two new styles,
 and
 <a href=https://github.com/alecthomas/chroma/blob/master/styles/doom-one2.go>doom-one2</a>
 which are inspired by Atom One and Doom Emacs's Doom One themes. You
-can use them in version 0.9.2.</p><p>Lastly, the things I learned Chroma command line tool can do(which of course you can find by
-running <code>chroma --help</code>):</p><p>Printing syntax highlighted files to terminal:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span>  <span style=color:#b3d23c>-f</span> terminal256 <span style=color:#b3d23c>-s</span> doom<span style=color:#b3d23c>-one</span> source.raku
-</code></pre></div><p>Generating SVG file:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span> <span style=color:#b3d23c>-s</span> doom<span style=color:#b3d23c>-one</span> source.raku <span style=color:#b3d23c>--svg</span> <span style=color:#c7bf54>&gt;</span> output.svg
-</code></pre></div><p>Generating styled HTML files:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span> <span style=color:#b3d23c>-s</span> doom<span style=color:#b3d23c>-one</span> <span style=color:#b3d23c>--html</span> <span style=color:#b3d23c>--html-all-styles</span> <span style=color:#b3d23c>--html-lines</span> source.raku <span style=color:#c7bf54>&gt;</span> output.html
-</code></pre></div><p>You can install Chroma with:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>go</span> install github.com/alecthomas/chroma@latest
-</code></pre></div><p>Or if you use Arch Linux, you can install it from <a href=https://aur.archlinux.org/packages/chroma-bin/>AUR</a>.</p><h2 id=generate-images-from-source-code-with-germanium class=heading><a href=#generate-images-from-source-code-with-germanium>Generate images from source code with Germanium</a></h2><p><a href=https://github.com/matsuyoshi30/germanium>Germanium</a>(written in Go) is an alternative to
+can use them in version 0.9.2.</p>
+<p>Lastly, the things I learned Chroma command line tool can do(which of course you can find by
+running <code>chroma --help</code>):</p>
+<p>Printing syntax highlighted files to terminal:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span>  <span style=color:#b3d23c>-f</span> terminal256 <span style=color:#b3d23c>-s</span> doom-one source.raku
+</code></pre></div><p>Generating SVG file:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span> <span style=color:#b3d23c>-s</span> doom-one source.raku <span style=color:#b3d23c>--svg</span> <span style=color:#c7bf54>&gt;</span> output.svg
+</code></pre></div><p>Generating styled HTML files:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>chroma</span> <span style=color:#b3d23c>-s</span> doom-one <span style=color:#b3d23c>--html</span> <span style=color:#b3d23c>--html-all-styles</span> <span style=color:#b3d23c>--html-lines</span> source.raku <span style=color:#c7bf54>&gt;</span> output.html
+</code></pre></div><p>You can install Chroma with:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>go</span> install github.com/alecthomas/chroma@latest
+</code></pre></div><p>Or if you use Arch Linux, you can install it from <a href=https://aur.archlinux.org/packages/chroma-bin/>AUR</a>.</p>
+<h2 id=generate-images-from-source-code-with-germanium class=heading>
+<a href=#generate-images-from-source-code-with-germanium>
+Generate images from source code with Germanium
+</a>
+</h2><p><a href=https://github.com/matsuyoshi30/germanium>Germanium</a>(written in Go) is an alternative to
 <a href=https://github.com/Aloxaf/silicon>Silicon</a>, which is written in
 <a href=https://www.rust-lang.org/>Rust</a> and uses <a href=https://github.com/trishume/syntect>Syntect</a> which
 uses Sublime Text <a href=https://github.com/sublimehq/Packages>syntax definitions</a> for syntax
 highlighting, which does not support Raku. Syntax definitions are written in
 <a href=https://yaml.org/>YAML</a> files, I don't know if you can put logic in there. Also <a href=https://github.com/sublimehq/Packages#new-packages>they
 say</a> they don't accept new packages! Maybe
-Syntect accepts packages in their <code>submodule</code>? I don't know.</p><p>Anyway, I added support for options choosing a style and also listing styles. Also changed the
-Chroma version in the dependencies, so new lexers and styles can be used in Germanium v1.2.0.</p><p><a href=/img/germanium-raku-go.png><img src=/img/germanium-raku-go.png alt="Germanium: raku and go"></a></p><p>Generating images:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>germanium</span> <span style=color:#b3d23c>-s</span> doom<span style=color:#b3d23c>-one</span> <span style=color:#b3d23c>-o</span> output.png source.raku
-</code></pre></div><p>You can install Germanium with:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>go</span> install github.com/matsuyoshi30/germanium@latest
-</code></pre></div><p>Or if you use Arch Linux, you can install it from <a href=https://aur.archlinux.org/packages/germanium-bin/>AUR</a>.</p><h2 id=golang class=heading><a href=#golang>Golang</a></h2><p>While writing the lexer, I often felt frustrated, because I wanted some functionality and would
-search for it and find three things:</p><ul><li>A GitHub issue with a proposal for what I wanted, which would be a closed issue and not
-implemented</li><li>A Stack Overflow answer which said: you can do it with "this long and manually written code"</li><li>A Stack Overflow answer which said: you can emulate it like this</li></ul><p>Which made me make <a href=https://mastodon.social/@CIAvash/106144252945443677>a joke</a> about it.</p><p>Go, to me is the complete opposite of Raku. And yet even though I didn't like it and the
+Syntect accepts packages in their <code>submodule</code>? I don't know.</p>
+<p>Anyway, I added support for options choosing a style and also listing styles. Also changed the
+Chroma version in the dependencies, so new lexers and styles can be used in Germanium v1.2.0.</p>
+<p><a href=/img/germanium-raku-go.png>
+<img src=/img/germanium-raku-go.png alt="Germanium: raku and go">
+</a></p>
+<p>Generating images:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>germanium</span> <span style=color:#b3d23c>-s</span> doom-one <span style=color:#b3d23c>-o</span> output.png source.raku
+</code></pre></div><p>You can install Germanium with:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fish data-lang=fish><span style=color:#00b1f7>go</span> install github.com/matsuyoshi30/germanium@latest
+</code></pre></div><p>Or if you use Arch Linux, you can install it from <a href=https://aur.archlinux.org/packages/germanium-bin/>AUR</a>.</p>
+<h2 id=golang class=heading>
+<a href=#golang>
+Golang
+</a>
+</h2><p>While writing the lexer, I often felt frustrated, because I wanted some functionality and would
+search for it and find three things:</p>
+<ul>
+<li>A GitHub issue with a proposal for what I wanted, which would be a closed issue and not
+implemented</li>
+<li>A Stack Overflow answer which said: you can do it with "this long and manually written code"</li>
+<li>A Stack Overflow answer which said: you can emulate it like this</li>
+</ul>
+<p>Which made me make <a href=https://mastodon.social/@CIAvash/106144252945443677>a joke</a> about it.</p>
+<p>Go, to me is the complete opposite of Raku. And yet even though I didn't like it and the
 frustration that came with it, strangely I began to kinda like it! I contributed to
 different Go projects in a relatively short time, that says something nice about Go. So I may
 actually try to learn it. Even though I see this when I visit their website(because of Google App
-Engine and sanctions! Google usually goes to the extreme).</p><p><a href=/img/google-403-forbidden.jpg><img src=/img/google-403-forbidden.jpg alt=google-403-forbidden-iran></a></p><p>Lastly, there are things the <code>go</code> command line tool doesn't provide(or maybe I'm unaware of it).
+Engine and sanctions! Google usually goes to the extreme).</p>
+<p><a href=/img/google-403-forbidden.jpg>
+<img src=/img/google-403-forbidden.jpg alt=google-403-forbidden-iran>
+</a></p>
+<p>Lastly, there are things the <code>go</code> command line tool doesn't provide(or maybe I'm unaware of it).
 Such as updating all modules installed globally(especially useful for
-command line apps).</p><h2 id=hugo-and-my-blog class=heading><a href=#hugo-and-my-blog>Hugo and my blog</a></h2><p>My blog was generated by <a href=https://jekyllrb.com/>Jekyll</a> until now. I don't blog often, so I
+command line apps).</p>
+<h2 id=hugo-and-my-blog class=heading>
+<a href=#hugo-and-my-blog>
+Hugo and my blog
+</a>
+</h2><p>My blog was generated by <a href=https://jekyllrb.com/>Jekyll</a> until now. I don't blog often, so I
 didn't have much motivation to migrate to Hugo, even though Hugo has more features. But I said
 what the heck, I created a lexer that Hugo uses so I might as well use it. Therefore, I migrated
 my blog to Hugo and even used some of its features, for example I created
 <a href=/categories>categories</a> and <a href=/tags>tags</a>, added TOC and used the <a href=https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks>markdown render
 hooks</a> feature for
 headings to linkify them and images to linkify them to their sources which is useful
-when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h2 id=raku class=heading><a href=#raku>Raku</a></h2><p>Finally some syntax highlighting for Raku inside Hugo with random code from here and there:</p><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-weight:700;font-style:italic>#!/usr/bin/env raku</span>
+when the image is large.</p>
+<p>Raku lexer is available since Hugo v0.84.0.</p>
+<h2 id=raku class=heading>
+<a href=#raku>
+Raku
+</a>
+</h2><p>Finally some syntax highlighting for Raku inside Hugo with random code from here and there:</p>
+<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-weight:700;font-style:italic>#!/usr/bin/env raku</span>
 
 <span style=color:#c678dd>=head1</span><span style=color:#a2cbff;font-weight:700> Raku syntax highlighting
-</span><span style=color:#a2cbff;font-weight:700></span>
-<span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>go</span>&gt;
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>go</span>&gt;
 <span style=color:#c678dd>package</span> <span style=color:#c1abea>main</span>
 
 <span style=color:#c678dd>import</span> <span style=color:#98c379>&#34;fmt&#34;</span>
@@ -117,11 +258,11 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
 <span style=color:#ef8383>say</span> <span style=color:#c678dd>q</span><span style=color:#98c379>:w</span>｢<span style=color:#98c379>some $variable &#39;some other text&#39; text</span>｣;
 <span style=color:#ef8383>say</span> <span style=color:#c678dd>qq</span><span style=color:#98c379>:w</span>｢<span style=color:#63c381>some </span><span style=color:#dcaeea>$variable</span><span style=color:#63c381> &#39;some other text&#39; text</span>｣;
 <span style=color:#ef8383>say</span> <span style=color:#c678dd>Q</span><span style=color:#98c379>:c</span>｢<span style=color:#98c379>some $variable &#39;some text&#39; </span>{ <span style=color:#d19a66>2</span> <span style=color:#c7bf54>+</span> <span style=color:#d19a66>1</span> }<span style=color:#98c379> text</span>｣;
-<span style=color:#ef8383>say</span> <span style=color:#c678dd>q</span><span style=color:#98c379>:a</span>｢<span style=color:#98c379>some </span><span style=color:#dcaeea>@array</span><span style=color:#c7bf54>[</span><span style=color:#d19a66>1</span><span style=color:#c7bf54>]</span><span style=color:#98c379> &#39;some text&#39; { 2 + 1 } text</span>｣;
+<span style=color:#ef8383>say</span> <span style=color:#c678dd>q</span><span style=color:#98c379>:a</span>｢<span style=color:#98c379>some </span><span style=color:#dcaeea>@array</span><span style=color:#98c379>[1] &#39;some text&#39; { 2 + 1 } text</span>｣;
 <span style=color:#ef8383>say</span> <span style=color:#c678dd>Q</span><span style=color:#98c379>:a:c</span>｢<span style=color:#63c381>some </span><span style=color:#dcaeea>@array</span><span style=color:#63c381> &#39;some text&#39; </span>{ <span style=color:#d19a66>2</span> <span style=color:#c7bf54>+</span> <span style=color:#d19a66>1</span> }<span style=color:#63c381> text</span>｣;
 <span style=color:#ef8383>say</span> <span style=color:#c678dd>Q</span>[<span style=color:#98c379>some </span><span style=color:#d26464;font-weight:700>\qq</span>[<span style=color:#dcaeea>$variable</span><span style=color:#c7bf54>.</span><span style=color:#00b1f7>method</span>()]<span style=color:#98c379> testing</span>];
 <span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>some </span><span style=color:#d26464;font-weight:700>\qq</span>[<span style=color:#dcaeea>$variable</span><span style=color:#c7bf54>.</span><span style=color:#00b1f7>method</span>()]<span style=color:#98c379> testing</span>&#39;;
-<span style=color:#ef8383>say</span> &#34;<span style=color:#63c381>some </span><span style=color:#dcaeea>@array</span><span style=color:#c7bf54>[</span><span style=color:#d19a66>2</span><span style=color:#c7bf54>]</span><span style=color:#63c381> </span><span style=color:#dcaeea>%hash</span>{&#39;<span style=color:#98c379>test</span>&#39;}<span style=color:#63c381> </span><span style=color:#dcaeea>$variable</span><span style=color:#c7bf54>.</span><span style=color:#00b1f7>method</span>()<span style=color:#63c381> </span><span style=color:#00b1f7>func</span>()<span style=color:#63c381> testing</span>&#34;;
+<span style=color:#ef8383>say</span> &#34;<span style=color:#63c381>some </span><span style=color:#dcaeea>@array</span><span style=color:#63c381>[2] </span><span style=color:#dcaeea>%hash</span>{&#39;<span style=color:#98c379>test</span>&#39;}<span style=color:#63c381> </span><span style=color:#dcaeea>$variable</span><span style=color:#c7bf54>.</span><span style=color:#00b1f7>method</span>()<span style=color:#63c381> func() testing</span>&#34;;
 
 <span style=color:#c678dd>use</span> <span style=color:#76a9f9>Some::Module</span>:<span style=color:#b3d23c>auth</span>&lt;<span style=color:#98c379>author</span>&gt;:<span style=color:#b3d23c>ver</span>(<span style=color:#c678dd>v</span><span style=color:#d19a66>1</span><span style=color:#bda26f>.*.0</span><span style=color:#c7bf54>+</span>);
 
@@ -162,7 +303,7 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
     }
 }
 
-<span style=color:#c1abea>Rectangle</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>width</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>5</span>, <span style=color:#98c379>height</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>7</span>)<span style=color:#c7bf54>.</span><span style=color:#00b1f7>print_area</span>;
+<span style=color:#c1abea>Rectangle</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>width</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>5</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>height</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>7</span>)<span style=color:#c7bf54>.</span><span style=color:#00b1f7>print_area</span>;
 <span style=color:#8a93a5;font-style:italic># OUTPUT: Area of Rectangle is 35.</span>
 
 <span style=color:#c678dd>#| U</span>&lt;<span style=text-decoration:underline>INI</span>&gt;<span style=color:#7e97c3> Parser
@@ -197,16 +338,16 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
     <span style=color:#c678dd>token</span> <span style=color:#00b1f7>TOP</span> {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>calc-op</span>&gt;<span style=color:#56b6c2> </span>}
 
     <span style=color:#c678dd>proto</span> <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>calc-op</span>          {<span style=color:#c7bf54>*</span>}
-    <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>calc-op:sym</span>&lt;add&gt; {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>+</span>&#39;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>}
-    <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>calc-op:sym</span>&lt;sub&gt; {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>-</span>&#39;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>calc-op</span>:<span style=color:#b3d23c>sym</span>&lt;<span style=color:#98c379>add</span>&gt; {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>+</span>&#39;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>calc-op</span>:<span style=color:#b3d23c>sym</span>&lt;<span style=color:#98c379>sub</span>&gt; {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>-</span>&#39;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>num</span>&gt;<span style=color:#56b6c2> </span>}
 
     <span style=color:#c678dd>token</span> <span style=color:#00b1f7>num</span> {<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\d</span><span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span>}
 }
 
 <span style=color:#c678dd>class</span> <span style=color:#76a9f9>Calculations</span> {
     <span style=color:#c678dd>method</span> <span style=color:#00b1f7>TOP</span>              (<span style=color:#dcaeea>$/</span>) { <span style=color:#c678dd>make</span> <span style=color:#dcaeea>$&lt;calc-op&gt;</span><span style=color:#c7bf54>.</span><span style=color:#c678dd>made</span>; }
-    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>calc-op:sym</span>&lt;<span style=color:#98c379>add</span>&gt; (<span style=color:#dcaeea>$/</span>) { <span style=color:#c678dd>make</span> <span style=color:#c7bf54>[+]</span> <span style=color:#dcaeea>$&lt;num&gt;</span>; }
-    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>calc-op:sym</span>&lt;<span style=color:#98c379>sub</span>&gt; (<span style=color:#dcaeea>$/</span>) { <span style=color:#c678dd>make</span> <span style=color:#c7bf54>[-]</span> <span style=color:#dcaeea>$&lt;num&gt;</span>; }
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>calc-op</span>:<span style=color:#b3d23c>sym</span>&lt;<span style=color:#98c379>add</span>&gt; (<span style=color:#dcaeea>$/</span>) { <span style=color:#c678dd>make</span> <span style=color:#c7bf54>[+]</span> <span style=color:#dcaeea>$&lt;num&gt;</span>; }
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>calc-op</span>:<span style=color:#b3d23c>sym</span>&lt;<span style=color:#98c379>sub</span>&gt; (<span style=color:#dcaeea>$/</span>) { <span style=color:#c678dd>make</span> <span style=color:#c7bf54>[-]</span> <span style=color:#dcaeea>$&lt;num&gt;</span>; }
 }
 
 <span style=color:#ef8383>say</span> <span style=color:#c1abea>Calculator</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>parse</span>(&#39;<span style=color:#98c379>2 + 3</span>&#39;<span style=color:#c7bf54>,</span> <span style=color:#98c379>actions</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#c1abea>Calculations</span>)<span style=color:#c7bf54>.</span><span style=color:#c678dd>made</span>;
@@ -313,7 +454,7 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
 <span style=color:#c678dd>use</span> <span style=color:#ef8383>NativeCall</span>;
 
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_init</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$appname</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#ef8383>int32</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
-<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_uninit</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>sub</span> <span style=color:#c1abea>notify_uninit</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>class</span> <span style=color:#76a9f9>NotifyNotification</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>repr</span>(&#39;<span style=color:#98c379>CPointer</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_new</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$summary</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$body</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$icon</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_show</span> (<span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
@@ -337,13 +478,13 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
 }
 
 <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$modules-load</span> <span style=color:#c7bf54>=</span> <span style=color:#c678dd>start</span> <span style=color:#dcaeea>@files</span>
-    <span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span>(/<span style=color:#56b6c2> \</span><span style=color:#bda26f>.</span>(<span style=color:#56b6c2>yaml</span><span style=color:#c7bf54>|</span><span style=color:#56b6c2>yml</span>)<span style=color:#56b6c2> </span><span style=color:#bda26f>$</span>/)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span>(/<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\</span><span style=color:#56b6c2>.</span>(<span style=color:#56b6c2>yaml</span><span style=color:#c7bf54>|</span><span style=color:#56b6c2>yml</span>)<span style=color:#56b6c2> </span><span style=color:#bda26f>$</span>/)
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>sort</span>(<span style=color:#c7bf54>-*.</span><span style=color:#ef8383>s</span>)
-    <span style=color:#c7bf54>.</span><span style=color:#ef8383>race</span>(<span style=color:#98c379>batch</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>1</span>, <span style=color:#98c379>degree</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>6</span>)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>race</span>(<span style=color:#98c379>batch</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>1</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>degree</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>6</span>)
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>map</span>(<span style=color:#c678dd>-&gt;</span> <span style=color:#dcaeea>$file</span> {
         <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$yaml</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>self</span><span style=color:#c7bf54>!</span><span style=color:#00b1f7>load-yaml</span>(<span style=color:#dcaeea>$file</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$schema</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$problems</span>);
         <span style=color:#c678dd>with</span> <span style=color:#dcaeea>$yaml</span> {
-            <span style=color:#c1abea>Easii::Model::Module</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>parsed</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$yaml</span>, <span style=color:#98c379>source</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>basename</span>)
+            <span style=color:#c1abea>Easii::Model::Module</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>parsed</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$yaml</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>source</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>basename</span>)
         }
     })
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>eager</span>;
@@ -372,4 +513,10 @@ when the image is large.</p><p>Raku lexer is available since Hugo v0.84.0.</p><h
 
 <span style=color:#c678dd>=finish</span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3>Goodbye!
-</span></code></pre></div></div></article></main></div></body></html>
+</span></code></pre></div>
+</div>
+</article>
+</main>
+</div>
+</body>
+</html>

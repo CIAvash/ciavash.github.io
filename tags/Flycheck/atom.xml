@@ -2,7 +2,7 @@
 And did some improvements to it and published it on &lt;a href="https://melpa.org/">melpa&lt;/a>, so others can easily install and update it.&lt;/p>
 &lt;p>For those who don't know, &lt;a href="https://www.flycheck.org/">flycheck&lt;/a> is a tool for syntax checking Gnu Emacs buffers.&lt;/p>
 &lt;p>You can install &lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a> using &lt;a href="https://github.com/jwiegley/use-package">use-package&lt;/a>:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-elisp" data-lang="elisp">(&lt;span style="color:#ef8383">use-package&lt;/span> &lt;span style="color:#dcaeea">flychek-raku&lt;/span> &lt;span style="color:#ef8383">:ensure&lt;/span> &lt;span style="color:#b756ff;font-weight:bold">t&lt;/span>)
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-elisp" data-lang="elisp">(&lt;span style="color:#ef8383">use-package&lt;/span> &lt;span style="color:#dcaeea">flychek-raku&lt;/span> &lt;span style="color:#ef8383">:ensure&lt;/span> &lt;span style="color:#b756ff;font-weight:bold">t&lt;/span>)
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="new-features" class="heading">
 &lt;a href="#new-features">
 New features
