@@ -43,7 +43,7 @@ Unrelated to the title of this blog post, I was also looking for a module to par
 my search led me to [goquery](https://pkg.go.dev/github.com/PuerkitoBio/goquery). Which was what I wanted, but I
 couldn't find an easy way to get the whitespace-trimmed text content of HTML elements; there was a `Text` function, but
 that contained everything. It seems it's not just the way of thinking of the Go language that makes me want more, but
-also the Go modules. So I ended up writing a recursive function to trim whitespace using `strings.TrimSpace` and join texts.
+also some Go modules. So I ended up writing a recursive function to trim whitespace using `strings.TrimSpace` and join texts.
 
 This is how I would do it in Raku, using [DOM::Tiny](https://github.com/zostay/raku-DOM-Tiny) (also containing the previous code):
 ```raku
