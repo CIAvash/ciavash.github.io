@@ -1,68 +1,4 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width">
-<title>
-An improved flycheck-raku now available on melpa [Emacs]
-</title>
-<meta name=description content="Writings of Siavash Askari Nasr">
-<link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css>
-<link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog>
-</head>
-<body>
-<div class=wrapper>
-<header class=page-header>
-<h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1>
-<span class=page-header-subtitle>Writings of Siavash Askari Nasr</span>
-<ul class="s-links list-unstyled list-inline">
-<li>
-<a href=/ title=Home rel=me>
-<img alt=Home src=/assets/img/icon/fa-home.svg>
-</a>
-</li>
-<li>
-<a href=/blog/ title=Blog>
-<img alt=Blog src=/assets/img/icon/fa-blog.svg>
-</a>
-</li>
-<li>
-<a href=/blog/atom.xml title=Feed>
-<img alt=Feed src=/assets/img/icon/fa-rss.svg>
-</a>
-</li>
-<li>
-<a href=https://mastodon.social/@CIAvash title=Mastodon rel=me>
-<img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg>
-</a>
-</li>
-<li>
-<a href=https://twitter.com/CIAvash title=Twitter rel=me>
-<img alt=Twitter src=/assets/img/icon/fa-twitter.svg>
-</a>
-</li>
-<li>
-<a href=https://github.com/CIAvash title=Github rel=me>
-<img alt=Github src=/assets/img/icon/fa-github.svg>
-</a>
-</li>
-<li>
-<a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me>
-<img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg>
-</a>
-</li>
-<li>
-<a href=https://www.artstation.com/CIAvash title=Artstation rel=me>
-<img alt=Artstation src=/assets/img/icon/fa-artstation.svg>
-</a>
-</li>
-</ul>
-</header>
-<main>
-<article class=article>
-<header>
-<h2 class=article-title>An improved flycheck-raku now available on melpa [Emacs]</h2>
-<p class=article-meta>
-<span class=article-author>By CIAvash • </span>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>An improved flycheck-raku now available on melpa [Emacs]</title><meta name=description content="Writings of Siavash Askari Nasr"><link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css><link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog></head><body><div class=wrapper><header class=page-header><h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1><span class=page-header-subtitle>Writings of Siavash Askari Nasr</span><ul class="s-links list-unstyled list-inline"><li><a href=/ title=Home rel=me><img alt=Home src=/assets/img/icon/fa-home.svg></a></li><li><a href=/blog/ title=Blog><img alt=Blog src=/assets/img/icon/fa-blog.svg></a></li><li><a href=/blog/atom.xml title=Feed><img alt=Feed src=/assets/img/icon/fa-rss.svg></a></li><li><a href=https://mastodon.social/@CIAvash title=Mastodon rel=me><img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg></a></li><li><a href=https://twitter.com/CIAvash title=Twitter rel=me><img alt=Twitter src=/assets/img/icon/fa-twitter.svg></a></li><li><a href=https://github.com/CIAvash title=Github rel=me><img alt=Github src=/assets/img/icon/fa-github.svg></a></li><li><a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me><img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg></a></li><li><a href=https://www.artstation.com/CIAvash title=Artstation rel=me><img alt=Artstation src=/assets/img/icon/fa-artstation.svg></a></li></ul></header><main><article class=article><header><h2 class=article-title>An improved flycheck-raku now available on melpa [Emacs]</h2><p class=article-meta><span class=article-author>By CIAvash •</span>
 <time datetime=2021-03-16>Mar 16, 2021</time>
 • Category:
 <a href=https://www.ciavash.name/categories/Raku/>Raku</a>
@@ -75,59 +11,9 @@ An improved flycheck-raku now available on melpa [Emacs]
 ,
 <a href=https://www.ciavash.name/tags/Flycheck/>Flycheck</a>
 ,
-<a href=https://www.ciavash.name/tags/Syntax-Checking/>Syntax Checking</a>
-</p>
-</header>
-<div class=article-content>
-<p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
-And did some improvements to it and published it on <a href=https://melpa.org/>melpa</a>, so others can easily install and update it.</p>
-<p>For those who don't know, <a href=https://www.flycheck.org/>flycheck</a> is a tool for syntax checking Gnu Emacs buffers.</p>
-<p>You can install <a href=https://github.com/Raku/flycheck-raku>flycheck-raku</a> using <a href=https://github.com/jwiegley/use-package>use-package</a>:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp>(<span style=color:#ef8383>use-package</span> <span style=color:#dcaeea>flychek-raku</span> <span style=color:#ef8383>:ensure</span> <span style=color:#b756ff;font-weight:700>t</span>)
-</code></pre></div><h2 id=new-features class=heading>
-<a href=#new-features>
-New features
-</a>
-</h2><h3 id=project-detection class=heading>
-<a href=#project-detection>
-Project detection
-</a>
-</h3><p><a href=/img/emacs-flycheck-raku-could-not-find-module.png>
-<img src=/img/emacs-flycheck-raku-could-not-find-module.png alt="Emacs - flycheck-raku - bare say">
-</a></p>
-<p>Previously if you used <code>flycheck-raku</code> on a project, it would show errors on <code>use SomeModule;</code>,
+<a href=https://www.ciavash.name/tags/Syntax-Checking/>Syntax Checking</a></p></header><div class=article-content><p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
+And did some improvements to it and published it on <a href=https://melpa.org/>melpa</a>, so others can easily install and update it.</p><p>For those who don't know, <a href=https://www.flycheck.org/>flycheck</a> is a tool for syntax checking Gnu Emacs buffers.</p><p>You can install <a href=https://github.com/Raku/flycheck-raku>flycheck-raku</a> using <a href=https://github.com/jwiegley/use-package>use-package</a>:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>(<span style=color:#ef8383>use-package</span> <span style=color:#dcaeea>flychek-raku</span> <span style=color:#ef8383>:ensure</span> <span style=color:#b756ff;font-weight:700>t</span>)
+</span></span></code></pre></div><h2 id=new-features class=heading><a href=#new-features>New features</a></h2><h3 id=project-detection class=heading><a href=#project-detection>Project detection</a></h3><p><a href=/img/emacs-flycheck-raku-could-not-find-module.png><img src=/img/emacs-flycheck-raku-could-not-find-module.png alt="Emacs - flycheck-raku - bare say"></a></p><p>Previously if you used <code>flycheck-raku</code> on a project, it would show errors on <code>use SomeModule;</code>,
 even though the module was in the <code>lib</code> directory of the project. And this would make <code>flycheck</code> kinda
-useless, because it wouldn't show further errors.</p>
-<p>But in the new version of <code>flycheck-raku</code>, project root is detected and its <code>lib</code> directory is added to
-include path. So no more errors on valid modules.</p>
-<h3 id=error-pattern-improvements class=heading>
-<a href=#error-pattern-improvements>
-Error pattern improvements
-</a>
-</h3><h4 id=full-error-messages class=heading>
-<a href=#full-error-messages>
-Full error messages
-</a>
-</h4><p>Previous versions of <code>flycheck-raku</code> would cut some long error messages. Now, error messages are fully shown.</p>
-<h4 id=multi-line-error-messages class=heading>
-<a href=#multi-line-error-messages>
-Multi-line error messages
-</a>
-</h4><p><a href=/img/emacs-flycheck-raku-bare-say.png>
-<img src=/img/emacs-flycheck-raku-bare-say.png alt="Emacs - flycheck-raku - bare say">
-</a></p>
-<p>In the new version, multi-line error messages are fully shown.</p>
-<h4 id=potential-difficulties class=heading>
-<a href=#potential-difficulties>
-Potential difficulties
-</a>
-</h4><p><a href=/img/emacs-flycheck-raku-symbol-redclaration.png>
-<img src=/img/emacs-flycheck-raku-symbol-redclaration.png alt="Emacs - flycheck-raku - symbol redclaration">
-</a></p>
-<p>New version shows potential difficulties; I've only seen one such error message and that is <code>Redclaration of symbol $x</code>.</p>
-</div>
-</article>
-</main>
-</div>
-</body>
-</html>
+useless, because it wouldn't show further errors.</p><p>But in the new version of <code>flycheck-raku</code>, project root is detected and its <code>lib</code> directory is added to
+include path. So no more errors on valid modules.</p><h3 id=error-pattern-improvements class=heading><a href=#error-pattern-improvements>Error pattern improvements</a></h3><h4 id=full-error-messages class=heading><a href=#full-error-messages>Full error messages</a></h4><p>Previous versions of <code>flycheck-raku</code> would cut some long error messages. Now, error messages are fully shown.</p><h4 id=multi-line-error-messages class=heading><a href=#multi-line-error-messages>Multi-line error messages</a></h4><p><a href=/img/emacs-flycheck-raku-bare-say.png><img src=/img/emacs-flycheck-raku-bare-say.png alt="Emacs - flycheck-raku - bare say"></a></p><p>In the new version, multi-line error messages are fully shown.</p><h4 id=potential-difficulties class=heading><a href=#potential-difficulties>Potential difficulties</a></h4><p><a href=/img/emacs-flycheck-raku-symbol-redclaration.png><img src=/img/emacs-flycheck-raku-symbol-redclaration.png alt="Emacs - flycheck-raku - symbol redclaration"></a></p><p>New version shows potential difficulties; I've only seen one such error message and that is <code>Redclaration of symbol $x</code>.</p></div></article></main></div></body></html>

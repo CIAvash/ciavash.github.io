@@ -2,31 +2,31 @@
 &lt;p>I suppose that you know what you're doing! For example you need to know in which partition linux is installed.&lt;/p>
 &lt;p>Boot Arch linux from live CD.&lt;/p>
 &lt;p>Create a directory for &lt;a href="https://wiki.archlinux.org/index.php/Change_Root">chroot&lt;/a> environment:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mkdir /mnt/root
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Mount the root partition and other necessary device and file systems:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/sda1 /mnt/root
-&lt;span style="color:#ef8383">cd&lt;/span> /mnt/root
-mount -o &lt;span style="color:#ef8383">bind&lt;/span> /dev dev/
-mount -t proc proc proc/
-mount -t sysfs sys sys/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>It seems that on newer Arch releases(2012), you can use &lt;code>arch-chroot /mnt/root&lt;/code> instead of the last 3 mount commands.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir /mnt/root
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Mount the root partition and other necessary device and file systems:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mount /dev/sda1 /mnt/root
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">cd&lt;/span> /mnt/root
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mount -o &lt;span style="color:#ef8383">bind&lt;/span> /dev dev/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mount -t proc proc proc/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mount -t sysfs sys sys/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It seems that on newer Arch releases(2012), you can use &lt;code>arch-chroot /mnt/root&lt;/code> instead of the last 3 mount commands.&lt;/p>
 &lt;p>If you have a separate partition for boot, mount it:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">mount /dev/&lt;span style="color:#c7bf54">[&lt;/span>boot partition&lt;span style="color:#c7bf54">]&lt;/span> boot/
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Change the root:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot .
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can define another shell by adding it to the above command, like this:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">chroot . /bin/bash
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Generate grub.cfg file:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-mkconfig -o /boot/grub/grub.cfg
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Install GRUB:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">grub-install /dev/sda
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Exit the chroot environment:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">exit&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount filesystems and devices:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">umount &lt;span style="color:#c7bf54">{&lt;/span>dev,proc,sys,&lt;span style="color:#c7bf54">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount the root partition:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ef8383">cd&lt;/span> ..
-umount root
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>And finally, you can reboot:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">reboot
-&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mount /dev/&lt;span style="color:#c7bf54">[&lt;/span>boot partition&lt;span style="color:#c7bf54">]&lt;/span> boot/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Change the root:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>chroot .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can define another shell by adding it to the above command, like this:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>chroot . /bin/bash
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Generate grub.cfg file:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Install GRUB:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>grub-install /dev/sda
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Exit the chroot environment:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">exit&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount filesystems and devices:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>umount &lt;span style="color:#c7bf54">{&lt;/span>dev,proc,sys,&lt;span style="color:#c7bf54">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Unmount the root partition:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">cd&lt;/span> ..
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>umount root
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And finally, you can reboot:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>reboot
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

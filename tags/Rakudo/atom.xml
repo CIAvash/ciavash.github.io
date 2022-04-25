@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Rakudo</title><link>https://www.ciavash.name/tags/Rakudo/</link><description>Recent content in Rakudo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Rakudo/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
+&lt;a href="#flymake">
+Flymake
+&lt;/a>
+&lt;/h1>&lt;p>I've been switching to &lt;a href="https://www.gnu.org/software/emacs/">Emacs&lt;/a> packages which are lighter and use the internal Emacs system,
+instead of creating their own. This time I wanted to try
+&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/flymake/index.html">Flymake&lt;/a>, the syntax checker that comes with Emacs. At
+first it wasn't very appealing because I thought it would only show the error on mouse hover! So I tried to see what options I
+have for displaying the error messages when text cursor moves over them.&lt;/p>
+&lt;h1 id="eldoc" class="heading">
+&lt;a href="#eldoc">
+Eldoc
+&lt;/a>
+&lt;/h1>&lt;p>The first step was using and tweaking &lt;a href="http://elpa.gnu.org/packages/eldoc.html">Eldoc&lt;/a>. Flymake shows errors by adding
+&lt;code>flymake-eldoc-function&lt;/code> to &lt;code>eldoc-documentation-functions&lt;/code> list. But by default Eldoc only shows one message at a time and the
+priority is with the order of the documentation functions.&lt;/p>
+&lt;p>Fortunately there is a customization option for showing messages. The name of this option is &lt;code>eldoc-documentation-strategy&lt;/code>, you
+can see its values and change it using &lt;code>customize-group&lt;/code> or &lt;code>customize-option&lt;/code> commands. The value I was interested in was
+&lt;code>eldoc-documentation-compose&lt;/code>; this function waits for all strings and then shows them. But changing this option is not enough if
+there are more than one messages, you have to change the &lt;code>eldoc-echo-area-use-multiline-p&lt;/code> option as well; I set it to &lt;code>always&lt;/code>.&lt;/p>
+&lt;h2 id="eglot" class="heading">
+&lt;a href="#eglot">
+Eglot
+&lt;/a>
+&lt;/h2>&lt;p>A word of caution! If you use &lt;a href="https://github.com/joaotavora/eglot">Eglot&lt;/a>(An LSP client), then make sure to add
+&lt;code>eldoc-documentation-strategy&lt;/code> to its &lt;code>eglot-stay-out-of&lt;/code> list. 'Cause Eglot sets it to &lt;code>eldoc-documentation-enthusiast&lt;/code> which
+caused a lot of head scratching.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-elisp" data-lang="elisp">&lt;span style="display:flex;">&lt;span>(&lt;span style="color:#dcaeea">add-to-list&lt;/span> &lt;span style="color:#56b6c2">&amp;#39;eglot-stay-out-of&lt;/span> &lt;span style="color:#56b6c2">&amp;#39;eldoc-documentation-strategy&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="eldoc-box" class="heading">
+&lt;a href="#eldoc-box">
+Eldoc-box
+&lt;/a>
+&lt;/h2>&lt;p>Now Eldoc can show all messages, documentation and Flymake diagnostics. But it shows them in the echo area. So I looked for a
+package to show it as a child frame. The package I found was &lt;a href="https://github.com/casouri/eldoc-box">eldoc-box&lt;/a>.&lt;/p>
+&lt;h1 id="flymake-rakudo" class="heading">
+&lt;a href="#flymake-rakudo">
+Flymake-rakudo
+&lt;/a>
+&lt;/h1>&lt;p>&lt;a href="https://www.ciavash.name/img/flymake-rakudo-screenshot.png">
+&lt;img
+src="https://www.ciavash.name/img/flymake-rakudo-screenshot.png"
+alt="flymake-rakudo screenshot"
+/>
+&lt;/a>&lt;/p>
+&lt;p>Now that I could see Flymake as a viable option, I had to create a syntax checker for &lt;a href="https://www.raku-lang.ir/en/">Raku&lt;/a> using
+the &lt;a href="https://rakudo.org/">Rakudo&lt;/a> implementation, because that is the language I use most. Of course there is a
+&lt;a href="https://github.com/purcell/flymake-flycheck">flymake-flycheck&lt;/a> package for using Flycheck checkers as Flymake backends and I
+could use it with &lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a>, but I decided to create one for Flymake. With a great
+timing, recently a package was released for Emacs which makes it easier to create Flymake checkers.&lt;/p>
+&lt;h2 id="flymake-collection" class="heading">
+&lt;a href="#flymake-collection">
+Flymake-collection
+&lt;/a>
+&lt;/h2>&lt;p>That package is &lt;a href="https://github.com/mohkale/flymake-collection">flymake-collection&lt;/a>, it provides a collection of Flymake checkers
+and helpers for creating checkers. At first I tried to use the regex from &lt;code>flycheck-raku&lt;/code>, but then I saw that
+&lt;code>flymake-collection&lt;/code> had &lt;code>flymake-collection-define-enumerate&lt;/code> and &lt;code>flymake-collection-parse-json&lt;/code> functions for creating a
+checker using JSON output. So I decided to set the &lt;code>RAKU_EXCEPTIONS_HANDLER&lt;/code> environment variable to &lt;code>JSON&lt;/code> and parse the output
+of that.&lt;/p>
+&lt;p>It wasn't an easy job at all, because I don't really know Emacs Lisp! And to create a flexible diagnostics generator, I had to
+work with Elisp's data structures. So I had no idea what I was doing! After playing with it for a while, reading the documentation
+and a lot of struggling, I learned a bit about association lists and managed to use them.&lt;/p>
+&lt;p>I also had to do a bit more because of how Rakudo outputs the errors; e.g. Parsing a JSON field separately, finding the error column
+from its position. But I finally did it and I'm happy with it so far. Of course it needs to be used more to find bugs or other
+special cases.&lt;/p>
+&lt;p>So there you have it: &lt;a href="https://github.com/Raku/flymake-rakudo">flymake-rakudo&lt;/a>.&lt;/p>
+&lt;h1 id="final-words" class="heading">
+&lt;a href="#final-words">
+Final words
+&lt;/a>
+&lt;/h1>&lt;p>Even with all that, I hope we'll see a language server implementation for Raku.&lt;/p></description></item></channel></rss>

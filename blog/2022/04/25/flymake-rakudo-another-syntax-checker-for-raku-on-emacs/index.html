@@ -1,0 +1,45 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><meta name=description content="Writings of Siavash Askari Nasr"><link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css><link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog></head><body><div class=wrapper><header class=page-header><h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1><span class=page-header-subtitle>Writings of Siavash Askari Nasr</span><ul class="s-links list-unstyled list-inline"><li><a href=/ title=Home rel=me><img alt=Home src=/assets/img/icon/fa-home.svg></a></li><li><a href=/blog/ title=Blog><img alt=Blog src=/assets/img/icon/fa-blog.svg></a></li><li><a href=/blog/atom.xml title=Feed><img alt=Feed src=/assets/img/icon/fa-rss.svg></a></li><li><a href=https://mastodon.social/@CIAvash title=Mastodon rel=me><img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg></a></li><li><a href=https://twitter.com/CIAvash title=Twitter rel=me><img alt=Twitter src=/assets/img/icon/fa-twitter.svg></a></li><li><a href=https://github.com/CIAvash title=Github rel=me><img alt=Github src=/assets/img/icon/fa-github.svg></a></li><li><a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me><img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg></a></li><li><a href=https://www.artstation.com/CIAvash title=Artstation rel=me><img alt=Artstation src=/assets/img/icon/fa-artstation.svg></a></li></ul></header><main><article class=article><header><h2 class=article-title>flymake-rakudo - Another syntax checker for Raku on Emacs</h2><p class=article-meta><span class=article-author>By CIAvash •</span>
+<time datetime=2022-04-25>Apr 25, 2022</time>
+• Category:
+<a href=https://www.ciavash.name/categories/Raku/>Raku</a>
+,
+<a href=https://www.ciavash.name/categories/Rakudo/>Rakudo</a>
+,
+<a href=https://www.ciavash.name/categories/Emacs/>Emacs</a>
+,
+<a href=https://www.ciavash.name/categories/Tools/>Tools</a>
+• Tag:
+<a href=https://www.ciavash.name/tags/Raku/>Raku</a>
+,
+<a href=https://www.ciavash.name/tags/Rakudo/>Rakudo</a>
+,
+<a href=https://www.ciavash.name/tags/Emacs/>Emacs</a>
+,
+<a href=https://www.ciavash.name/tags/Flymake/>Flymake</a>
+,
+<a href=https://www.ciavash.name/tags/Syntax-Checking/>Syntax Checking</a></p></header><div class=article-content><h1 id=flymake class=heading><a href=#flymake>Flymake</a></h1><p>I've been switching to <a href=https://www.gnu.org/software/emacs/>Emacs</a> packages which are lighter and use the internal Emacs system,
+instead of creating their own. This time I wanted to try
+<a href=https://www.gnu.org/software/emacs/manual/html_node/flymake/index.html>Flymake</a>, the syntax checker that comes with Emacs. At
+first it wasn't very appealing because I thought it would only show the error on mouse hover! So I tried to see what options I
+have for displaying the error messages when text cursor moves over them.</p><h1 id=eldoc class=heading><a href=#eldoc>Eldoc</a></h1><p>The first step was using and tweaking <a href=http://elpa.gnu.org/packages/eldoc.html>Eldoc</a>. Flymake shows errors by adding
+<code>flymake-eldoc-function</code> to <code>eldoc-documentation-functions</code> list. But by default Eldoc only shows one message at a time and the
+priority is with the order of the documentation functions.</p><p>Fortunately there is a customization option for showing messages. The name of this option is <code>eldoc-documentation-strategy</code>, you
+can see its values and change it using <code>customize-group</code> or <code>customize-option</code> commands. The value I was interested in was
+<code>eldoc-documentation-compose</code>; this function waits for all strings and then shows them. But changing this option is not enough if
+there are more than one messages, you have to change the <code>eldoc-echo-area-use-multiline-p</code> option as well; I set it to <code>always</code>.</p><h2 id=eglot class=heading><a href=#eglot>Eglot</a></h2><p>A word of caution! If you use <a href=https://github.com/joaotavora/eglot>Eglot</a>(An LSP client), then make sure to add
+<code>eldoc-documentation-strategy</code> to its <code>eglot-stay-out-of</code> list. 'Cause Eglot sets it to <code>eldoc-documentation-enthusiast</code> which
+caused a lot of head scratching.</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-elisp data-lang=elisp><span style=display:flex><span>(<span style=color:#dcaeea>add-to-list</span> <span style=color:#56b6c2>&#39;eglot-stay-out-of</span> <span style=color:#56b6c2>&#39;eldoc-documentation-strategy</span>)
+</span></span></code></pre></div><h2 id=eldoc-box class=heading><a href=#eldoc-box>Eldoc-box</a></h2><p>Now Eldoc can show all messages, documentation and Flymake diagnostics. But it shows them in the echo area. So I looked for a
+package to show it as a child frame. The package I found was <a href=https://github.com/casouri/eldoc-box>eldoc-box</a>.</p><h1 id=flymake-rakudo class=heading><a href=#flymake-rakudo>Flymake-rakudo</a></h1><p><a href=/img/flymake-rakudo-screenshot.png><img src=/img/flymake-rakudo-screenshot.png alt="flymake-rakudo screenshot"></a></p><p>Now that I could see Flymake as a viable option, I had to create a syntax checker for <a href=https://www.raku-lang.ir/en/>Raku</a> using
+the <a href=https://rakudo.org/>Rakudo</a> implementation, because that is the language I use most. Of course there is a
+<a href=https://github.com/purcell/flymake-flycheck>flymake-flycheck</a> package for using Flycheck checkers as Flymake backends and I
+could use it with <a href=https://github.com/Raku/flycheck-raku>flycheck-raku</a>, but I decided to create one for Flymake. With a great
+timing, recently a package was released for Emacs which makes it easier to create Flymake checkers.</p><h2 id=flymake-collection class=heading><a href=#flymake-collection>Flymake-collection</a></h2><p>That package is <a href=https://github.com/mohkale/flymake-collection>flymake-collection</a>, it provides a collection of Flymake checkers
+and helpers for creating checkers. At first I tried to use the regex from <code>flycheck-raku</code>, but then I saw that
+<code>flymake-collection</code> had <code>flymake-collection-define-enumerate</code> and <code>flymake-collection-parse-json</code> functions for creating a
+checker using JSON output. So I decided to set the <code>RAKU_EXCEPTIONS_HANDLER</code> environment variable to <code>JSON</code> and parse the output
+of that.</p><p>It wasn't an easy job at all, because I don't really know Emacs Lisp! And to create a flexible diagnostics generator, I had to
+work with Elisp's data structures. So I had no idea what I was doing! After playing with it for a while, reading the documentation
+and a lot of struggling, I learned a bit about association lists and managed to use them.</p><p>I also had to do a bit more because of how Rakudo outputs the errors; e.g. Parsing a JSON field separately, finding the error column
+from its position. But I finally did it and I'm happy with it so far. Of course it needs to be used more to find bugs or other
+special cases.</p><p>So there you have it: <a href=https://github.com/Raku/flymake-rakudo>flymake-rakudo</a>.</p><h1 id=final-words class=heading><a href=#final-words>Final words</a></h1><p>Even with all that, I hope we'll see a language server implementation for Raku.</p></div></article></main></div></body></html>

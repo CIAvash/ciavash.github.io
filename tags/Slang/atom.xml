@@ -15,18 +15,19 @@ cannot be done with simple functions. Maybe the &lt;a href="https://docs.raku.or
 want to make it complicated, so it's a very short and simple slang which takes an expression of form &lt;code>&amp;lt;got&amp;gt; &amp;lt;infix&amp;gt; &amp;lt;expected&amp;gt;&lt;/code>.&lt;/p>
 &lt;p>The current status of the module: It works for me!&lt;/p>
 &lt;p>Here are some examples:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-raku" data-lang="raku">&lt;span style="color:#c678dd">use&lt;/span> &lt;span style="color:#ef8383">T&lt;/span>:&lt;span style="color:#98c379">auth&lt;/span>&amp;lt;&lt;span style="color:#98c379">zef:CIAash&lt;/span>&amp;gt;;
-&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#d19a66">4&lt;/span> &lt;span style="color:#c7bf54">==&lt;/span> &lt;span style="color:#d19a66">4&lt;/span>;
-&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 1 - 4 == 4
-&lt;/span>&lt;span style="color:#7e97c3">
-&lt;/span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
-&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 2 - $my_great_module.return(&amp;#39;something&amp;#39;) eq &amp;#39;something&amp;#39;
-&lt;/span>&lt;span style="color:#7e97c3">
-&lt;/span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something else&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
-&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> not ok 3 - $my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;
-&lt;/span>&lt;span style="color:#7e97c3"># Failed test &amp;#39;$my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;&amp;#39;
-&lt;/span>&lt;span style="color:#7e97c3"># at ... line ...
-&lt;/span>&lt;span style="color:#7e97c3"># expected: &amp;#34;something&amp;#34;
-&lt;/span>&lt;span style="color:#7e97c3"># matcher: &amp;#39;infix:&amp;lt;eq&amp;gt;&amp;#39;
-&lt;/span>&lt;span style="color:#7e97c3"># got: &amp;#34;something else&amp;#34;
-&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-raku" data-lang="raku">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c678dd">use&lt;/span> &lt;span style="color:#ef8383">T&lt;/span>:&lt;span style="color:#98c379">auth&lt;/span>&amp;lt;&lt;span style="color:#98c379">zef:CIAash&lt;/span>&amp;gt;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#d19a66">4&lt;/span> &lt;span style="color:#c7bf54">==&lt;/span> &lt;span style="color:#d19a66">4&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 1 - 4 == 4
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> ok 2 - $my_great_module.return(&amp;#39;something&amp;#39;) eq &amp;#39;something&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3">&lt;/span>&lt;span style="color:#ef8383">t&lt;/span> &lt;span style="color:#dcaeea">$my_great_module&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#c678dd">return&lt;/span>(&amp;#39;&lt;span style="color:#98c379">something else&lt;/span>&amp;#39;) &lt;span style="color:#b756ff;font-weight:bold">eq&lt;/span> &amp;#39;&lt;span style="color:#98c379">something&lt;/span>&amp;#39;;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c1abea">=output&lt;/span>&lt;span style="color:#7e97c3"> not ok 3 - $my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># Failed test &amp;#39;$my_great_module.return(&amp;#39;something else&amp;#39;) eq &amp;#39;something&amp;#39;&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># at ... line ...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># expected: &amp;#34;something&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># matcher: &amp;#39;infix:&amp;lt;eq&amp;gt;&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># got: &amp;#34;something else&amp;#34;
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

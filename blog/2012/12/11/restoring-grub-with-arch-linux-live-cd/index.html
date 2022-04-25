@@ -1,68 +1,4 @@
-<!doctype html><html lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width">
-<title>
-Restoring GRUB with Arch linux live CD
-</title>
-<meta name=description content="Writings of Siavash Askari Nasr">
-<link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css>
-<link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog>
-</head>
-<body>
-<div class=wrapper>
-<header class=page-header>
-<h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1>
-<span class=page-header-subtitle>Writings of Siavash Askari Nasr</span>
-<ul class="s-links list-unstyled list-inline">
-<li>
-<a href=/ title=Home rel=me>
-<img alt=Home src=/assets/img/icon/fa-home.svg>
-</a>
-</li>
-<li>
-<a href=/blog/ title=Blog>
-<img alt=Blog src=/assets/img/icon/fa-blog.svg>
-</a>
-</li>
-<li>
-<a href=/blog/atom.xml title=Feed>
-<img alt=Feed src=/assets/img/icon/fa-rss.svg>
-</a>
-</li>
-<li>
-<a href=https://mastodon.social/@CIAvash title=Mastodon rel=me>
-<img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg>
-</a>
-</li>
-<li>
-<a href=https://twitter.com/CIAvash title=Twitter rel=me>
-<img alt=Twitter src=/assets/img/icon/fa-twitter.svg>
-</a>
-</li>
-<li>
-<a href=https://github.com/CIAvash title=Github rel=me>
-<img alt=Github src=/assets/img/icon/fa-github.svg>
-</a>
-</li>
-<li>
-<a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me>
-<img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg>
-</a>
-</li>
-<li>
-<a href=https://www.artstation.com/CIAvash title=Artstation rel=me>
-<img alt=Artstation src=/assets/img/icon/fa-artstation.svg>
-</a>
-</li>
-</ul>
-</header>
-<main>
-<article class=article>
-<header>
-<h2 class=article-title>Restoring GRUB with Arch linux live CD</h2>
-<p class=article-meta>
-<span class=article-author>By CIAvash • </span>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width"><title>Restoring GRUB with Arch linux live CD</title><meta name=description content="Writings of Siavash Askari Nasr"><link rel=stylesheet href=https://www.ciavash.name/sass/main.min.e994a45c9a4760edc7d2cfc8b10b31bacb2ffe0744639de74214d73bf5264029.css><link rel=alternate type=application/rss+xml href=https://www.ciavash.name/blog/atom.xml title=CIAvash::Blog></head><body><div class=wrapper><header class=page-header><h1 class=page-header-title><a href=/blog/>CIAvash::Blog</a></h1><span class=page-header-subtitle>Writings of Siavash Askari Nasr</span><ul class="s-links list-unstyled list-inline"><li><a href=/ title=Home rel=me><img alt=Home src=/assets/img/icon/fa-home.svg></a></li><li><a href=/blog/ title=Blog><img alt=Blog src=/assets/img/icon/fa-blog.svg></a></li><li><a href=/blog/atom.xml title=Feed><img alt=Feed src=/assets/img/icon/fa-rss.svg></a></li><li><a href=https://mastodon.social/@CIAvash title=Mastodon rel=me><img alt=Mastodon src=/assets/img/icon/fa-mastodon.svg></a></li><li><a href=https://twitter.com/CIAvash title=Twitter rel=me><img alt=Twitter src=/assets/img/icon/fa-twitter.svg></a></li><li><a href=https://github.com/CIAvash title=Github rel=me><img alt=Github src=/assets/img/icon/fa-github.svg></a></li><li><a href=https://gitlab.com/u/CIAvash title=Gitlab rel=me><img alt=Gitlab src=/assets/img/icon/fa-gitlab.svg></a></li><li><a href=https://www.artstation.com/CIAvash title=Artstation rel=me><img alt=Artstation src=/assets/img/icon/fa-artstation.svg></a></li></ul></header><main><article class=article><header><h2 class=article-title>Restoring GRUB with Arch linux live CD</h2><p class=article-meta><span class=article-author>By CIAvash •</span>
 <time datetime=2012-12-11>Dec 11, 2012</time>
 • Category:
 <a href=https://www.ciavash.name/categories/Arch-Linux/>Arch Linux</a>
@@ -71,45 +7,20 @@ Restoring GRUB with Arch linux live CD
 ,
 <a href=https://www.ciavash.name/tags/GRUB/>GRUB</a>
 ,
-<a href=https://www.ciavash.name/tags/Recovery/>Recovery</a>
-</p>
-</header>
-<div class=article-content>
-<p>I had Arch linux on my computer and needed Windows for gaming; Windows installs its own boot loader, so I had to re-install grub. The following is what I did to restore grub.</p>
-<p>I suppose that you know what you're doing! For example you need to know in which partition linux is installed.</p>
-<p>Boot Arch linux from live CD.</p>
-<p>Create a directory for <a href=https://wiki.archlinux.org/index.php/Change_Root>chroot</a> environment:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mkdir /mnt/root
-</code></pre></div><p>Mount the root partition and other necessary device and file systems:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mount /dev/sda1 /mnt/root
-<span style=color:#ef8383>cd</span> /mnt/root
-mount -o <span style=color:#ef8383>bind</span> /dev dev/
-mount -t proc proc proc/
-mount -t sysfs sys sys/
-</code></pre></div><p>It seems that on newer Arch releases(2012), you can use <code>arch-chroot /mnt/root</code> instead of the last 3 mount commands.</p>
-<p>If you have a separate partition for boot, mount it:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>mount /dev/<span style=color:#c7bf54>[</span>boot partition<span style=color:#c7bf54>]</span> boot/
-</code></pre></div><p>Change the root:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>chroot .
-</code></pre></div><p>You can define another shell by adding it to the above command, like this:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>chroot . /bin/bash
-</code></pre></div><p>Generate grub.cfg file:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre></div><p>Install GRUB:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>grub-install /dev/sda
-</code></pre></div><p>Exit the chroot environment:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#ef8383>exit</span>
-</code></pre></div><p>Unmount filesystems and devices:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>umount <span style=color:#c7bf54>{</span>dev,proc,sys,<span style=color:#c7bf54>}</span>
-</code></pre></div><p>Unmount the root partition:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#ef8383>cd</span> ..
-umount root
-</code></pre></div><p>And finally, you can reboot:</p>
-<div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>reboot
-</code></pre></div>
-</div>
-</article>
-</main>
-</div>
-</body>
-</html>
+<a href=https://www.ciavash.name/tags/Recovery/>Recovery</a></p></header><div class=article-content><p>I had Arch linux on my computer and needed Windows for gaming; Windows installs its own boot loader, so I had to re-install grub. The following is what I did to restore grub.</p><p>I suppose that you know what you're doing! For example you need to know in which partition linux is installed.</p><p>Boot Arch linux from live CD.</p><p>Create a directory for <a href=https://wiki.archlinux.org/index.php/Change_Root>chroot</a> environment:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>mkdir /mnt/root
+</span></span></code></pre></div><p>Mount the root partition and other necessary device and file systems:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>mount /dev/sda1 /mnt/root
+</span></span><span style=display:flex><span><span style=color:#ef8383>cd</span> /mnt/root
+</span></span><span style=display:flex><span>mount -o <span style=color:#ef8383>bind</span> /dev dev/
+</span></span><span style=display:flex><span>mount -t proc proc proc/
+</span></span><span style=display:flex><span>mount -t sysfs sys sys/
+</span></span></code></pre></div><p>It seems that on newer Arch releases(2012), you can use <code>arch-chroot /mnt/root</code> instead of the last 3 mount commands.</p><p>If you have a separate partition for boot, mount it:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>mount /dev/<span style=color:#c7bf54>[</span>boot partition<span style=color:#c7bf54>]</span> boot/
+</span></span></code></pre></div><p>Change the root:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>chroot .
+</span></span></code></pre></div><p>You can define another shell by adding it to the above command, like this:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>chroot . /bin/bash
+</span></span></code></pre></div><p>Generate grub.cfg file:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></div><p>Install GRUB:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>grub-install /dev/sda
+</span></span></code></pre></div><p>Exit the chroot environment:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#ef8383>exit</span>
+</span></span></code></pre></div><p>Unmount filesystems and devices:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>umount <span style=color:#c7bf54>{</span>dev,proc,sys,<span style=color:#c7bf54>}</span>
+</span></span></code></pre></div><p>Unmount the root partition:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#ef8383>cd</span> ..
+</span></span><span style=display:flex><span>umount root
+</span></span></code></pre></div><p>And finally, you can reboot:</p><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>reboot
+</span></span></code></pre></div></div></article></main></div></body></html>

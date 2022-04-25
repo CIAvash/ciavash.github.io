@@ -5,10 +5,10 @@
 &lt;p>Take a look at the README.md for its usage and some dummy C code for using in scanner and parser.&lt;/p>
 &lt;p>Usage:&lt;/p>
 &lt;p>scanner:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./scanner.pl &lt;span style="color:#c7bf54">[&lt;/span>file_name&lt;span style="color:#c7bf54">]&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output: Symbol Table (tokens)&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./scanner.pl &lt;span style="color:#c7bf54">[&lt;/span>file_name&lt;span style="color:#c7bf54">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output: Symbol Table (tokens)&lt;/p>
 &lt;p>parser:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">./parser.pl &lt;span style="color:#c7bf54">[&lt;/span>-s&lt;span style="color:#c7bf54">]&lt;/span> &lt;span style="color:#c7bf54">[&lt;/span>file_name&lt;span style="color:#c7bf54">]&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output: Table of parsing process&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./parser.pl &lt;span style="color:#c7bf54">[&lt;/span>-s&lt;span style="color:#c7bf54">]&lt;/span> &lt;span style="color:#c7bf54">[&lt;/span>file_name&lt;span style="color:#c7bf54">]&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output: Table of parsing process&lt;/p>
 &lt;p>With -s switch you can also see the scanner's output.&lt;/p>
 &lt;p>&lt;a href="https://github.com/CIAvash/simple-c-parser/">Simple C Parser on GitHub&lt;/a>&lt;/p></description></item></channel></rss>
