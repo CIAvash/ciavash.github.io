@@ -58,7 +58,8 @@ body.home {
             font-size: 14px;
         }
         .slinks a {
-            margin: 0 5px;
+            margin: 5px 5px;
+            display: inline-block;
         }
     }
 }
@@ -272,10 +273,14 @@ $social_icon_width: 25px;
     }
 }
 
-@media screen and (max-width: 521px) {
+@media screen and (max-width: 559px) {
     $social_icon_width: 25px;
     .s-links {
-        width: $social_icon_width * 3 + 3 * 9;
+        width: $social_icon_width * 5 + 5 * 10;
+
+        @media screen and (max-width: 424px) {
+            width: $social_icon_width * 3 + 3 * 9;
+        }
 
         li {
             margin: 6px 3px 0;

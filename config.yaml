@@ -15,6 +15,7 @@ params:
     Description: Writings of Siavash Askari Nasr
     Permalink: /blog/
   github: CIAvash
+  codeberg: CIAvash
   gitlab: CIAvash
   twitter: CIAvash
   mastodon: '@CIAvash'
