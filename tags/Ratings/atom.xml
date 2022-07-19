@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Ratings</title><link>https://www.ciavash.name/tags/Ratings/</link><description>Recent content in Ratings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Ratings/atom.xml" rel="self" type="application/rss+xml"/><item><title>MovieInfo - A web app for finding movie information and ratings</title><link>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</guid><description>&lt;p>I wanted to create something that makes it easy for me to see movie ratings.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Ratings</title><link>https://siavash.askari-nasr.com/tags/Ratings/</link><description>Recent content in Ratings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 16 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/tags/Ratings/atom.xml" rel="self" type="application/rss+xml"/><item><title>MovieInfo - A web app for finding movie information and ratings</title><link>https://siavash.askari-nasr.com/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</guid><description>&lt;p>I wanted to create something that makes it easy for me to see movie ratings.
 I decided to create it as a SPA. In order to do so, I had to find a good framework.
 I looked at a few well known frameworks, but did not like any of them!&lt;/p>
 &lt;p>I was going to give up, but then I saw &lt;a href="http://elm-lang.org/">Elm&lt;/a>.
@@ -10,9 +10,9 @@ I liked what I saw, so I did a bit more reading before starting the project.&lt;
 &lt;a href="#movieinfohttpsciavashgitlabiomovieinfo">
 &lt;a href="https://ciavash.gitlab.io/MovieInfo/">MovieInfo&lt;/a>
 &lt;/a>
-&lt;/h2>&lt;p>&lt;a href="https://www.ciavash.name/img/MovieInfo-title.jpg">
+&lt;/h2>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/MovieInfo-title.jpg">
 &lt;img
-src="https://www.ciavash.name/img/MovieInfo-title.jpg"
+src="https://siavash.askari-nasr.com/img/MovieInfo-title.jpg"
 alt="MovieInfo - screenshot of a title"
 />
 &lt;/a>&lt;/p>

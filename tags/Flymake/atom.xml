@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Flymake</title><link>https://www.ciavash.name/tags/Flymake/</link><description>Recent content in Flymake</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Flymake/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Flymake</title><link>https://siavash.askari-nasr.com/tags/Flymake/</link><description>Recent content in Flymake</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/tags/Flymake/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
 &lt;a href="#flymake">
 Flymake
 &lt;/a>
@@ -36,9 +36,9 @@ package to show it as a child frame. The package I found was &lt;a href="https:/
 &lt;a href="#flymake-rakudo">
 Flymake-rakudo
 &lt;/a>
-&lt;/h1>&lt;p>&lt;a href="https://www.ciavash.name/img/flymake-rakudo-screenshot.png">
+&lt;/h1>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png">
 &lt;img
-src="https://www.ciavash.name/img/flymake-rakudo-screenshot.png"
+src="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png"
 alt="flymake-rakudo screenshot"
 />
 &lt;/a>&lt;/p>

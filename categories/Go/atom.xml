@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Go</title><link>https://www.ciavash.name/categories/Go/</link><description>Recent content in Go</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/categories/Go/atom.xml" rel="self" type="application/rss+xml"/><item><title>How to write Raku's trans routine/operator in Go</title><link>https://www.ciavash.name/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</guid><description>&lt;p>I was looking for a way to transliterate(translate) English numbers to Persian numbers in Go.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Go</title><link>https://siavash.askari-nasr.com/categories/Go/</link><description>Recent content in Go</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Sun, 13 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/categories/Go/atom.xml" rel="self" type="application/rss+xml"/><item><title>How to write Raku's trans routine/operator in Go</title><link>https://siavash.askari-nasr.com/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</guid><description>&lt;p>I was looking for a way to transliterate(translate) English numbers to Persian numbers in Go.
 Such functionality is usually found in programming languages, but I wasn't expecting too much from Go.&lt;/p>
 &lt;p>It's very easy to do in &lt;a href="https://www.raku-lang.ir/en">Raku&lt;/a>:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-raku" data-lang="raku">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">say&lt;/span> &lt;span style="color:#d19a66">567&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">trans&lt;/span>&lt;span style="color:#c7bf54">:&lt;/span> &amp;#39;&lt;span style="color:#98c379">0&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">9&lt;/span>&amp;#39; &lt;span style="color:#c7bf54">=&amp;gt;&lt;/span> &amp;#39;&lt;span style="color:#98c379">۰&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">۹&lt;/span>&amp;#39;
@@ -60,12 +60,12 @@ also some Go modules. So I ended up writing a recursive function to trim whitesp
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>What I get from Go is speed, so I won't complain too much 😀&lt;/p>
 &lt;p>And just for fun, I'm still seeing this when I visit &lt;a href="https://pkg.go.dev">https://pkg.go.dev&lt;/a> :
-&lt;a href="https://www.ciavash.name/img/pkg.go.dev-blocked-for-Iran-by-Google.png">
+&lt;a href="https://siavash.askari-nasr.com/img/pkg.go.dev-blocked-for-Iran-by-Google.png">
 &lt;img
-src="https://www.ciavash.name/img/pkg.go.dev-blocked-for-Iran-by-Google.png"
+src="https://siavash.askari-nasr.com/img/pkg.go.dev-blocked-for-Iran-by-Google.png"
 alt="pkg.go.dev blocked for Iran by Google"
 />
-&lt;/a>&lt;/p></description></item><item><title>Raku, Go, Chroma, Germanium, Hugo and my blog</title><link>https://www.ciavash.name/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</guid><description>&lt;p>When I created my &lt;a href="https://www.raku-lang.ir/en">Raku programming language website&lt;/a> with
+&lt;/a>&lt;/p></description></item><item><title>Raku, Go, Chroma, Germanium, Hugo and my blog</title><link>https://siavash.askari-nasr.com/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</guid><description>&lt;p>When I created my &lt;a href="https://www.raku-lang.ir/en">Raku programming language website&lt;/a> with
 &lt;a href="https://gohugo.io/">Hugo&lt;/a> static site generator, I had to manually create the syntax highlighted
 html files for code examples shown in the front page, because Hugo used
 &lt;a href="https://github.com/alecthomas/chroma/">Chroma&lt;/a>(written in &lt;a href="https://golang.org/">Go&lt;/a> and uses a
@@ -142,9 +142,9 @@ say&lt;/a> they don't accept new packages! Maybe
 Syntect accepts packages in their &lt;code>submodule&lt;/code>? I don't know.&lt;/p>
 &lt;p>Anyway, I added support for options choosing a style and also listing styles. Also changed the
 Chroma version in the dependencies, so new lexers and styles can be used in Germanium v1.2.0.&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/germanium-raku-go.png">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/germanium-raku-go.png">
 &lt;img
-src="https://www.ciavash.name/img/germanium-raku-go.png"
+src="https://siavash.askari-nasr.com/img/germanium-raku-go.png"
 alt="Germanium: raku and go"
 />
 &lt;/a>&lt;/p>
@@ -171,9 +171,9 @@ frustration that came with it, strangely I began to kinda like it! I contributed
 different Go projects in a relatively short time, that says something nice about Go. So I may
 actually try to learn it. Even though I see this when I visit their website(because of Google App
 Engine and sanctions! Google usually goes to the extreme).&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/google-403-forbidden.jpg">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/google-403-forbidden.jpg">
 &lt;img
-src="https://www.ciavash.name/img/google-403-forbidden.jpg"
+src="https://siavash.askari-nasr.com/img/google-403-forbidden.jpg"
 alt="google-403-forbidden-iran"
 />
 &lt;/a>&lt;/p>
@@ -188,7 +188,7 @@ Hugo and my blog
 didn't have much motivation to migrate to Hugo, even though Hugo has more features. But I said
 what the heck, I created a lexer that Hugo uses so I might as well use it. Therefore, I migrated
 my blog to Hugo and even used some of its features, for example I created
-&lt;a href="https://www.ciavash.name/categories">categories&lt;/a> and &lt;a href="https://www.ciavash.name/tags">tags&lt;/a>, added TOC and used the &lt;a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">markdown render
+&lt;a href="https://siavash.askari-nasr.com/categories">categories&lt;/a> and &lt;a href="https://siavash.askari-nasr.com/tags">tags&lt;/a>, added TOC and used the &lt;a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">markdown render
 hooks&lt;/a> feature for
 headings to linkify them and images to linkify them to their sources which is useful
 when the image is large.&lt;/p>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - CLI</title><link>https://www.ciavash.name/categories/CLI/</link><description>Recent content in CLI</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Thu, 12 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/categories/CLI/atom.xml" rel="self" type="application/rss+xml"/><item><title>Get football information in your terminal with football</title><link>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</link><pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</guid><description>&lt;p>&lt;a href="https://www.ciavash.name/img/football-leagues.png">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - CLI</title><link>https://siavash.askari-nasr.com/categories/CLI/</link><description>Recent content in CLI</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Thu, 12 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/categories/CLI/atom.xml" rel="self" type="application/rss+xml"/><item><title>Get football information in your terminal with football</title><link>https://siavash.askari-nasr.com/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</link><pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</guid><description>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-leagues.png">
 &lt;img
-src="https://www.ciavash.name/img/football-leagues.png"
+src="https://siavash.askari-nasr.com/img/football-leagues.png"
 alt="Football Leagues"
 />
 &lt;/a>&lt;/p>
@@ -14,23 +14,23 @@ and &lt;a href="https://github.com/ugexe/zef">Zef&lt;/a>, then run:&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;a href="https://gitlab.com/CIAvash/App-Football/blob/master/README.md">README&lt;/a> file has some useful examples,
 but here are more examples and screenshots:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --team&lt;span style="color:#c7bf54">=&lt;/span>bayern --fixtures --timeframe&lt;span style="color:#c7bf54">=&lt;/span>p30 --venue&lt;span style="color:#c7bf54">=&lt;/span>away
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-bayern-away-fixtures.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-bayern-away-fixtures.png">
 &lt;img
-src="https://www.ciavash.name/img/football-bayern-away-fixtures.png"
+src="https://siavash.askari-nasr.com/img/football-bayern-away-fixtures.png"
 alt="Football - Bayern away fixtures"
 />
 &lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --team&lt;span style="color:#c7bf54">=&lt;/span>mancity --players
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-mancity-players.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-mancity-players.png">
 &lt;img
-src="https://www.ciavash.name/img/football-mancity-players.png"
+src="https://siavash.askari-nasr.com/img/football-mancity-players.png"
 alt="Football - Mancity players"
 />
 &lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --league&lt;span style="color:#c7bf54">=&lt;/span>pl --table --matchday&lt;span style="color:#c7bf54">=&lt;/span>&lt;span style="color:#d19a66">37&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-pl-table-matchday-37.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-pl-table-matchday-37.png">
 &lt;img
-src="https://www.ciavash.name/img/football-pl-table-matchday-37.png"
+src="https://siavash.askari-nasr.com/img/football-pl-table-matchday-37.png"
 alt="Football - PL matchday 37 table"
 />
 &lt;/a>&lt;/p></description></item></channel></rss>

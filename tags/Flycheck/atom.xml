@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Flycheck</title><link>https://www.ciavash.name/tags/Flycheck/</link><description>Recent content in Flycheck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Flycheck/atom.xml" rel="self" type="application/rss+xml"/><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Flycheck</title><link>https://siavash.askari-nasr.com/tags/Flycheck/</link><description>Recent content in Flycheck</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/tags/Flycheck/atom.xml" rel="self" type="application/rss+xml"/><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
 And did some improvements to it and published it on &lt;a href="https://melpa.org/">melpa&lt;/a>, so others can easily install and update it.&lt;/p>
 &lt;p>For those who don't know, &lt;a href="https://www.flycheck.org/">flycheck&lt;/a> is a tool for syntax checking Gnu Emacs buffers.&lt;/p>
 &lt;p>You can install &lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a> using &lt;a href="https://github.com/jwiegley/use-package">use-package&lt;/a>:&lt;/p>
@@ -11,9 +11,9 @@ New features
 &lt;a href="#project-detection">
 Project detection
 &lt;/a>
-&lt;/h3>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png">
+&lt;/h3>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -35,9 +35,9 @@ Full error messages
 &lt;a href="#multi-line-error-messages">
 Multi-line error messages
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -46,9 +46,9 @@ alt="Emacs - flycheck-raku - bare say"
 &lt;a href="#potential-difficulties">
 Potential difficulties
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png"
 alt="Emacs - flycheck-raku - symbol redclaration"
 />
 &lt;/a>&lt;/p>

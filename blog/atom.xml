@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Blog</title><link>https://www.ciavash.name/blog/</link><description>Recent content in Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/blog/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Blog</title><link>https://siavash.askari-nasr.com/blog/</link><description>Recent content in Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/blog/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
 &lt;a href="#flymake">
 Flymake
 &lt;/a>
@@ -36,9 +36,9 @@ package to show it as a child frame. The package I found was &lt;a href="https:/
 &lt;a href="#flymake-rakudo">
 Flymake-rakudo
 &lt;/a>
-&lt;/h1>&lt;p>&lt;a href="https://www.ciavash.name/img/flymake-rakudo-screenshot.png">
+&lt;/h1>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png">
 &lt;img
-src="https://www.ciavash.name/img/flymake-rakudo-screenshot.png"
+src="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png"
 alt="flymake-rakudo screenshot"
 />
 &lt;/a>&lt;/p>
@@ -67,7 +67,7 @@ special cases.&lt;/p>
 &lt;a href="#final-words">
 Final words
 &lt;/a>
-&lt;/h1>&lt;p>Even with all that, I hope we'll see a language server implementation for Raku.&lt;/p></description></item><item><title>How to write Raku's trans routine/operator in Go</title><link>https://www.ciavash.name/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</guid><description>&lt;p>I was looking for a way to transliterate(translate) English numbers to Persian numbers in Go.
+&lt;/h1>&lt;p>Even with all that, I hope we'll see a language server implementation for Raku.&lt;/p></description></item><item><title>How to write Raku's trans routine/operator in Go</title><link>https://siavash.askari-nasr.com/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/02/13/how-to-write-raku-trans-sub-operator-in-go/</guid><description>&lt;p>I was looking for a way to transliterate(translate) English numbers to Persian numbers in Go.
 Such functionality is usually found in programming languages, but I wasn't expecting too much from Go.&lt;/p>
 &lt;p>It's very easy to do in &lt;a href="https://www.raku-lang.ir/en">Raku&lt;/a>:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-raku" data-lang="raku">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">say&lt;/span> &lt;span style="color:#d19a66">567&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">trans&lt;/span>&lt;span style="color:#c7bf54">:&lt;/span> &amp;#39;&lt;span style="color:#98c379">0&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">9&lt;/span>&amp;#39; &lt;span style="color:#c7bf54">=&amp;gt;&lt;/span> &amp;#39;&lt;span style="color:#98c379">۰&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">۹&lt;/span>&amp;#39;
@@ -129,12 +129,12 @@ also some Go modules. So I ended up writing a recursive function to trim whitesp
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>What I get from Go is speed, so I won't complain too much 😀&lt;/p>
 &lt;p>And just for fun, I'm still seeing this when I visit &lt;a href="https://pkg.go.dev">https://pkg.go.dev&lt;/a> :
-&lt;a href="https://www.ciavash.name/img/pkg.go.dev-blocked-for-Iran-by-Google.png">
+&lt;a href="https://siavash.askari-nasr.com/img/pkg.go.dev-blocked-for-Iran-by-Google.png">
 &lt;img
-src="https://www.ciavash.name/img/pkg.go.dev-blocked-for-Iran-by-Google.png"
+src="https://siavash.askari-nasr.com/img/pkg.go.dev-blocked-for-Iran-by-Google.png"
 alt="pkg.go.dev blocked for Iran by Google"
 />
-&lt;/a>&lt;/p></description></item><item><title>T - Easy way of writing test assertions which output good test descriptions and error messages in Raku</title><link>https://www.ciavash.name/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</guid><description>&lt;p>After I finished watching &lt;a href="https://www.codesections.com/">Daniel Sockwell&lt;/a>'s &lt;a href="https://fosdem.org/2022/schedule/event/simpletesting/">FOSDEM 2022 Raku
+&lt;/a>&lt;/p></description></item><item><title>T - Easy way of writing test assertions which output good test descriptions and error messages in Raku</title><link>https://siavash.askari-nasr.com/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</link><pubDate>Sun, 13 Feb 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/02/13/T-easy-way-writing-test-assertions-good-test-descriptions-error-messages-in-raku/</guid><description>&lt;p>After I finished watching &lt;a href="https://www.codesections.com/">Daniel Sockwell&lt;/a>'s &lt;a href="https://fosdem.org/2022/schedule/event/simpletesting/">FOSDEM 2022 Raku
 presentation&lt;/a>, I thought this is a good opportunity to play with
 &lt;a href="https://www.raku-lang.ir/en">Raku&lt;/a>'s &lt;a href="https://design.raku.org/S99.html#slang">slangs&lt;/a>, something I hadn't done before.&lt;/p>
 &lt;p>What is Daniel's talk(and upcoming module) and my module going to solve?&lt;/p>
@@ -166,7 +166,7 @@ want to make it complicated, so it's a very short and simple slang which takes a
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># expected: &amp;#34;something&amp;#34;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># matcher: &amp;#39;infix:&amp;lt;eq&amp;gt;&amp;#39;
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3"># got: &amp;#34;something else&amp;#34;
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Raku, Go, Chroma, Germanium, Hugo and my blog</title><link>https://www.ciavash.name/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</guid><description>&lt;p>When I created my &lt;a href="https://www.raku-lang.ir/en">Raku programming language website&lt;/a> with
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Raku, Go, Chroma, Germanium, Hugo and my blog</title><link>https://siavash.askari-nasr.com/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</link><pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2021/07/05/raku-go-chroma-germanium-hugo-and-my-blog/</guid><description>&lt;p>When I created my &lt;a href="https://www.raku-lang.ir/en">Raku programming language website&lt;/a> with
 &lt;a href="https://gohugo.io/">Hugo&lt;/a> static site generator, I had to manually create the syntax highlighted
 html files for code examples shown in the front page, because Hugo used
 &lt;a href="https://github.com/alecthomas/chroma/">Chroma&lt;/a>(written in &lt;a href="https://golang.org/">Go&lt;/a> and uses a
@@ -243,9 +243,9 @@ say&lt;/a> they don't accept new packages! Maybe
 Syntect accepts packages in their &lt;code>submodule&lt;/code>? I don't know.&lt;/p>
 &lt;p>Anyway, I added support for options choosing a style and also listing styles. Also changed the
 Chroma version in the dependencies, so new lexers and styles can be used in Germanium v1.2.0.&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/germanium-raku-go.png">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/germanium-raku-go.png">
 &lt;img
-src="https://www.ciavash.name/img/germanium-raku-go.png"
+src="https://siavash.askari-nasr.com/img/germanium-raku-go.png"
 alt="Germanium: raku and go"
 />
 &lt;/a>&lt;/p>
@@ -272,9 +272,9 @@ frustration that came with it, strangely I began to kinda like it! I contributed
 different Go projects in a relatively short time, that says something nice about Go. So I may
 actually try to learn it. Even though I see this when I visit their website(because of Google App
 Engine and sanctions! Google usually goes to the extreme).&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/google-403-forbidden.jpg">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/google-403-forbidden.jpg">
 &lt;img
-src="https://www.ciavash.name/img/google-403-forbidden.jpg"
+src="https://siavash.askari-nasr.com/img/google-403-forbidden.jpg"
 alt="google-403-forbidden-iran"
 />
 &lt;/a>&lt;/p>
@@ -289,7 +289,7 @@ Hugo and my blog
 didn't have much motivation to migrate to Hugo, even though Hugo has more features. But I said
 what the heck, I created a lexer that Hugo uses so I might as well use it. Therefore, I migrated
 my blog to Hugo and even used some of its features, for example I created
-&lt;a href="https://www.ciavash.name/categories">categories&lt;/a> and &lt;a href="https://www.ciavash.name/tags">tags&lt;/a>, added TOC and used the &lt;a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">markdown render
+&lt;a href="https://siavash.askari-nasr.com/categories">categories&lt;/a> and &lt;a href="https://siavash.askari-nasr.com/tags">tags&lt;/a>, added TOC and used the &lt;a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks">markdown render
 hooks&lt;/a> feature for
 headings to linkify them and images to linkify them to their sources which is useful
 when the image is large.&lt;/p>
@@ -582,7 +582,7 @@ Raku
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c678dd">=finish&lt;/span>&lt;span style="color:#7e97c3">
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#7e97c3">Goodbye!
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
 And did some improvements to it and published it on &lt;a href="https://melpa.org/">melpa&lt;/a>, so others can easily install and update it.&lt;/p>
 &lt;p>For those who don't know, &lt;a href="https://www.flycheck.org/">flycheck&lt;/a> is a tool for syntax checking Gnu Emacs buffers.&lt;/p>
 &lt;p>You can install &lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a> using &lt;a href="https://github.com/jwiegley/use-package">use-package&lt;/a>:&lt;/p>
@@ -595,9 +595,9 @@ New features
 &lt;a href="#project-detection">
 Project detection
 &lt;/a>
-&lt;/h3>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png">
+&lt;/h3>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -619,9 +619,9 @@ Full error messages
 &lt;a href="#multi-line-error-messages">
 Multi-line error messages
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -630,13 +630,13 @@ alt="Emacs - flycheck-raku - bare say"
 &lt;a href="#potential-difficulties">
 Potential difficulties
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png"
 alt="Emacs - flycheck-raku - symbol redclaration"
 />
 &lt;/a>&lt;/p>
-&lt;p>New version shows potential difficulties; I've only seen one such error message and that is &lt;code>Redclaration of symbol $x&lt;/code>.&lt;/p></description></item><item><title>MovieInfo - A web app for finding movie information and ratings</title><link>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</guid><description>&lt;p>I wanted to create something that makes it easy for me to see movie ratings.
+&lt;p>New version shows potential difficulties; I've only seen one such error message and that is &lt;code>Redclaration of symbol $x&lt;/code>.&lt;/p></description></item><item><title>MovieInfo - A web app for finding movie information and ratings</title><link>https://siavash.askari-nasr.com/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</link><pubDate>Sun, 16 Oct 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2016/10/16/movieinfo-web-app-for-finding-movie-information-ratings/</guid><description>&lt;p>I wanted to create something that makes it easy for me to see movie ratings.
 I decided to create it as a SPA. In order to do so, I had to find a good framework.
 I looked at a few well known frameworks, but did not like any of them!&lt;/p>
 &lt;p>I was going to give up, but then I saw &lt;a href="http://elm-lang.org/">Elm&lt;/a>.
@@ -648,9 +648,9 @@ I liked what I saw, so I did a bit more reading before starting the project.&lt;
 &lt;a href="#movieinfohttpsciavashgitlabiomovieinfo">
 &lt;a href="https://ciavash.gitlab.io/MovieInfo/">MovieInfo&lt;/a>
 &lt;/a>
-&lt;/h2>&lt;p>&lt;a href="https://www.ciavash.name/img/MovieInfo-title.jpg">
+&lt;/h2>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/MovieInfo-title.jpg">
 &lt;img
-src="https://www.ciavash.name/img/MovieInfo-title.jpg"
+src="https://siavash.askari-nasr.com/img/MovieInfo-title.jpg"
 alt="MovieInfo - screenshot of a title"
 />
 &lt;/a>&lt;/p>
@@ -660,9 +660,9 @@ and used the &lt;a href="https://omdbapi.com/">OMDb API&lt;/a> to show the neces
 I added an overall rating, which is the average of those ratings.&lt;/p>
 &lt;p>&lt;a href="https://ciavash.gitlab.io/MovieInfo/">MovieInfo&lt;/a> is released under GPLv3+
 and its source code is available &lt;a href="https://gitlab.com/CIAvash/MovieInfo">here&lt;/a>.&lt;/p>
-&lt;p>&lt;strong>Update&lt;/strong>: I Recreated the app with &lt;a href="https://svelte.dev/">Svelte&lt;/a>: &lt;a href="https://movie-info.ciavash.name/">MovieInfo&lt;/a>&lt;/p></description></item><item><title>Get football information in your terminal with football</title><link>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</link><pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</guid><description>&lt;p>&lt;a href="https://www.ciavash.name/img/football-leagues.png">
+&lt;p>&lt;strong>Update&lt;/strong>: I Recreated the app with &lt;a href="https://svelte.dev/">Svelte&lt;/a>: &lt;a href="https://movie-info.ciavash.name/">MovieInfo&lt;/a>&lt;/p></description></item><item><title>Get football information in your terminal with football</title><link>https://siavash.askari-nasr.com/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</link><pubDate>Thu, 12 May 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2016/05/12/get-soccer-information-in-your-terminal-with-football/</guid><description>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-leagues.png">
 &lt;img
-src="https://www.ciavash.name/img/football-leagues.png"
+src="https://siavash.askari-nasr.com/img/football-leagues.png"
 alt="Football Leagues"
 />
 &lt;/a>&lt;/p>
@@ -676,26 +676,26 @@ and &lt;a href="https://github.com/ugexe/zef">Zef&lt;/a>, then run:&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;a href="https://gitlab.com/CIAvash/App-Football/blob/master/README.md">README&lt;/a> file has some useful examples,
 but here are more examples and screenshots:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --team&lt;span style="color:#c7bf54">=&lt;/span>bayern --fixtures --timeframe&lt;span style="color:#c7bf54">=&lt;/span>p30 --venue&lt;span style="color:#c7bf54">=&lt;/span>away
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-bayern-away-fixtures.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-bayern-away-fixtures.png">
 &lt;img
-src="https://www.ciavash.name/img/football-bayern-away-fixtures.png"
+src="https://siavash.askari-nasr.com/img/football-bayern-away-fixtures.png"
 alt="Football - Bayern away fixtures"
 />
 &lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --team&lt;span style="color:#c7bf54">=&lt;/span>mancity --players
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-mancity-players.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-mancity-players.png">
 &lt;img
-src="https://www.ciavash.name/img/football-mancity-players.png"
+src="https://siavash.askari-nasr.com/img/football-mancity-players.png"
 alt="Football - Mancity players"
 />
 &lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>football --league&lt;span style="color:#c7bf54">=&lt;/span>pl --table --matchday&lt;span style="color:#c7bf54">=&lt;/span>&lt;span style="color:#d19a66">37&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://www.ciavash.name/img/football-pl-table-matchday-37.png">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/football-pl-table-matchday-37.png">
 &lt;img
-src="https://www.ciavash.name/img/football-pl-table-matchday-37.png"
+src="https://siavash.askari-nasr.com/img/football-pl-table-matchday-37.png"
 alt="Football - PL matchday 37 table"
 />
-&lt;/a>&lt;/p></description></item><item><title>How to type Raku unicode characters in Emacs</title><link>https://www.ciavash.name/blog/2016/01/09/entering-raku-unicode-characters-in-emacs/</link><pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2016/01/09/entering-raku-unicode-characters-in-emacs/</guid><description>&lt;p>&lt;a href="https://raku.org/">Raku programming language&lt;/a> uses some unicode characters as operators, quotation marks, etc.
+&lt;/a>&lt;/p></description></item><item><title>How to type Raku unicode characters in Emacs</title><link>https://siavash.askari-nasr.com/blog/2016/01/09/entering-raku-unicode-characters-in-emacs/</link><pubDate>Sat, 09 Jan 2016 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2016/01/09/entering-raku-unicode-characters-in-emacs/</guid><description>&lt;p>&lt;a href="https://raku.org/">Raku programming language&lt;/a> uses some unicode characters as operators, quotation marks, etc.
 In this post I'm going to explain how to type those characters in Emacs using
 &lt;a href="http://www.emacswiki.org/emacs/InputMethods">input methods&lt;/a>.&lt;/p>
 &lt;p>First, you might want to see a list of those characters and their ASCII equivalents
@@ -1011,16 +1011,16 @@ You may specifically want to look at &lt;a href="https://en.wikipedia.org/wiki/C
 &lt;td style="text-align:center">&lt;code>\nequiv&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Magrent 1.0 released [Firefox]</title><link>https://www.ciavash.name/blog/2014/06/04/magrent-1-0-released/</link><pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2014/06/04/magrent-1-0-released/</guid><description>&lt;p>&lt;a href="https://www.ciavash.name/img/Magrent-Panel.png">
+&lt;/table></description></item><item><title>Magrent 1.0 released [Firefox]</title><link>https://siavash.askari-nasr.com/blog/2014/06/04/magrent-1-0-released/</link><pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2014/06/04/magrent-1-0-released/</guid><description>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/Magrent-Panel.png">
 &lt;img
-src="https://www.ciavash.name/img/Magrent-Panel.png"
+src="https://siavash.askari-nasr.com/img/Magrent-Panel.png"
 alt="Magrent-Panel"
 />
 &lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://addons.mozilla.org/en-US/firefox/addon/magrent/">Magrent&lt;/a> 1.0 adds context menu items to torrent info hash(when hash is selected) and The Pirate Bay torrent pages and links.&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/Magrent-ContextMenu.png">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/Magrent-ContextMenu.png">
 &lt;img
-src="https://www.ciavash.name/img/Magrent-ContextMenu.png"
+src="https://siavash.askari-nasr.com/img/Magrent-ContextMenu.png"
 alt="Magrent-ContextMenu"
 />
 &lt;/a>&lt;/p>
@@ -1033,7 +1033,7 @@ alt="Magrent-ContextMenu"
 &lt;li>New icon&lt;/li>
 &lt;li>Notify user when torrent source is not accessible.&lt;/li>
 &lt;li>Add torrent source name to the notification title&lt;/li>
-&lt;/ul></description></item><item><title>Simple parser for C language</title><link>https://www.ciavash.name/blog/2013/07/02/simple-parser-for-c-language/</link><pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2013/07/02/simple-parser-for-c-language/</guid><description>&lt;p>For a long time I'v wanted to push my Parser project which was a university project for Principles of Compiler Design course to GitHub. Now I’v found the time to do it and you can download it &lt;a href="https://github.com/CIAvash/simple-c-parser/">here&lt;/a>.&lt;/p>
+&lt;/ul></description></item><item><title>Simple parser for C language</title><link>https://siavash.askari-nasr.com/blog/2013/07/02/simple-parser-for-c-language/</link><pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2013/07/02/simple-parser-for-c-language/</guid><description>&lt;p>For a long time I'v wanted to push my Parser project which was a university project for Principles of Compiler Design course to GitHub. Now I’v found the time to do it and you can download it &lt;a href="https://github.com/CIAvash/simple-c-parser/">here&lt;/a>.&lt;/p>
 &lt;p>2 years ago I started learning Perl, soon Perl became my favourite programming language. It was then that our professor gave us the scanner project for C language. He told us that we can use the programming language of our choice. We were also allowed to use regular expressions. So I thought Perl is the best language for writing the project. In a month I read &lt;a href="http://en.wikipedia.org/wiki/Learning_Perl">Learning Perl&lt;/a> book and other necessary stuff and became ready to write the scanner. Scanner was my first Perl project. When I gave the project to professor, he said that I was the first person who has written the project in Perl :)&lt;/p>
 &lt;p>After Scanner, professor gave us a simple C grammar for a parser project. I wrote that in Perl too. The result (with a little change) is &lt;a href="https://github.com/CIAvash/simple-c-parser/">here&lt;/a>.&lt;/p>
 &lt;p>The used grammar exists in the documents directory. Along with other things that are produced from grammar: the LL(1) grammar after left factoring and left recursion removal, FIRST and FOLLOW sets and the parse table.&lt;/p>
@@ -1046,7 +1046,7 @@ alt="Magrent-ContextMenu"
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./parser.pl &lt;span style="color:#c7bf54">[&lt;/span>-s&lt;span style="color:#c7bf54">]&lt;/span> &lt;span style="color:#c7bf54">[&lt;/span>file_name&lt;span style="color:#c7bf54">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output: Table of parsing process&lt;/p>
 &lt;p>With -s switch you can also see the scanner's output.&lt;/p>
-&lt;p>&lt;a href="https://github.com/CIAvash/simple-c-parser/">Simple C Parser on GitHub&lt;/a>&lt;/p></description></item><item><title>Restoring GRUB with Arch linux live CD</title><link>https://www.ciavash.name/blog/2012/12/11/restoring-grub-with-arch-linux-live-cd/</link><pubDate>Tue, 11 Dec 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2012/12/11/restoring-grub-with-arch-linux-live-cd/</guid><description>&lt;p>I had Arch linux on my computer and needed Windows for gaming; Windows installs its own boot loader, so I had to re-install grub. The following is what I did to restore grub.&lt;/p>
+&lt;p>&lt;a href="https://github.com/CIAvash/simple-c-parser/">Simple C Parser on GitHub&lt;/a>&lt;/p></description></item><item><title>Restoring GRUB with Arch linux live CD</title><link>https://siavash.askari-nasr.com/blog/2012/12/11/restoring-grub-with-arch-linux-live-cd/</link><pubDate>Tue, 11 Dec 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2012/12/11/restoring-grub-with-arch-linux-live-cd/</guid><description>&lt;p>I had Arch linux on my computer and needed Windows for gaming; Windows installs its own boot loader, so I had to re-install grub. The following is what I did to restore grub.&lt;/p>
 &lt;p>I suppose that you know what you're doing! For example you need to know in which partition linux is installed.&lt;/p>
 &lt;p>Boot Arch linux from live CD.&lt;/p>
 &lt;p>Create a directory for &lt;a href="https://wiki.archlinux.org/index.php/Change_Root">chroot&lt;/a> environment:&lt;/p>
@@ -1077,12 +1077,12 @@ alt="Magrent-ContextMenu"
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>umount root
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And finally, you can reboot:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>reboot
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>My move from Ubuntu to Arch Linux</title><link>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</link><pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</guid><description>&lt;p>About a month ago I decided to try a new linux distribution. I was using Ubuntu and was even waiting for Ubuntu 12.10. I chose &lt;a href="https://www.archlinux.org/">Arch Linux&lt;/a> for testing, and Installed it on my netbook. I really liked the installation process! Then I chose &lt;a href="http://xfce.org/">Xfce&lt;/a> as Desktop Environment. After a few days I decided to move from Ubuntu to Arch Linux.&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>My move from Ubuntu to Arch Linux</title><link>https://siavash.askari-nasr.com/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</link><pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2012/11/12/move-from-ubuntu-to-arch-linux/</guid><description>&lt;p>About a month ago I decided to try a new linux distribution. I was using Ubuntu and was even waiting for Ubuntu 12.10. I chose &lt;a href="https://www.archlinux.org/">Arch Linux&lt;/a> for testing, and Installed it on my netbook. I really liked the installation process! Then I chose &lt;a href="http://xfce.org/">Xfce&lt;/a> as Desktop Environment. After a few days I decided to move from Ubuntu to Arch Linux.&lt;/p>
 &lt;p>When I read an article about a window manager, I was reminded of Tiling Window Managers so I decided to check window managers before moving. After some reading and comparing, I chose &lt;a href="http://xmonad.org/">xmonad&lt;/a> as my window manager.&lt;/p>
 &lt;p>So I installed Arch Linux with xmonad. I spent a few days on installing softwares and configuring. You can see the result in the below picture.&lt;/p>
-&lt;p>&lt;a href="https://www.ciavash.name/img/arch-linux-xmonad-CIAvash.png">
+&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/arch-linux-xmonad-CIAvash.png">
 &lt;img
-src="https://www.ciavash.name/img/arch-linux-xmonad-CIAvash.png"
+src="https://siavash.askari-nasr.com/img/arch-linux-xmonad-CIAvash.png"
 alt="arch-linux-xmonad"
 />
 &lt;/a>&lt;/p>

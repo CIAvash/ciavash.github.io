@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Syntax Checking</title><link>https://www.ciavash.name/tags/Syntax-Checking/</link><description>Recent content in Syntax Checking</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ciavash.name/tags/Syntax-Checking/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CIAvash - Syntax Checking</title><link>https://siavash.askari-nasr.com/tags/Syntax-Checking/</link><description>Recent content in Syntax Checking</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>CIAvash</managingEditor><webMaster>CIAvash</webMaster><lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://siavash.askari-nasr.com/tags/Syntax-Checking/atom.xml" rel="self" type="application/rss+xml"/><item><title>flymake-rakudo - Another syntax checker for Raku on Emacs</title><link>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2022/04/25/flymake-rakudo-another-syntax-checker-for-raku-on-emacs/</guid><description>&lt;h1 id="flymake" class="heading">
 &lt;a href="#flymake">
 Flymake
 &lt;/a>
@@ -36,9 +36,9 @@ package to show it as a child frame. The package I found was &lt;a href="https:/
 &lt;a href="#flymake-rakudo">
 Flymake-rakudo
 &lt;/a>
-&lt;/h1>&lt;p>&lt;a href="https://www.ciavash.name/img/flymake-rakudo-screenshot.png">
+&lt;/h1>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png">
 &lt;img
-src="https://www.ciavash.name/img/flymake-rakudo-screenshot.png"
+src="https://siavash.askari-nasr.com/img/flymake-rakudo-screenshot.png"
 alt="flymake-rakudo screenshot"
 />
 &lt;/a>&lt;/p>
@@ -67,7 +67,7 @@ special cases.&lt;/p>
 &lt;a href="#final-words">
 Final words
 &lt;/a>
-&lt;/h1>&lt;p>Even with all that, I hope we'll see a language server implementation for Raku.&lt;/p></description></item><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://www.ciavash.name/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
+&lt;/h1>&lt;p>Even with all that, I hope we'll see a language server implementation for Raku.&lt;/p></description></item><item><title>An improved flycheck-raku now available on melpa [Emacs]</title><link>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</link><pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate><author>CIAvash</author><guid>https://siavash.askari-nasr.com/blog/2021/03/16/improved-raku-flycheck-melpa-emacs/</guid><description>&lt;p>Recently I forked the flycheck-raku (by @widefox) to the Raku GitHub organization.
 And did some improvements to it and published it on &lt;a href="https://melpa.org/">melpa&lt;/a>, so others can easily install and update it.&lt;/p>
 &lt;p>For those who don't know, &lt;a href="https://www.flycheck.org/">flycheck&lt;/a> is a tool for syntax checking Gnu Emacs buffers.&lt;/p>
 &lt;p>You can install &lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a> using &lt;a href="https://github.com/jwiegley/use-package">use-package&lt;/a>:&lt;/p>
@@ -80,9 +80,9 @@ New features
 &lt;a href="#project-detection">
 Project detection
 &lt;/a>
-&lt;/h3>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png">
+&lt;/h3>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-could-not-find-module.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-could-not-find-module.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -104,9 +104,9 @@ Full error messages
 &lt;a href="#multi-line-error-messages">
 Multi-line error messages
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-bare-say.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-bare-say.png"
 alt="Emacs - flycheck-raku - bare say"
 />
 &lt;/a>&lt;/p>
@@ -115,9 +115,9 @@ alt="Emacs - flycheck-raku - bare say"
 &lt;a href="#potential-difficulties">
 Potential difficulties
 &lt;/a>
-&lt;/h4>&lt;p>&lt;a href="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png">
+&lt;/h4>&lt;p>&lt;a href="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png">
 &lt;img
-src="https://www.ciavash.name/img/emacs-flycheck-raku-symbol-redclaration.png"
+src="https://siavash.askari-nasr.com/img/emacs-flycheck-raku-symbol-redclaration.png"
 alt="Emacs - flycheck-raku - symbol redclaration"
 />
 &lt;/a>&lt;/p>
