@@ -6,11 +6,9 @@
 {{ define "main" }}
 <div class="slinks">
     <a href="{{ $.Site.Params.Blog.Permalink }}" rel="me">Blog</a>
-    <a href="https://twitter.com/{{ $.Site.Params.twitter }}" rel="me">Twitter</a>
     <a href="https://mastodon.social/{{ $.Site.Params.mastodon }}" rel="me">Mastodon</a>
-    <a href="https://github.com/{{ $.Site.Params.github }}" rel="me">Github</a>
     <a href="https://codeberg.org/{{ $.Site.Params.codeberg }}" rel="me">Codeberg</a>
-    <a href="https://gitlab.com/u/{{ $.Site.Params.gitlab }}/projects" rel="me">Gitlab</a>
+    <a href="https://github.com/{{ $.Site.Params.github }}" rel="me">Github</a>
     <a href="https://www.artstation.com/{{ $.Site.Params.artstation }}" rel="me">Artstation</a>
 </div>
 {{ .Content }}
