@@ -17,8 +17,7 @@ So I decided to give it a try and started reading the
 [guide](https://guide.elm-lang.org/) and the [docs](http://elm-lang.org/docs).
 I liked what I saw, so I did a bit more reading before starting the project.
 
-[MovieInfo](https://ciavash.gitlab.io/MovieInfo/)
--------------------------------------------------
+## MovieInfo
 
 ![MovieInfo - screenshot of a title](/img/MovieInfo-title.jpg)
 
