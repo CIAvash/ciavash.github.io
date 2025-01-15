@@ -67,19 +67,19 @@ body.home {
 body {
     font-family: Roboto, 'Fira Sans', sans-serif;
     font-size: 17px;
-    background: #422c2c;
-    color: #CCC;
+    background: #161111;
+    color: #b7b7b7;
     padding-bottom: 40px;
 }
 
 a, a:hover, a:focus {
-    color: #34b2ff;
+    color: #eb7e9a;
     text-decoration: none;
     transition: border-color 500ms;
 }
 
 a:hover, a:focus {
-    border-bottom: 1px solid #157cbb;
+    border-bottom: 1px solid #d35475;
 }
 
 img {
@@ -104,8 +104,8 @@ pre {
 
 code {
     font-family: 'Roboto Mono', 'Fira Mono', monospace;
-    background-color: #330b0b;
-    color: #DBB284;
+    background-color: #3b1b1b;
+    color: #c1ac94;
     padding: 1px 4px 3px;
     white-space: nowrap;
 }
@@ -178,10 +178,10 @@ pre {
 
 .page-header-title {
     a {
-        color: #dd4e4e;
+        color: #bf6161;
 
         &:hover, &:focus {
-            border-bottom: 1px solid #a72323;
+            border-bottom: 1px solid #894040;
         }
     }
 }
@@ -214,30 +214,22 @@ $social_icon_width: 25px;
 
     footer {
         margin-top: 5px;
-
-        a {
-            color: #f1a067;
-
-            &:hover {
-                border-color: #af6b3b;
-            }
-        }
     }
 }
 
 .article-title {
     a {
-        color: #e8ca91;
+        color: #d34f71;
 
         &:hover {
-            border-color: #a98540;
+            border-color: #ad3352;
         }
     }
 }
 
 .article-meta {
     font-size: 14px;
-    color: #b39494;
+    color: #ada5a5;
 }
 
 .article-content {
