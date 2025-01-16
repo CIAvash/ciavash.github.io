@@ -101,14 +101,14 @@ also some Go modules. So I ended up writing a recursive function to trim whitesp
 &lt;p>This is how I would do it in Raku, using &lt;a href="https://github.com/zostay/raku-DOM-Tiny">DOM::Tiny&lt;/a> (also containing the previous code):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-raku" data-lang="raku">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ef8383">put&lt;/span> &lt;span style="color:#dcaeea">$dom&lt;/span>&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">find&lt;/span>(&amp;#39;&lt;span style="color:#98c379">.my-element &amp;gt; div&lt;/span>&amp;#39;)&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">map&lt;/span>(&lt;span style="color:#c7bf54">*.&lt;/span>&lt;span style="color:#00b1f7">all-text&lt;/span>(:&lt;span style="color:#98c379">trim&lt;/span>))&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">join&lt;/span>(&amp;#34;&lt;span style="color:#d26464;font-weight:bold">\n&lt;/span>&amp;#34;)&lt;span style="color:#c7bf54">.&lt;/span>&lt;span style="color:#ef8383">trans&lt;/span>&lt;span style="color:#c7bf54">:&lt;/span> &amp;#39;&lt;span style="color:#98c379">0&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">9&lt;/span>&amp;#39; &lt;span style="color:#c7bf54">=&amp;gt;&lt;/span> &amp;#39;&lt;span style="color:#98c379">۰&lt;/span>&amp;#39;&lt;span style="color:#c7bf54">..&lt;/span>&amp;#39;&lt;span style="color:#98c379">۹&lt;/span>&amp;#39;;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And this is my Go solution(maybe there are better ways to do it, that I'm not aware of, or even better way to write my code):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">&lt;/span> &lt;span style="color:#c1abea">text&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">Join&lt;/span>(&lt;span style="color:#c1abea">doc&lt;/span>.&lt;span style="color:#00b1f7">Find&lt;/span>(&lt;span style="color:#98c379">`.my-element &amp;gt; div`&lt;/span>).&lt;span style="color:#00b1f7">Map&lt;/span>(&lt;span style="color:#c1abea">getText&lt;/span>), &lt;span style="color:#98c379">&amp;#34;\n&amp;#34;&lt;/span>)
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">text&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">Join&lt;/span>(&lt;span style="color:#c1abea">doc&lt;/span>.&lt;span style="color:#00b1f7">Find&lt;/span>(&lt;span style="color:#98c379">`.my-element &amp;gt; div`&lt;/span>).&lt;span style="color:#00b1f7">Map&lt;/span>(&lt;span style="color:#c1abea">getText&lt;/span>), &lt;span style="color:#98c379">&amp;#34;\n&amp;#34;&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">text&lt;/span> = &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">NewReplacer&lt;/span>(&lt;span style="color:#98c379">`0`&lt;/span>, &lt;span style="color:#98c379">`۰`&lt;/span>, &lt;span style="color:#98c379">`1`&lt;/span>, &lt;span style="color:#98c379">`۱`&lt;/span>, &lt;span style="color:#98c379">`2`&lt;/span>, &lt;span style="color:#98c379">`۲`&lt;/span>, &lt;span style="color:#98c379">`3`&lt;/span>, &lt;span style="color:#98c379">`۳`&lt;/span>, &lt;span style="color:#98c379">`4`&lt;/span>, &lt;span style="color:#98c379">`۴`&lt;/span>, &lt;span style="color:#98c379">`5`&lt;/span>, &lt;span style="color:#98c379">`۵`&lt;/span>, &lt;span style="color:#98c379">`6`&lt;/span>, &lt;span style="color:#98c379">`۶`&lt;/span>, &lt;span style="color:#98c379">`7`&lt;/span>, &lt;span style="color:#98c379">`۷`&lt;/span>, &lt;span style="color:#98c379">`8`&lt;/span>, &lt;span style="color:#98c379">`۸`&lt;/span>, &lt;span style="color:#98c379">`9`&lt;/span>, &lt;span style="color:#98c379">`۹`&lt;/span>).&lt;span style="color:#00b1f7">Replace&lt;/span>(&lt;span style="color:#c1abea">text&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">fmt&lt;/span>.&lt;span style="color:#00b1f7">Println&lt;/span>(&lt;span style="color:#c1abea">text&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#c678dd">func&lt;/span> &lt;span style="color:#00b1f7">getText&lt;/span> (&lt;span style="color:#c1abea">_&lt;/span> &lt;span style="color:#ef8383">int&lt;/span>, &lt;span style="color:#c1abea">s&lt;/span> &lt;span style="color:#c7bf54">*&lt;/span>&lt;span style="color:#c1abea">goquery&lt;/span>.&lt;span style="color:#c1abea">Selection&lt;/span>) &lt;span style="color:#ef8383">string&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c678dd">if&lt;/span> &lt;span style="color:#c1abea">children&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">s&lt;/span>.&lt;span style="color:#00b1f7">ChildrenFiltered&lt;/span>(&lt;span style="color:#98c379">`:not(img)`&lt;/span>); &lt;span style="color:#c1abea">children&lt;/span>.&lt;span style="color:#00b1f7">Text&lt;/span>() &lt;span style="color:#c7bf54">!=&lt;/span> &lt;span style="color:#98c379">``&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c678dd">return&lt;/span> &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">Join&lt;/span>(&lt;span style="color:#c1abea">children&lt;/span>.&lt;span style="color:#00b1f7">Map&lt;/span>(&lt;span style="color:#c1abea">getText&lt;/span>), &lt;span style="color:#98c379">` `&lt;/span>)
@@ -117,8 +117,8 @@ also some Go modules. So I ended up writing a recursive function to trim whitesp
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Another solution is using the &lt;code>regexp&lt;/code> module to replace all whitespace:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">&lt;/span> &lt;span style="color:#c1abea">text&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">Join&lt;/span>(&lt;span style="color:#c1abea">doc&lt;/span>.&lt;span style="color:#00b1f7">Find&lt;/span>(&lt;span style="color:#98c379">`.my-element &amp;gt; div`&lt;/span>).&lt;span style="color:#00b1f7">Map&lt;/span>(&lt;span style="color:#c678dd">func&lt;/span>(&lt;span style="color:#c1abea">_&lt;/span> &lt;span style="color:#ef8383">int&lt;/span>, &lt;span style="color:#c1abea">s&lt;/span> &lt;span style="color:#c7bf54">*&lt;/span>&lt;span style="color:#c1abea">goquery&lt;/span>.&lt;span style="color:#c1abea">Selection&lt;/span>) &lt;span style="color:#ef8383">string&lt;/span> {
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">text&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">Join&lt;/span>(&lt;span style="color:#c1abea">doc&lt;/span>.&lt;span style="color:#00b1f7">Find&lt;/span>(&lt;span style="color:#98c379">`.my-element &amp;gt; div`&lt;/span>).&lt;span style="color:#00b1f7">Map&lt;/span>(&lt;span style="color:#c678dd">func&lt;/span>(&lt;span style="color:#c1abea">_&lt;/span> &lt;span style="color:#ef8383">int&lt;/span>, &lt;span style="color:#c1abea">s&lt;/span> &lt;span style="color:#c7bf54">*&lt;/span>&lt;span style="color:#c1abea">goquery&lt;/span>.&lt;span style="color:#c1abea">Selection&lt;/span>) &lt;span style="color:#ef8383">string&lt;/span> {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">re&lt;/span> &lt;span style="color:#c7bf54">:=&lt;/span> &lt;span style="color:#c1abea">regexp&lt;/span>.&lt;span style="color:#00b1f7">MustCompile&lt;/span>(&lt;span style="color:#98c379">`\s+`&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c678dd">return&lt;/span> &lt;span style="color:#c1abea">re&lt;/span>.&lt;span style="color:#00b1f7">ReplaceAllLiteralString&lt;/span>(&lt;span style="color:#c1abea">s&lt;/span>.&lt;span style="color:#00b1f7">Text&lt;/span>(), &lt;span style="color:#98c379">` `&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }), &lt;span style="color:#98c379">&amp;#34;\n&amp;#34;&lt;/span>)
@@ -126,8 +126,8 @@ also some Go modules. So I ended up writing a recursive function to trim whitesp
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">text&lt;/span> = &lt;span style="color:#c1abea">strings&lt;/span>.&lt;span style="color:#00b1f7">NewReplacer&lt;/span>(&lt;span style="color:#98c379">`0`&lt;/span>, &lt;span style="color:#98c379">`۰`&lt;/span>, &lt;span style="color:#98c379">`1`&lt;/span>, &lt;span style="color:#98c379">`۱`&lt;/span>, &lt;span style="color:#98c379">`2`&lt;/span>, &lt;span style="color:#98c379">`۲`&lt;/span>, &lt;span style="color:#98c379">`3`&lt;/span>, &lt;span style="color:#98c379">`۳`&lt;/span>, &lt;span style="color:#98c379">`4`&lt;/span>, &lt;span style="color:#98c379">`۴`&lt;/span>, &lt;span style="color:#98c379">`5`&lt;/span>, &lt;span style="color:#98c379">`۵`&lt;/span>, &lt;span style="color:#98c379">`6`&lt;/span>, &lt;span style="color:#98c379">`۶`&lt;/span>, &lt;span style="color:#98c379">`7`&lt;/span>, &lt;span style="color:#98c379">`۷`&lt;/span>, &lt;span style="color:#98c379">`8`&lt;/span>, &lt;span style="color:#98c379">`۸`&lt;/span>, &lt;span style="color:#98c379">`9`&lt;/span>, &lt;span style="color:#98c379">`۹`&lt;/span>).&lt;span style="color:#00b1f7">Replace&lt;/span>(&lt;span style="color:#c1abea">text&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#c1abea">fmt&lt;/span>.&lt;span style="color:#00b1f7">Println&lt;/span>(&lt;span style="color:#c1abea">text&lt;/span>)
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>What I get from Go is speed, so I won't complain too much 😀&lt;/p>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#8a93a5;font-style:italic">// ........&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>What I get from Go is speed, so I won't complain too much 😀&lt;/p>
 &lt;p>And just for fun, I'm still seeing this when I visit &lt;a href="https://pkg.go.dev">https://pkg.go.dev&lt;/a> :
 &lt;a href="https://siavash.askari-nasr.com/img/pkg.go.dev-blocked-for-Iran-by-Google.png">
 &lt;img
@@ -680,276 +680,276 @@ You may specifically want to look at &lt;a href="https://en.wikipedia.org/wiki/C
 &lt;table class="table">
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:center">Character&lt;/th>
-&lt;th style="text-align:center">C-x 8&lt;/th>
-&lt;th style="text-align:center">rfc1345&lt;/th>
-&lt;th style="text-align:center">TeX&lt;/th>
+&lt;th style="text-align: center">Character&lt;/th>
+&lt;th style="text-align: center">C-x 8&lt;/th>
+&lt;th style="text-align: center">rfc1345&lt;/th>
+&lt;th style="text-align: center">TeX&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:center">«&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;lt;&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\flqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">«&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;lt;&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\flqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">»&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\frqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">»&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\frqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">×&lt;/td>
-&lt;td style="text-align:center">&lt;code>x&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;*X&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\times&lt;/code>&lt;/td>
+&lt;td style="text-align: center">×&lt;/td>
+&lt;td style="text-align: center">&lt;code>x&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;*X&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\times&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">÷&lt;/td>
-&lt;td style="text-align:center">&lt;code>/ /&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-:&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\div&lt;/code>&lt;/td>
+&lt;td style="text-align: center">÷&lt;/td>
+&lt;td style="text-align: center">&lt;code>/ /&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-:&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\div&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">−&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ -&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-2&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\minus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">−&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ -&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-2&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\minus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≤&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ &amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;=&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\le&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≤&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ &amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;=&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\le&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≥&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ &amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;gt;=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ge&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≥&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ &amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;gt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ge&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≠&lt;/td>
-&lt;td style="text-align:center">&lt;code>/ =&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;!=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ne&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≠&lt;/td>
+&lt;td style="text-align: center">&lt;code>/ =&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;!=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ne&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∘&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;Ob&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\circ&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∘&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;Ob&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\circ&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;?=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cong&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;?=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cong&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">π&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;p*&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\pi&lt;/code>&lt;/td>
+&lt;td style="text-align: center">π&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;p*&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\pi&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">τ&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;t*&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\tau&lt;/code>&lt;/td>
+&lt;td style="text-align: center">τ&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;t*&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\tau&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∞&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;00&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\infty&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∞&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;00&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\infty&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">…&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;.3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ldots&lt;/code>&lt;/td>
+&lt;td style="text-align: center">…&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;.3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ldots&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">‘&lt;/td>
-&lt;td style="text-align:center">&lt;code>[&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'6&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\rq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">‘&lt;/td>
+&lt;td style="text-align: center">&lt;code>[&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'6&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\rq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">’&lt;/td>
-&lt;td style="text-align:center">&lt;code>]&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\lq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">’&lt;/td>
+&lt;td style="text-align: center">&lt;code>]&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\lq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">‚&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;.9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\glq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">‚&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;.9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\glq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">“&lt;/td>
-&lt;td style="text-align:center">&lt;code>{&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;quot;6&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ldq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">“&lt;/td>
+&lt;td style="text-align: center">&lt;code>{&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;quot;6&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ldq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">”&lt;/td>
-&lt;td style="text-align:center">&lt;code>}&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;quot;9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\rdq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">”&lt;/td>
+&lt;td style="text-align: center">&lt;code>}&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;quot;9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\rdq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">„&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;:9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\glqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">„&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;:9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\glqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">¯&lt;/td>
-&lt;td style="text-align:center">&lt;code>=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'m&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\={}&lt;/code>&lt;/td>
+&lt;td style="text-align: center">¯&lt;/td>
+&lt;td style="text-align: center">&lt;code>=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'m&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\={}&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁻&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^-&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁻&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^-&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁺&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;+S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^+&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁺&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;+S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^+&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁰ - ⁹&lt;/td>
-&lt;td style="text-align:center">&lt;code>^ 1&lt;/code> - &lt;code>^ 3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;0S&lt;/code> - &lt;code>&amp;amp;9S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^0&lt;/code> - &lt;code>^9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁰ - ⁹&lt;/td>
+&lt;td style="text-align: center">&lt;code>^ 1&lt;/code> - &lt;code>^ 3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;0S&lt;/code> - &lt;code>&amp;amp;9S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^0&lt;/code> - &lt;code>^9&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">½&lt;/td>
-&lt;td style="text-align:center">&lt;code>1 / 2&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;12&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\frac12&lt;/code>&lt;/td>
+&lt;td style="text-align: center">½&lt;/td>
+&lt;td style="text-align: center">&lt;code>1 / 2&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;12&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\frac12&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;/0&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\emptyset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;/0&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\emptyset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∈&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(-&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\in&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∈&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(-&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\in&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∉&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\notin&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∉&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\notin&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∋&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-)&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ni&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∋&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-)&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ni&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊆&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(_&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\subseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊆&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(_&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\subseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊈&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsubseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊈&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsubseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊂&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\subset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊂&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\subset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊄&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsubset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊄&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsubset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊇&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;)_&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\supseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊇&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;)_&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\supseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊉&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsupseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊉&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsupseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊃&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\supset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊃&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\supset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsupset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsupset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∪&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;)U&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cup&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∪&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;)U&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cup&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∩&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(U&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cap&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∩&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(U&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cap&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∖&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\setminus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∖&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\setminus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊖&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ominus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊖&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ominus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊎&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\uplus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊎&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\uplus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≡&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;=3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\equiv&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≡&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;=3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\equiv&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≢&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nequiv&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≢&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nequiv&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item></channel></rss>

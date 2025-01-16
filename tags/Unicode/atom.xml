@@ -42,276 +42,276 @@ You may specifically want to look at &lt;a href="https://en.wikipedia.org/wiki/C
 &lt;table class="table">
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:center">Character&lt;/th>
-&lt;th style="text-align:center">C-x 8&lt;/th>
-&lt;th style="text-align:center">rfc1345&lt;/th>
-&lt;th style="text-align:center">TeX&lt;/th>
+&lt;th style="text-align: center">Character&lt;/th>
+&lt;th style="text-align: center">C-x 8&lt;/th>
+&lt;th style="text-align: center">rfc1345&lt;/th>
+&lt;th style="text-align: center">TeX&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:center">«&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;lt;&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\flqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">«&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;lt;&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\flqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">»&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\frqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">»&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;gt;&amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\frqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">×&lt;/td>
-&lt;td style="text-align:center">&lt;code>x&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;*X&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\times&lt;/code>&lt;/td>
+&lt;td style="text-align: center">×&lt;/td>
+&lt;td style="text-align: center">&lt;code>x&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;*X&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\times&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">÷&lt;/td>
-&lt;td style="text-align:center">&lt;code>/ /&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-:&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\div&lt;/code>&lt;/td>
+&lt;td style="text-align: center">÷&lt;/td>
+&lt;td style="text-align: center">&lt;code>/ /&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-:&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\div&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">−&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ -&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-2&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\minus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">−&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ -&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-2&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\minus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≤&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ &amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;=&amp;lt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\le&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≤&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ &amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;=&amp;lt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\le&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≥&lt;/td>
-&lt;td style="text-align:center">&lt;code>_ &amp;gt;&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;gt;=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ge&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≥&lt;/td>
+&lt;td style="text-align: center">&lt;code>_ &amp;gt;&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;gt;=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ge&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≠&lt;/td>
-&lt;td style="text-align:center">&lt;code>/ =&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;!=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ne&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≠&lt;/td>
+&lt;td style="text-align: center">&lt;code>/ =&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;!=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ne&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∘&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;Ob&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\circ&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∘&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;Ob&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\circ&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;?=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cong&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;?=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cong&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">π&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;p*&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\pi&lt;/code>&lt;/td>
+&lt;td style="text-align: center">π&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;p*&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\pi&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">τ&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;t*&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\tau&lt;/code>&lt;/td>
+&lt;td style="text-align: center">τ&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;t*&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\tau&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∞&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;00&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\infty&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∞&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;00&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\infty&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">…&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;.3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ldots&lt;/code>&lt;/td>
+&lt;td style="text-align: center">…&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;.3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ldots&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">‘&lt;/td>
-&lt;td style="text-align:center">&lt;code>[&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'6&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\rq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">‘&lt;/td>
+&lt;td style="text-align: center">&lt;code>[&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'6&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\rq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">’&lt;/td>
-&lt;td style="text-align:center">&lt;code>]&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\lq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">’&lt;/td>
+&lt;td style="text-align: center">&lt;code>]&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\lq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">‚&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;.9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\glq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">‚&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;.9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\glq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">“&lt;/td>
-&lt;td style="text-align:center">&lt;code>{&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;quot;6&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ldq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">“&lt;/td>
+&lt;td style="text-align: center">&lt;code>{&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;quot;6&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ldq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">”&lt;/td>
-&lt;td style="text-align:center">&lt;code>}&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;&amp;quot;9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\rdq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">”&lt;/td>
+&lt;td style="text-align: center">&lt;code>}&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;&amp;quot;9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\rdq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">„&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;:9&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\glqq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">„&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;:9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\glqq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">¯&lt;/td>
-&lt;td style="text-align:center">&lt;code>=&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;'m&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\={}&lt;/code>&lt;/td>
+&lt;td style="text-align: center">¯&lt;/td>
+&lt;td style="text-align: center">&lt;code>=&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;'m&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\={}&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁻&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^-&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁻&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^-&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁺&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;+S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^+&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁺&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;+S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^+&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⁰ - ⁹&lt;/td>
-&lt;td style="text-align:center">&lt;code>^ 1&lt;/code> - &lt;code>^ 3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;0S&lt;/code> - &lt;code>&amp;amp;9S&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>^0&lt;/code> - &lt;code>^9&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⁰ - ⁹&lt;/td>
+&lt;td style="text-align: center">&lt;code>^ 1&lt;/code> - &lt;code>^ 3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;0S&lt;/code> - &lt;code>&amp;amp;9S&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>^0&lt;/code> - &lt;code>^9&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">½&lt;/td>
-&lt;td style="text-align:center">&lt;code>1 / 2&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;12&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\frac12&lt;/code>&lt;/td>
+&lt;td style="text-align: center">½&lt;/td>
+&lt;td style="text-align: center">&lt;code>1 / 2&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;12&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\frac12&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;/0&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\emptyset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;/0&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\emptyset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∈&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(-&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\in&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∈&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(-&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\in&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∉&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\notin&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∉&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\notin&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∋&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;-)&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ni&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∋&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;-)&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ni&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊆&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(_&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\subseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊆&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(_&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\subseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊈&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsubseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊈&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsubseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊂&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\subset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊂&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\subset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊄&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsubset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊄&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsubset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊇&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;)_&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\supseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊇&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;)_&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\supseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊉&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsupseteq&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊉&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsupseteq&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊃&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\supset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊃&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(C&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\supset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊅&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nsupset&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊅&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nsupset&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∪&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;)U&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cup&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∪&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;)U&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cup&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∩&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;(U&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\cap&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∩&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;(U&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\cap&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">∖&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\setminus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">∖&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\setminus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊖&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\ominus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊖&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\ominus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">⊎&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\uplus&lt;/code>&lt;/td>
+&lt;td style="text-align: center">⊎&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\uplus&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≡&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>&amp;amp;=3&lt;/code>&lt;/td>
-&lt;td style="text-align:center">&lt;code>\equiv&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≡&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>&amp;amp;=3&lt;/code>&lt;/td>
+&lt;td style="text-align: center">&lt;code>\equiv&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">≢&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;/td>
-&lt;td style="text-align:center">&lt;code>\nequiv&lt;/code>&lt;/td>
+&lt;td style="text-align: center">≢&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;/td>
+&lt;td style="text-align: center">&lt;code>\nequiv&lt;/code>&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></description></item></channel></rss>
